@@ -8,7 +8,7 @@ let state = {
     showTrueFalseQuestionsResult: false
 };
 
-function handleUserAnswearSelection(question, trueFalse) {
+function handleUserTrueFalseSelection(question, trueFalse) {
     let questionsRecord = state.trueFalseQuestions.find(q => {
         return q.question == question;
     });
@@ -16,7 +16,7 @@ function handleUserAnswearSelection(question, trueFalse) {
     questionsRecord.userAnswear = trueFalse;
 }
 
-var PionirjiView = {
+let TrueFalse = {
     oninit: function() {
         state.trueFalseQuestions = generateTrueFalseQuestions(Constants.Pioner, 10);
     },
@@ -40,7 +40,7 @@ var PionirjiView = {
                             userAnswear={q.userAnswear}
                             questionNumber={index}
                             showTrueFalseQuestionsResult={state.showTrueFalseQuestionsResult} 
-                            onAnswearSelection={handleUserAnswearSelection} 
+                            onAnswearSelection={handleUserTrueFalseSelection} 
                         />
                     })
                 }
@@ -51,6 +51,16 @@ var PionirjiView = {
                 class="btn btn-primary checkResultButton"
                 onclick={() => { state.showTrueFalseQuestionsResult = true }}
             >Preveri</button>
+        </div>
+    }
+}
+
+var PionirjiView = {
+    oninit: function() {
+    },
+    view: function() {
+        return <div>
+           <TrueFalse />
         </div>
     }
 }
