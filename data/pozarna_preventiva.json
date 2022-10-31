@@ -1,0 +1,42 @@
+[
+  {
+    "question": "Q1",
+    "correctAnswear": "pravilen odg",
+    "wrongAnswears": [
+      "napacn odg a",
+      "napacn odg b",
+      "napacn odg c"
+    ],
+    "ages": ["pioner", "mladinec"]
+  },
+  {
+    "question": "Q2",
+    "correctAnswear": "pravilen odg",
+    "wrongAnswears": [
+      "napacn odg a",
+      "napacn odg b",
+      "napacn odg c"
+    ],
+    "ages": ["pioner"]
+  },
+  {
+    "question": "Q3",
+    "correctAnswear": "pravilen odg",
+    "wrongAnswears": [
+      "napacn odg a",
+      "napacn odg b",
+      "napacn odg c"
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Q4",
+    "correctAnswear": "pravilen odg",
+    "wrongAnswears": [
+      "napacn odg a",
+      "napacn odg b",
+      "napacn odg c"
+    ],
+    "ages": ["pioner", "mladinec"]
+  }
+]
