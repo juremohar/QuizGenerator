@@ -32,8 +32,7 @@ let WrongAnswear = {
                 <i class="bi bi-x-circle"></i> Napačen odgovor!
             </div>
             <div className="correct-answear">
-                {/* <span className="fw-bold">Pravilen odgovor je: </span> */}
-                {vnode.attrs.correctAnswear}
+                { vnode.attrs.correctAnswear }
             </div>
         </div>
     }

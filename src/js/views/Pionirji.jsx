@@ -1,35 +1,12 @@
 import { TrueFalseComponent } from '../components/TrueFalseComponent';
 import Constants from '../constants';
-import { appState } from '../appstate'; 
+import { generateTrueFalseQuestions } from '../../helpers/questions';
 
-const trueFalseJson = require('../../../data/ves_neves.json').filter(q => q.ages.includes(Constants.Pioner));
 
 let state = {
     trueFalseQuestions: [],
     showTrueFalseQuestionsResult: false
 };
-
-function getQuestions(questions, numberOfQuestions) {
-    let list = questions.sort(() => 0.5 - Math.random()).slice(0, numberOfQuestions);
-    return generateTrueFalseQuestions(list);
-}
-
-function generateTrueFalseQuestions(questions) {
-    return questions.map(q => {
-        let pickCorrect = Math.random() < 0.5;
-        let randomAnswear = q.correctAnswear;
-        if (!pickCorrect) {
-            randomAnswear = q.wrongAnswears.sort(function() {return 0.5 - Math.random()})[0];
-        }
-
-        return {
-            question: q.question,
-            correctAnswear: q.correctAnswear,
-            randomAnswear: randomAnswear,
-            userAnswear: null
-        }
-    });
-}
 
 function handleUserAnswearSelection(question, trueFalse) {
     let questionsRecord = state.trueFalseQuestions.find(q => {
@@ -41,7 +18,7 @@ function handleUserAnswearSelection(question, trueFalse) {
 
 var PionirjiView = {
     oninit: function() {
-        state.trueFalseQuestions = getQuestions(trueFalseJson, 10);
+        state.trueFalseQuestions = generateTrueFalseQuestions(Constants.Pioner, 10);
     },
     view: function() {
         return <div className="my-4">
@@ -75,9 +52,6 @@ var PionirjiView = {
                 onclick={() => { state.showTrueFalseQuestionsResult = true }}
             >Preveri</button>
         </div>
-    },
-    onremove: function() {
-        appState.questions = [];
     }
 }
 
