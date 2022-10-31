@@ -1,4 +1,3 @@
-
 function isAnswerSelected(userAnswer, trueFalse) {
     if (userAnswer === trueFalse) {
         return "active";
@@ -7,18 +6,18 @@ function isAnswerSelected(userAnswer, trueFalse) {
     return "";
 }
 
-function isuserAnswerCorrect(userAnswer, correctAnswers, randomAnswer) {
+function isUserAnswerCorrect(userAnswer, correctAnswers, randomAnswer) {
     let wasShownAnswerCorrect = correctAnswers === randomAnswer;
 
     return wasShownAnswerCorrect === userAnswer;
 }
 
 
-let ShowcorrectAnswers = {
+let ShowCorrectAnswers = {
     view: function(vnode) {
         let properties = vnode.attrs;
-        if (isuserAnswerCorrect(properties.userAnswer, properties.correctAnswers, properties.randomAnswer)) {
-            return <correctAnswers />
+        if (isUserAnswerCorrect(properties.userAnswer, properties.correctAnswers, properties.randomAnswer)) {
+            return <CorrectAnswers />
         }
 
         return <WrongAnswer correctAnswers={properties.correctAnswers} />
@@ -38,7 +37,7 @@ let WrongAnswer = {
     }
 }
 
-let correctAnswers = {
+let CorrectAnswers = {
     view: function() {
         return <div className="badge bg-success mt-2">
             <i class="bi bi-check-circle"></i> Pravilen odgovor!
@@ -56,7 +55,7 @@ var TrueFalseComponent = {
             <div className="random-answer">
                 { properties.randomAnswer }
             </div>
-            <div className="mt-2 trueFalseButtons">
+            <div className="mt-2 true-false-buttons">
                 <button 
                     type="button" 
                     className={`btn btn-outline-dark btn-sm me-2 ${ isAnswerSelected(properties.userAnswer, true) }`}
@@ -70,7 +69,7 @@ var TrueFalseComponent = {
             </div>
             <div>
                 { 
-                    properties.showTrueFalseQuestionsResult && <ShowcorrectAnswers userAnswer={properties.userAnswer} correctAnswers={properties.correctAnswers} randomAnswer={properties.randomAnswer} />
+                    properties.showTrueFalseQuestionsResult && <ShowCorrectAnswers userAnswer={properties.userAnswer} correctAnswers={properties.correctAnswers} randomAnswer={properties.randomAnswer} />
                 }
             </div>
         </div>

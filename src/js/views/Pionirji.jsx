@@ -48,7 +48,7 @@ let TrueFalse = {
 
             <button 
                 type="button" 
-                class="btn btn-primary checkResultButton"
+                class="btn btn-primary check-result-button"
                 onclick={() => { state.showTrueFalseQuestionsResult = true }}
             >Preveri</button>
         </div>

@@ -39,30 +39,30 @@
     font-size: 15px;
 }
 
-.trueFalseButtons {
+.true-false-buttons {
     button {
         width: 10%;
     }
 }
 
-.checkResultButton {
+.check-result-button {
     width: 20%;
 }
 
 @include media-breakpoint-down(md) { 
-    .trueFalseButtons {
+    .true-false-buttons {
         button {
             width: 25%;
         }
     }
 
-    .checkResultButton {
+    .check-result-button {
         width: 50%;
     }
 }
 
 @include media-breakpoint-down(sm) { 
-    .trueFalseButtons {
+    .true-false-buttons {
         display: flex;
 
         button {
@@ -70,7 +70,7 @@
         }
     }
 
-    .checkResultButton {
+    .check-result-button {
         width: 100%;
     }
 }
