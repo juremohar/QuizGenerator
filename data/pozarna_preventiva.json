@@ -1,8 +1,8 @@
 [
   {
     "question": "Q1",
-    "correctAnswear": "pravilen odg",
-    "wrongAnswears": [
+    "correctAnswer": "pravilen odg",
+    "wrongAnswers": [
       "napacn odg a",
       "napacn odg b",
       "napacn odg c"
@@ -11,8 +11,8 @@
   },
   {
     "question": "Q2",
-    "correctAnswear": "pravilen odg",
-    "wrongAnswears": [
+    "correctAnswer": "pravilen odg",
+    "wrongAnswers": [
       "napacn odg a",
       "napacn odg b",
       "napacn odg c"
@@ -21,8 +21,8 @@
   },
   {
     "question": "Q3",
-    "correctAnswear": "pravilen odg",
-    "wrongAnswears": [
+    "correctAnswer": "pravilen odg",
+    "wrongAnswers": [
       "napacn odg a",
       "napacn odg b",
       "napacn odg c"
@@ -31,8 +31,8 @@
   },
   {
     "question": "Q4",
-    "correctAnswear": "pravilen odg",
-    "wrongAnswears": [
+    "correctAnswer": "pravilen odg",
+    "wrongAnswers": [
       "napacn odg a",
       "napacn odg b",
       "napacn odg c"

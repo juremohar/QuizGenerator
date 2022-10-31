@@ -4,16 +4,16 @@ function generateTrueFalseQuestions(category, numberOfQuestions) {
 
     return list.map(q => {
         let pickCorrect = Math.random() < 0.5;
-        let randomAnswear = q.correctAnswear;
+        let randomAnswer = q.correctAnswers;
         if (!pickCorrect) {
-            randomAnswear = q.wrongAnswears.sort(function() {return 0.5 - Math.random()})[0];
+            randomAnswer = q.wrongAnswers.sort(function() {return 0.5 - Math.random()})[0];
         }
 
         return {
             question: q.question,
-            correctAnswear: q.correctAnswear,
-            randomAnswear: randomAnswear,
-            userAnswear: null
+            correctAnswers: q.correctAnswers,
+            randomAnswer: randomAnswer,
+            userAnswer: null
         }
     });
 }

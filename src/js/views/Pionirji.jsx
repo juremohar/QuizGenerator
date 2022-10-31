@@ -13,7 +13,7 @@ function handleUserTrueFalseSelection(question, trueFalse) {
         return q.question == question;
     });
 
-    questionsRecord.userAnswear = trueFalse;
+    questionsRecord.userAnswer = trueFalse;
 }
 
 let TrueFalse = {
@@ -35,12 +35,12 @@ let TrueFalse = {
                     state.trueFalseQuestions.map((q, index) => {
                         return <TrueFalseComponent 
                             question={q.question} 
-                            correctAnswear={q.correctAnswear}
-                            randomAnswear={q.randomAnswear} 
-                            userAnswear={q.userAnswear}
+                            correctAnswers={q.correctAnswers}
+                            randomAnswer={q.randomAnswer} 
+                            userAnswer={q.userAnswer}
                             questionNumber={index}
                             showTrueFalseQuestionsResult={state.showTrueFalseQuestionsResult} 
-                            onAnswearSelection={handleUserTrueFalseSelection} 
+                            onAnswerSelection={handleUserTrueFalseSelection} 
                         />
                     })
                 }

@@ -1,8 +1,8 @@
 [
   {
     "question": "Kje je bilo ustanovljeno prvo gasilsko društvo?",
-    "correctAnswear": "Metlika.",
-    "wrongAnswears": [
+    "correctAnswers": "Metlika.",
+    "wrongAnswers": [
       "Ljubljana.",
       "Celje."
     ],
@@ -10,8 +10,8 @@
   },
   {
     "question": "Kako so se ob ustanovitvi imenovala najstarejša gasilska društva v sloveniji?",
-    "correctAnswear": "Požarne brambe.",
-    "wrongAnswears": [
+    "correctAnswers": "Požarne brambe.",
+    "wrongAnswers": [
       "Straže.",
       "Prostovoljno gasilsko društvo."
     ],
@@ -19,8 +19,8 @@
   },
   {
     "question": "Katerega leta je bila ustanovljena prva prostovoljna požarna bramba na slovenskem? ",
-    "correctAnswear": "1869.",
-    "wrongAnswears": [
+    "correctAnswers": "1869.",
+    "wrongAnswers": [
       "1902.",
       "1723."
     ],
@@ -28,8 +28,8 @@
   },
   {
     "question": "Kdo je bil ustanovitelj najstarejšega gasilskega društva v sloveniji?",
-    "correctAnswear": "Dr. Josip Savinšek.",
-    "wrongAnswears": [
+    "correctAnswers": "Dr. Josip Savinšek.",
+    "wrongAnswers": [
       "Matevž Hace.",
       "Dr. Boris Pahor."
     ],
@@ -37,8 +37,8 @@
   },
   {
     "question": "Kdo je bil prvi predsednik gasilske zveze slovenije? ",
-    "correctAnswear": "Matevž Hace.",
-    "wrongAnswears": [
+    "correctAnswers": "Matevž Hace.",
+    "wrongAnswers": [
       "Dr. Josip Savinšek.",
       "Franci Petek"
     ],
@@ -46,8 +46,8 @@
   },
   {
     "question": "Kje je bila v slovenije ustanovljena prva gasilska šola?",
-    "correctAnswear": "V Žireh.",
-    "wrongAnswears": [
+    "correctAnswers": "V Žireh.",
+    "wrongAnswers": [
       "V Ljubljani.",
       "V Metliki."
     ],
@@ -55,8 +55,8 @@
   },
   {
     "question": "Kje je slovenski gasilski muzej?",
-    "correctAnswear": "V Metliki",
-    "wrongAnswears": [
+    "correctAnswers": "V Metliki",
+    "wrongAnswers": [
       "V Žireh.",
       "Na Vrhniki."
     ],
@@ -64,8 +64,8 @@
   },
   {
     "question": "Kdo je zavetnik gasilcev?",
-    "correctAnswear": "Sveti Florjan.",
-    "wrongAnswears": [
+    "correctAnswers": "Sveti Florjan.",
+    "wrongAnswers": [
       "Sveti Martin.",
       "Sveti Jurij."
     ],
@@ -73,8 +73,8 @@
   },
   {
     "question": "Kdo je sedanji poveljnik gasilske zveze slovenije?",
-    "correctAnswear": "Franci Petek",
-    "wrongAnswears": [
+    "correctAnswers": "Franci Petek",
+    "wrongAnswers": [
       "Janko Cerkvenik.",
       "Matevž Hace."
     ],
@@ -82,8 +82,8 @@
   },
   {
     "question": "Kdo je sedanji predsednik gasilske zveze slovenije? ",
-    "correctAnswear": "Janko Cerkvenik.",
-    "wrongAnswears": [
+    "correctAnswers": "Janko Cerkvenik.",
+    "wrongAnswers": [
       "Franci Petek.",
       "Matevž Hace."
     ],
@@ -91,8 +91,8 @@
   },
   {
     "question": "Po kom se imenuje najvišje gasilsko priznanje v sloveniji?",
-    "correctAnswear": "Po Matevžu Hacetu.",
-    "wrongAnswears": [
+    "correctAnswers": "Po Matevžu Hacetu.",
+    "wrongAnswers": [
       "Po Franci Petek.",
       "Po svetniku sveti Florjan."
     ],
@@ -100,8 +100,8 @@
   },
   {
     "question": "Kaj je navadno spodbudilo nastanek gasilskih društev? ",
-    "correctAnswear": "Manjši ali večji požari pri katerih so bili ljudje nemočni.",
-    "wrongAnswears": [
+    "correctAnswers": "Manjši ali večji požari pri katerih so bili ljudje nemočni.",
+    "wrongAnswers": [
       "Želja po druženju.",
       "Popravle, viharji, toča."
     ],
@@ -109,8 +109,8 @@
   },
   {
     "question": "V kateri državi je dr. Josip Savinšek spoznal delovanje prostovoljnih požarnih bramb?",
-    "correctAnswear": "Na Hrvaškem.",
-    "wrongAnswears": [
+    "correctAnswers": "Na Hrvaškem.",
+    "wrongAnswers": [
       "V Franciji.",
       "V Italiji"
     ],
@@ -118,8 +118,8 @@
   },
   {
     "question": "Po kom se imenuje slovenski gasilski muzej v Metliki?",
-    "correctAnswear": "Po dr. Branku Božiču",
-    "wrongAnswears": [
+    "correctAnswers": "Po dr. Branku Božiču",
+    "wrongAnswers": [
       "Po Franci Petku",
       "Po Matevžu Hacetu."
     ],
@@ -127,8 +127,8 @@
   },
   {
     "question": "Kdo je prvi slovenskim gasilcem poveljeval v slovenskem jeziku?",
-    "correctAnswear": "Ignacij Merhar.",
-    "wrongAnswears": [
+    "correctAnswers": "Ignacij Merhar.",
+    "wrongAnswers": [
       "Matevž Hace",
       "Janko Kosernik."
     ],
@@ -136,8 +136,8 @@
   },
   {
     "question": "Kako so se preimenovala gasilska društva po zakon o organizaciji gasilstva, je izšel 15. Julija 1933?",
-    "correctAnswear": "V gasilske čete.",
-    "wrongAnswears": [
+    "correctAnswers": "V gasilske čete.",
+    "wrongAnswers": [
       "Požarne straže.",
       "Prostovoljna gasilka društva."
     ],
@@ -145,8 +145,8 @@
   },
   {
     "question": "Katerega leta je bila ustanovljena gasilske zveze ljudske republike Slovenije?",
-    "correctAnswear": "1949.",
-    "wrongAnswears": [
+    "correctAnswers": "1949.",
+    "wrongAnswers": [
       "1992.",
       "1918."
     ],
@@ -154,8 +154,8 @@
   },
   {
     "question": "Kdo je bil na 1. Kongresu gasilske zveze ljudske republike Slovenije izvoljen za poveljnika?",
-    "correctAnswear": "Miran Špricar.",
-    "wrongAnswears": [
+    "correctAnswers": "Miran Špricar.",
+    "wrongAnswers": [
       "Franci Petek.",
       "Janez Kastelic."
     ],
@@ -163,8 +163,8 @@
   },
   {
     "question": "Kako je delovalo gasilstvo v času 2. Svetovne vojne?",
-    "correctAnswear": "Delovanje društev je bilo zelo oteženo, omejeno in marsikje prekinjeno.",
-    "wrongAnswears": [
+    "correctAnswers": "Delovanje društev je bilo zelo oteženo, omejeno in marsikje prekinjeno.",
+    "wrongAnswers": [
       "Društva so postala vse večja.",
       "Gasilci so dobili veliko denarja, da so si lahko posodobili opremo."
     ],
@@ -172,8 +172,8 @@
   },
   {
     "question": "Prva gasilska šola je leta 1950 začela delovati v žireh. Za kateri čin je izobraževala gasilce?",
-    "correctAnswear": "Za gasilske častnike.",
-    "wrongAnswears": [
+    "correctAnswers": "Za gasilske častnike.",
+    "wrongAnswers": [
       "Za operativne gasilce.",
       "Za desetarje."
     ],
