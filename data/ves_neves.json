@@ -1,7 +1,7 @@
 [
   {
     "question": "Koliko so lahko stari otroci, da spadajo v tekmovalno kategorijo pionirjev gasilcev?",
-    "correctAnswers": "Od 6 do 11 let.",
+    "correctAnswer": "Od 6 do 11 let.",
     "wrongAnswers": [
       "Od 5 do 11 let.",
       "Od 6 do 12 let.",
@@ -11,7 +11,7 @@
   },
   {
     "question": "Koliko so lahko stari otroci, da spadajo v tekmovalno kategorijo mladincev gasilcev?",
-    "correctAnswers": "Od 12 do 16 let.",
+    "correctAnswer": "Od 12 do 16 let.",
     "wrongAnswers": [
       "Od 11 do 16 let.",
       "Od 13 do 16 let.",
@@ -21,7 +21,7 @@
   },
   {
     "question": "Kdo je gasilec pripravnik?",
-    "correctAnswers": "Je član pgd v starosti od 16 do 18 let, oziroma nad 18 let v času strokovnega usposabljanja in priprave za operativnega gasilca.",
+    "correctAnswer": "Je član pgd v starosti od 16 do 18 let, oziroma nad 18 let v času strokovnega usposabljanja in priprave za operativnega gasilca.",
     "wrongAnswers": [
       "Je član pgd v starosti od 16 do 18 let, oziroma nad 18 let brez želje da postane operativni gasilec.",
       "Je operativni gasilec, ki ni član gasilskega društva.",
@@ -31,7 +31,7 @@
   },
   {
     "question": "Ali lahko tujec postane član pgd?",
-    "correctAnswers": "Da, pod enakimi pogoji, kot je za slovenske državljane.",
+    "correctAnswer": "Da, pod enakimi pogoji, kot je za slovenske državljane.",
     "wrongAnswers": [
       "Ne.",
       "Da, vendar ne more biti operativni gasilec.",
@@ -41,7 +41,7 @@
   },
   {
     "question": "Kateri so simboli v prostovoljnem gasilstvu?",
-    "correctAnswers": "Gasilski znak in prapor.",
+    "correctAnswer": "Gasilski znak in prapor.",
     "wrongAnswers": [
       "Gasilski znak in cev.",
       "Voda in ogenj.",
@@ -51,7 +51,7 @@
   },
   {
     "question": "Zakaj se ob potresu ne smemo zadrževati na stopniščih?",
-    "correctAnswers": "Ker obstaja velika verjetnost, da se zruši.",
+    "correctAnswer": "Ker obstaja velika verjetnost, da se zruši.",
     "wrongAnswers": [
       "Ker obstaja velika verjetnost, da bodo tla spolzka."
     ],
@@ -59,7 +59,7 @@
   },
   {
     "question": "Katero telefonsko številko pokličemo, ko vidimo, da gori?",
-    "correctAnswers": "112.",
+    "correctAnswer": "112.",
     "wrongAnswers": [
       "113.",
       "911.",
@@ -69,7 +69,7 @@
   },
   {
     "question": "Kaj povemo, ko kličemo na telefonsko številko 112?",
-    "correctAnswers": "Povemo: kdo kliče, kaj se je zgodilo, kje se je zgodilo, koliko je ponesrečencev, kakšne so poškodbe, kakšne so okoliščine na kraju nesreče, kakšno pomoč potrebujete.",
+    "correctAnswer": "Povemo: kdo kliče, kaj se je zgodilo, kje se je zgodilo, koliko je ponesrečencev, kakšne so poškodbe, kakšne so okoliščine na kraju nesreče, kakšno pomoč potrebujete.",
     "wrongAnswers": [
       "Kakšno je vreme, kaj se je zgodilo, kje se je zgodilo.",
       "Kaj se je zgodilo, kje se je zgodilo, kako se počutimo.",
@@ -79,7 +79,7 @@
   },
   {
     "question": "Navedi sestavne dele »trikotnika gorenja«?",
-    "correctAnswers": "Gorljiva snov, kisik, toplota.",
+    "correctAnswer": "Gorljiva snov, kisik, toplota.",
     "wrongAnswers": [
       "Gorljiva snov, kisik, voda.",
       "Gorljiva snov, ogljikov monoksid, toplota.",
@@ -89,7 +89,7 @@
   },
   {
     "question": "Kaj je gorljiva snov?",
-    "correctAnswers": "To je snov, ki gori, kadar so izpolnjeni vsi pogoji za gorenje; vsaka snov, ki gori.",
+    "correctAnswer": "To je snov, ki gori, kadar so izpolnjeni vsi pogoji za gorenje; vsaka snov, ki gori.",
     "wrongAnswers": [
       "Snov, ki se nahaja na gori.",
       "Snov, ki se nemore vneti."
@@ -98,7 +98,7 @@
   },
   {
     "question": "V katerih agregatnih stanjih so lahko gorljive snovi?",
-    "correctAnswers": "V trdnem, tekočem ali plinastem agregatnem stanju.",
+    "correctAnswer": "V trdnem, tekočem ali plinastem agregatnem stanju.",
     "wrongAnswers": [
       "V trdnem, tekočem.",
       "V trdnem, tekočem ali mokrem.",
@@ -108,7 +108,7 @@
   },
   {
     "question": "Kateri gospodinjski električni aparati so največkrat povzročitelji požarov?",
-    "correctAnswers": "Električni gospodinjski pripomočki, ki so v okvari (kuhalnik, likalnik, električne peči, ipd).",
+    "correctAnswer": "Električni gospodinjski pripomočki, ki so v okvari (kuhalnik, likalnik, električne peči, ipd).",
     "wrongAnswers": [
       "Električni gospodinjski pripomočki, ki so v okvari (kuhalnik, likalnik, električne peči, ipd)."
     ],
@@ -116,7 +116,7 @@
   },
   {
     "question": "Koga najprej umaknemo iz gorečega stanovanja?",
-    "correctAnswers": "ljudi in živali.",
+    "correctAnswer": "Ljudi in živali.",
     "wrongAnswers": [
       "Denar in osebne dokumente.",
       "Računalnik in telefon.",
@@ -126,7 +126,7 @@
   },
   {
     "question": "Kako razvrščamo požare glede na obseg?",
-    "correctAnswers": "Na male, večje, velike, katastrofalne.",
+    "correctAnswer": "Na male, večje, velike, katastrofalne.",
     "wrongAnswers": [
       "Na male in velike.",
       "Velike in katastrofalne.",
@@ -136,7 +136,7 @@
   },
   {
     "question": "Kako razdelimo požare glede na kraj gorenja in taktiko gašenja?",
-    "correctAnswers": "Na notranje, zunanje, kombinirane in požare v naravnem okolju.",
+    "correctAnswer": "Na notranje, zunanje, kombinirane in požare v naravnem okolju.",
     "wrongAnswers": [
       "Na domače in tuje.",
       "Kombinirane in tuje.",
@@ -146,7 +146,7 @@
   },
   {
     "question": "Kako delimo požare glede na vrsto gorljivega materiala, ki je zajet v požar?",
-    "correctAnswers": "Požari razreda a, požari razreda b, požari razreda c, požari razreda d.",
+    "correctAnswer": "Požari razreda a, požari razreda b, požari razreda c, požari razreda d.",
     "wrongAnswers": [
       "Požari razreda a, požari razreda b, požari razreda c.",
       "Požari razreda 1, požari razreda 2, požari razreda 3, požari razreda 4."
@@ -155,7 +155,7 @@
   },
   {
     "question": "Požari razreda a so požari:",
-    "correctAnswers": "Gorljivih trdnih snovi. (les, seno, obleka … ipd)",
+    "correctAnswer": "Gorljivih trdnih snovi. (les, seno, obleka … ipd)",
     "wrongAnswers": [
       "Gorljivih tekočih snovi. (bencin, olje, nafta, alkohol … ipd).",
       "Požari lahkih kovin (aluminij, magnezij … ipd).",
@@ -165,7 +165,7 @@
   },
   {
     "question": "Požari razreda b so požari:",
-    "correctAnswers": "Gorljivih tekočih snovi. (bencin, olje, nafta, alkohol … ipd)",
+    "correctAnswer": "Gorljivih tekočih snovi. (bencin, olje, nafta, alkohol … ipd)",
     "wrongAnswers": [
       "Gorljivih trdnih snovi. (les, seno, obleka … ipd).",
       "Požari lahkih kovin (aluminij, magnezij … ipd).",
@@ -175,7 +175,7 @@
   },
   {
     "question": "požari razreda c so požari:",
-    "correctAnswers": "Gorljivih (vnetljivih) plinov (zemeljski plin ali metan, propan, butan, vodik, acetilen, amonijak … ipd)",
+    "correctAnswer": "Gorljivih (vnetljivih) plinov (zemeljski plin ali metan, propan, butan, vodik, acetilen, amonijak … ipd)",
     "wrongAnswers": [
       "Gorljivih tekočih snovi. (bencin, olje, nafta, alkohol … ipd).",
       "Gorljivih trdnih snovi. (les, seno, obleka … ipd).",
@@ -185,7 +185,7 @@
   },
   {
     "question": "Požari razreda d so požari:",
-    "correctAnswers": "Požari lahkih kovin (aluminij, magnezij … ipd)",
+    "correctAnswer": "Požari lahkih kovin (aluminij, magnezij … ipd)",
     "wrongAnswers": [
       "Gorljivih tekočih snovi. (bencin, olje, nafta, alkohol … ipd).",
       "Gorljivih trdnih snovi. (les, seno, obleka … ipd).",
@@ -195,7 +195,7 @@
   },
   {
     "question": "Katero gasilno sredstvo je najcenejše in najbolj razširjeno?",
-    "correctAnswers": "Voda.",
+    "correctAnswer": "Voda.",
     "wrongAnswers": [
       "Pena.",
       "Gasilski aparat.",
@@ -205,7 +205,7 @@
   },
   {
     "question": "Kako delimo gasilne cevi glede na premer?",
-    "correctAnswers": "a, b, c, d.",
+    "correctAnswer": "a, b, c, d.",
     "wrongAnswers": [
       "1, 2, 3, 4.",
       "a, b, c."
@@ -214,7 +214,7 @@
   },
   {
     "question": "Kako delimo gasilne cevi glede na vrsto?",
-    "correctAnswers": "Sesalne, tlačne, visokotlačne.",
+    "correctAnswer": "Sesalne, tlačne, visokotlačne.",
     "wrongAnswers": [
       "Mehke in trdne.",
       "Sesalne in tlačne."
@@ -223,7 +223,7 @@
   },
   {
     "question": "Za kaj uporabljamo gasilne spojke?",
-    "correctAnswers": "Za spajanje sesalnih in tlačnih cevi ter gasilskih armatur (ročnik, trojak … ipd).",
+    "correctAnswer": "Za spajanje sesalnih in tlačnih cevi ter gasilskih armatur (ročnik, trojak … ipd).",
     "wrongAnswers": [
       "Spajanje vrvi.",
       "Za spajanje blaga."
@@ -232,7 +232,7 @@
   },
   {
     "question": "Kaj je gasilski prapor?",
-    "correctAnswers": "Gasilski prapor je simbol v prostovoljnem gasilstvu. izdelan je iz svilene tkanine in obrobljen z zlato vrvico. na njem so izvezeni simboli društva. uporablja se ob svečanih dogodkih in za predstavitev društva.",
+    "correctAnswer": "Gasilski prapor je simbol v prostovoljnem gasilstvu. izdelan je iz svilene tkanine in obrobljen z zlato vrvico. na njem so izvezeni simboli društva. uporablja se ob svečanih dogodkih in za predstavitev društva.",
     "wrongAnswers": [
       "Zaščitena rastlina, ki predstavlja simbol gasilcev.",
       "Nagrada za najbolj požrtovalenga gasilca."
@@ -241,7 +241,7 @@
   },
   {
     "question": "Koliko pionirjev tekmuje pri vaji z vedrovko?",
-    "correctAnswers": "Devet.",
+    "correctAnswer": "Devet.",
     "wrongAnswers": [
       "Deset.",
       "Tri."
@@ -250,7 +250,7 @@
   },
   {
     "question": "Kako imenujemo tekmovalce, ki imajo rumene oznake?",
-    "correctAnswers": "Cevarji.",
+    "correctAnswer": "Cevarji.",
     "wrongAnswers": [
       "Napadalci.",
       "Vodarji."
@@ -259,7 +259,7 @@
   },
   {
     "question": "Kako imenujemo tekmovalce, ki imajo rdeče oznake?",
-    "correctAnswers": "Napadalci.",
+    "correctAnswer": "Napadalci.",
     "wrongAnswers": [
       "Vodarji.",
       "Cevarji."
@@ -268,7 +268,7 @@
   },
   {
     "question": "Kako imenujemo tekmovalce, ki imajo modre oznake?",
-    "correctAnswers": "Vodarji.",
+    "correctAnswer": "Vodarji.",
     "wrongAnswers": [
       "Napadalci.",
       "Cevarji."
@@ -277,7 +277,7 @@
   },
   {
     "question": "Koliko vode je v enem vedru, ki ga tekmovalca neseta pri vaji z vedrovko?",
-    "correctAnswers": "5 litrov.",
+    "correctAnswer": "5 litrov.",
     "wrongAnswers": [
       "15 litrov.",
       "3 litrov."
@@ -286,7 +286,7 @@
   },
   {
     "question": "Katero povelje mora izdati tekmovalec, ki meri s curkom v tarčo pri vaji z vedrovko?",
-    "correctAnswers": "»voda!«",
+    "correctAnswer": "»voda!«",
     "wrongAnswers": [
       "»start!«",
       "»zdaj!«"
@@ -295,7 +295,7 @@
   },
   {
     "question": "Kako morajo biti oblečeni tekmovalci pri kvizu?",
-    "correctAnswers": "V gasilsko delavno obleko.",
+    "correctAnswer": "V gasilsko delavno obleko.",
     "wrongAnswers": [
       "Ni pomembno.",
       "Kavbojke in kratka majica."
@@ -304,7 +304,7 @@
   },
   {
     "question": "Kakšen ročnik predajajo pionirji pri štafeti?",
-    "correctAnswers": "Navadni d-ročnik.",
+    "correctAnswer": "Navadni d-ročnik.",
     "wrongAnswers": [
       "Navadni b-ročnik",
       "Navadni c-ročnik."
@@ -313,7 +313,7 @@
   },
   {
     "question": "Koliko gasilskih regij je v sloveniji?",
-    "correctAnswers": "17.",
+    "correctAnswer": "17.",
     "wrongAnswers": [
       "170.",
       "13."
@@ -322,7 +322,7 @@
   },
   {
     "question": "Kateri organ voli poveljnika in predsednika pgd?",
-    "correctAnswers": "Občni zbor.",
+    "correctAnswer": "Občni zbor.",
     "wrongAnswers": [
       "Vaščani.",
       "Operativni gasilci."
@@ -331,7 +331,7 @@
   },
   {
     "question": "Kako je organizirano gasilstvo v sloveniji?",
-    "correctAnswers": "V prostovoljnih in poklicnih gasilskih organizacijah.",
+    "correctAnswer": "V prostovoljnih in poklicnih gasilskih organizacijah.",
     "wrongAnswers": [
       "Po različnih vaseh/mestih.",
       "V poklicnih gasilskih organizacijah."
@@ -340,7 +340,7 @@
   },
   {
     "question": "Koliko prostovoljnih gasilskih društev je v sloveniji?",
-    "correctAnswers": "Okrog 1300.",
+    "correctAnswer": "Okrog 1300.",
     "wrongAnswers": [
       "Okrog 2400.",
       "Okrog 130."
@@ -349,7 +349,7 @@
   },
   {
     "question": "Kje opravimo registracijo gasilskega društva?",
-    "correctAnswers": "Na upravni enoti.",
+    "correctAnswer": "Na upravni enoti.",
     "wrongAnswers": [
       "V gasilskem društvu.",
       "Na ministrstvu za obrambo."
@@ -358,7 +358,7 @@
   },
   {
     "question": "Kje na gasilski uniformi nosimo oznake činov?",
-    "correctAnswers": "Na naramniku.",
+    "correctAnswer": "Na naramniku.",
     "wrongAnswers": [
       "Na čeladi.",
       "Na prsih."
@@ -367,7 +367,7 @@
   },
   {
     "question": "Na katerem rokavu delovne obleke nosimo znak pripadnosti gasilski organizaciji?",
-    "correctAnswers": "Na levem.",
+    "correctAnswer": "Na levem.",
     "wrongAnswers": [
       "Na desnem.",
       "Znak pripadnosti gasilski organizaciji nosimo na kapi."
@@ -376,7 +376,7 @@
   },
   {
     "question": "Kako gasilci pozdravljajo?",
-    "correctAnswers": "Z roko in z obračanjem glave.",
+    "correctAnswer": "Z roko in z obračanjem glave.",
     "wrongAnswers": [
       "Pozdravimo se z besedami kot so živjo, se vidimo, ...",
       "S stiskom roke."
@@ -385,7 +385,7 @@
   },
   {
     "question": "S katero nogo se začne premikanje pri vaji razvrščanja?",
-    "correctAnswers": "Z levo nogo.",
+    "correctAnswer": "Z levo nogo.",
     "wrongAnswers": [
       "Z desno nogo."
     ],
@@ -393,7 +393,7 @@
   },
   {
     "question": "Katere vrste radijskih postaj poznamo?",
-    "correctAnswers": "Ročne, mobilne in stabilne.",
+    "correctAnswer": "Ročne, mobilne in stabilne.",
     "wrongAnswers": [
       "Telefonske",
       "Telefonske, mobilne in stabilne."
@@ -402,7 +402,7 @@
   },
   {
     "question": "Kako se imenuje informacijski sistem za vodenje evidenc prostovoljnih gasilcev?",
-    "correctAnswers": "Vulkan.",
+    "correctAnswer": "Vulkan.",
     "wrongAnswers": [
       "Meteor.",
       "Triglav."
@@ -411,7 +411,7 @@
   },
   {
     "question": "Kaj je evakuacija?",
-    "correctAnswers": "Organiziran umik ljudi na varno mesto ob požaru ali drugi nevarnosti.",
+    "correctAnswer": "Organiziran umik ljudi na varno mesto ob požaru ali drugi nevarnosti.",
     "wrongAnswers": [
       "Predaja nove gasilske opreme gasilskemu društvu."
     ],
@@ -419,7 +419,7 @@
   },
   {
     "question": "Kaj pomeni, če je številu nevarnosti na opozorilni tabli za označevanje vozil dodana črka x?",
-    "correctAnswers": "Snov nevarno reagira z vodo.",
+    "correctAnswer": "Snov nevarno reagira z vodo.",
     "wrongAnswers": [
       "Snov nevarno reagira z prahom.",
       "Snov ni primerna za uživanje."
@@ -428,7 +428,7 @@
   },
   {
     "question": "Koliko časa je potrebna požarna straža?",
-    "correctAnswers": "Dokler je prisotna požarna nevarnost.",
+    "correctAnswer": "Dokler je prisotna požarna nevarnost.",
     "wrongAnswers": [
       "2 uri.",
       "2 dneva."
@@ -437,7 +437,7 @@
   },
   {
     "question": "Ko se pojavi katastrofalni požar v naravi, lahko gasimo tudi s/z?",
-    "correctAnswers": "Helikopterji in letali, ki prevažajo vodo.",
+    "correctAnswer": "Helikopterji in letali, ki prevažajo vodo.",
     "wrongAnswers": [
       "Helikopterji in letali, ki prevažajo vodo."
     ],
@@ -445,7 +445,7 @@
   },
   {
     "question": "Kdo je v društvu odgovoren za delo z gasilsko mladino?",
-    "correctAnswers": "Mentor gasilske mladine.",
+    "correctAnswer": "Mentor gasilske mladine.",
     "wrongAnswers": [
       "Predsednik.",
       "Poveljnik."
@@ -454,7 +454,7 @@
   },
   {
     "question": "Kaj je gasilnik ali gasilni aparat?",
-    "correctAnswers": "Je naprava za gašenje začetnih požarov.",
+    "correctAnswer": "Je naprava za gašenje začetnih požarov.",
     "wrongAnswers": [
       "Je naprava za gašenje velikih/katastrofalnih požarov."
     ],

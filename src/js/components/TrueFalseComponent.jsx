@@ -6,8 +6,8 @@ function isAnswerSelected(userAnswer, trueFalse) {
     return "";
 }
 
-function isUserAnswerCorrect(userAnswer, correctAnswers, randomAnswer) {
-    let wasShownAnswerCorrect = correctAnswers === randomAnswer;
+function isUserAnswerCorrect(userAnswer, correctAnswer, randomAnswer) {
+    let wasShownAnswerCorrect = correctAnswer === randomAnswer;
 
     return wasShownAnswerCorrect === userAnswer;
 }
@@ -16,11 +16,11 @@ function isUserAnswerCorrect(userAnswer, correctAnswers, randomAnswer) {
 let ShowCorrectAnswers = {
     view: function(vnode) {
         let properties = vnode.attrs;
-        if (isUserAnswerCorrect(properties.userAnswer, properties.correctAnswers, properties.randomAnswer)) {
+        if (isUserAnswerCorrect(properties.userAnswer, properties.correctAnswer, properties.randomAnswer)) {
             return <CorrectAnswers />
         }
 
-        return <WrongAnswer correctAnswers={properties.correctAnswers} />
+        return <WrongAnswer correctAnswer={properties.correctAnswer} />
     }
 }
 
@@ -31,7 +31,7 @@ let WrongAnswer = {
                 <i class="bi bi-x-circle"></i> Napačen odgovor!
             </div>
             <div className="correct-answer">
-                { vnode.attrs.correctAnswers }
+                { vnode.attrs.correctAnswer }
             </div>
         </div>
     }
@@ -69,7 +69,7 @@ var TrueFalseComponent = {
             </div>
             <div>
                 { 
-                    properties.showResults && <ShowCorrectAnswers userAnswer={properties.userAnswer} correctAnswers={properties.correctAnswers} randomAnswer={properties.randomAnswer} />
+                    properties.showResults && <ShowCorrectAnswers userAnswer={properties.userAnswer} correctAnswer={properties.correctAnswer} randomAnswer={properties.randomAnswer} />
                 }
             </div>
         </div>
