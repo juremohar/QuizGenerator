@@ -49,6 +49,10 @@
     width: 20%;
 }
 
+.home-layout {
+    flex-direction: row;
+}
+
 @include media-breakpoint-down(md) { 
     .true-false-buttons {
         button {
@@ -58,6 +62,14 @@
 
     .check-result-button {
         width: 50%;
+    }
+
+    .home-layout {
+        flex-direction: column;
+    }
+
+    .card {
+        margin: 10px 0;
     }
 }
 
