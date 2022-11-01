@@ -5,7 +5,7 @@
     "wrongAnswers": [
    
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kaj potrebujemo za nudenje prve pomoči?",
@@ -13,7 +13,7 @@
     "wrongAnswers": [
   
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kako dolgo nudimo prvo pomoč?",
@@ -22,7 +22,7 @@
       "Nekaj minut",
       "Prva pomoč vedno nudi do prihoda ekipe nujne medicinske pomoči."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Ali imamo v sloveniji helikopter, ki je namenjen zgolj reševanju?",
@@ -31,7 +31,7 @@
       "Da.",
       "Da. Delimo si ga s sosednjimi državami."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kdo opravlja helikopterske prevoze nenadno obolelih/poškodovanih pri nas v sloveniji?",
@@ -40,7 +40,7 @@
       "Sosednje države.",
       "Helikopterji gasilskih društev."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Katero številko je potrebno poklicati kadar potrebujemo reševalce?",
@@ -49,7 +49,7 @@
       "Poklicati je potrebno številko 911.",
       "Poklicati je potrebno številko 113."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kaj naredimo najprej, preden pristopimo do ponesrečenca?",
@@ -58,7 +58,7 @@
       "Preveriti, če oseba še diha.",
       "Pokličemo 112 in povemo, da imamo ponesrečenca."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kako ugotoviš ali je poškodovanec (zboleli) pri zavesti?",
@@ -67,7 +67,7 @@
       "Poškodovanca sprašujemo vprašanja.",
       "Poškodovanca vščipnemo in počakamo, če nas bo ogovoril."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kako ravnamo, ko nekdo omedli?",
@@ -76,7 +76,7 @@
       "Osebo postavimo v stabilni bočni položaj.",
       "Osebo ne smemo premikati, dokler ne pride zdravnik."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kako se imenuje položaj za nezavestnega?",
@@ -85,7 +85,7 @@
       "Stabilni stoječi položaj.",
       "Nestabilen bočni položaj."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kakšno je razmerje pri oživljanju odraslih?",
@@ -94,7 +94,7 @@
       "40 stisov prsnega koša in 2 vpiha.",
       "30 stisov prsnega koša in 4 vpiha."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "S čim se zaščitimo pri oživljanju?",
@@ -103,7 +103,7 @@
       "Z obrazno masko.",
       "Z trikotno ruto."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Ali moramo dajati vpihe osebi, ki ne diha in se ne odziva?",
@@ -112,7 +112,7 @@
       "Da. Ni razlagov, da tega ne bi počeli.",
       "Ne. To potrebujemo početi, le ko osebo poznamo."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kaj naredimo, če ima nekdo lažjo zaporo dihalne poti?",
@@ -121,7 +121,7 @@
       "Postavimo ga v stabilni bočni položaj.",
       "Pokličemo reševalce in počakamo ob ponesrečencu."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kako pravilno shranjujemo zdravila?",
@@ -130,7 +130,7 @@
       "Zdravila shranjujemo na prostorih, do katerih imajo vsi dostop.",
       "Vseeno je, kje se zdravila nahajajo, saj na njih ne vpliva nič."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Zakaj je nevaren skok na glavo v plitvo vodo?",
@@ -139,7 +139,7 @@
       "Ker lahko pošpricamo mimoidoče.",
       "Ker nismo preverili, ali se v vodi morda skriva morski pes."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kje se uporabljajo trikotne rute?",
@@ -148,7 +148,7 @@
       "Uporabljamo jo za prenos gasilske opreme.",
       "Uporabljamo jo za zaščito pred soncem."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kaj dosežemo z imobilizacijo?",
@@ -157,7 +157,7 @@
       "Za zaustavitev krvi.",
       "Ponesrečencu s tem olajšamo bolečine"
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "S čim lahko pokrijemo vsako rano?",
@@ -166,7 +166,7 @@
       "S kosom oblačila.",
       "Z dlanjo."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kako oskrbimo manjše poškodbe (vreznina na prstu, odrgnina …)?",
@@ -175,7 +175,7 @@
       "Rano si lahko pokrijemo z dlanjo, ki bo ustavilo krvavite.v",
       "AED."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kako oskrbimo rano, ki je nastala zaradi ugriza živali?",
@@ -184,7 +184,7 @@
       "Rano imobiliziramo in obiščemo zdravnika.",
       "Rano razkužimo z vrelo vodo in obiščemop zdravnika."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kako zaustavimo krvavitev iz nosu?",
@@ -193,7 +193,7 @@
       "Osebo postavimo v stabilni bočni položaj.",
       "Oseba naj sede, se nagne nazaj in stisne nosnici. Na tilnik mu lahko položimo hladen obkladek."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Ali lahko osebo, ki ima poškodovano hrbtenico premikamo?",
@@ -202,7 +202,7 @@
       "Osebo s poškodovano hrbtenico lahko vedno premaknemo, saj to ni hujša poškodba.",
       "Osebo s poškodovano hrbtenico lahko premaknemo samo če je odzivna."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kako se imenuje pripomoček za oskrbo opeklin?",
@@ -211,7 +211,7 @@
       "Kompresijska obveza.",
       "Trikotna obveza."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kako se imenuje postopek razvrščanja poškodovanih oseb glede na vrsto in težo poškodbe ter nujnost oskrbe?",
@@ -220,7 +220,7 @@
       "Štiriaža.",
       "Kompresijski postopek."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kdo je triažer?",
@@ -229,7 +229,7 @@
       "Oseba, ki vodi intervencijo.",
       "Oseba, ki se javi v klicnem centru, ko potrebujemo pomoč."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "S katerimi barvami označujemo triažne skupine?",
@@ -238,7 +238,7 @@
       "Rdeča, rumena, zelena in bela.",
       "Oranžna, rumena, zelena in črna."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kako označujemo poškodovane pri triaži?",
@@ -247,7 +247,7 @@
       "S posebno barvo.",
       "Oseb ne označujemo."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kaj je najpogostejši način zaustavljanja večjih krvavitev?",
@@ -256,7 +256,7 @@
       "Imobilizacijska obveza.",
       "Trikotna obveza."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kaj pomeni kratica AED?",
@@ -265,6 +265,6 @@
       "Avtomatski energetski defibrilator.",
       "Avtomatski eksterni daljnovod."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   }
 ]

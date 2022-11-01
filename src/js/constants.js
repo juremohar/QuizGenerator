@@ -1,5 +1,5 @@
 class Constants {
-    static Pioner = "pioner";
+    static Pionir = "pionir";
     static Mladinec = "mladinec";
 }
 

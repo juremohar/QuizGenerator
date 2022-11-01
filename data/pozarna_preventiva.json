@@ -7,7 +7,7 @@
       "napacn odg b",
       "napacn odg c"
     ],
-    "ages": ["pioner", "mladinec"]
+    "ages": ["pionir", "mladinec"]
   },
   {
     "question": "Q2",
@@ -17,7 +17,7 @@
       "napacn odg b",
       "napacn odg c"
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Q3",
@@ -37,6 +37,6 @@
       "napacn odg b",
       "napacn odg c"
     ],
-    "ages": ["pioner", "mladinec"]
+    "ages": ["pionir", "mladinec"]
   }
 ]

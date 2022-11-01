@@ -7,7 +7,7 @@
       "Od 6 do 12 let.",
       "Od 7 do 13 let."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Koliko so lahko stari otroci, da spadajo v tekmovalno kategorijo mladincev gasilcev?",
@@ -17,7 +17,7 @@
       "Od 13 do 16 let.",
       "Od 12 do 17 let."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kdo je gasilec pripravnik?",
@@ -27,7 +27,7 @@
       "Je operativni gasilec, ki ni član gasilskega društva.",
       "Je gasilec, ki je v stalni pripravljenosti na intervencije."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Ali lahko tujec postane član pgd?",
@@ -37,7 +37,7 @@
       "Da, vendar ne more biti operativni gasilec.",
       "Ne, saj ne zna slovensko in bi lahko povzročil nesporazum na intervenciji."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kateri so simboli v prostovoljnem gasilstvu?",
@@ -47,7 +47,7 @@
       "Voda in ogenj.",
       "Prapor in dobravolja."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Zakaj se ob potresu ne smemo zadrževati na stopniščih?",
@@ -55,7 +55,7 @@
     "wrongAnswers": [
       "Ker obstaja velika verjetnost, da bodo tla spolzka."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Katero telefonsko številko pokličemo, ko vidimo, da gori?",
@@ -65,7 +65,7 @@
       "911.",
       "123."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kaj povemo, ko kličemo na telefonsko številko 112?",
@@ -75,7 +75,7 @@
       "Kaj se je zgodilo, kje se je zgodilo, kako se počutimo.",
       "V kateri državi se nahajamo, kakšne so poškodbe, kakšne so okoliščine na kraju nesreče."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Navedi sestavne dele »trikotnika gorenja«?",
@@ -85,7 +85,7 @@
       "Gorljiva snov, ogljikov monoksid, toplota.",
       "Veter, kisik, toplota."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kaj je gorljiva snov?",
@@ -94,7 +94,7 @@
       "Snov, ki se nahaja na gori.",
       "Snov, ki se nemore vneti."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "V katerih agregatnih stanjih so lahko gorljive snovi?",
@@ -104,7 +104,7 @@
       "V trdnem, tekočem ali mokrem.",
       "V stoječem, tekočem ali mokrem."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kateri gospodinjski električni aparati so največkrat povzročitelji požarov?",
@@ -112,7 +112,7 @@
     "wrongAnswers": [
       "Električni gospodinjski pripomočki, ki so v okvari (kuhalnik, likalnik, električne peči, ipd)."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Koga najprej umaknemo iz gorečega stanovanja?",
@@ -122,7 +122,7 @@
       "Računalnik in telefon.",
       "Pohištvo."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kako razvrščamo požare glede na obseg?",
@@ -132,7 +132,7 @@
       "Velike in katastrofalne.",
       "Vaške in mestne."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kako razdelimo požare glede na kraj gorenja in taktiko gašenja?",
@@ -142,7 +142,7 @@
       "Kombinirane in tuje.",
       "Notranje in vodne."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kako delimo požare glede na vrsto gorljivega materiala, ki je zajet v požar?",
@@ -151,7 +151,7 @@
       "Požari razreda a, požari razreda b, požari razreda c.",
       "Požari razreda 1, požari razreda 2, požari razreda 3, požari razreda 4."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Požari razreda a so požari:",
@@ -161,7 +161,7 @@
       "Požari lahkih kovin (aluminij, magnezij … ipd).",
       "Gorljivih (vnetljivih) plinov (zemeljski plin ali metan, propan, butan, vodik, acetilen, amonijak … ipd)."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Požari razreda b so požari:",
@@ -171,7 +171,7 @@
       "Požari lahkih kovin (aluminij, magnezij … ipd).",
       "Gorljivih (vnetljivih) plinov (zemeljski plin ali metan, propan, butan, vodik, acetilen, amonijak … ipd)."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "požari razreda c so požari:",
@@ -181,7 +181,7 @@
       "Gorljivih trdnih snovi. (les, seno, obleka … ipd).",
       "Gorljivih (vnetljivih) plinov (zemeljski plin ali metan, propan, butan, vodik, acetilen, amonijak … ipd)."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Požari razreda d so požari:",
@@ -191,7 +191,7 @@
       "Gorljivih trdnih snovi. (les, seno, obleka … ipd).",
       "Gorljivih (vnetljivih) plinov (zemeljski plin ali metan, propan, butan, vodik, acetilen, amonijak … ipd)."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Katero gasilno sredstvo je najcenejše in najbolj razširjeno?",
@@ -201,7 +201,7 @@
       "Gasilski aparat.",
       "Prah."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kako delimo gasilne cevi glede na premer?",
@@ -210,7 +210,7 @@
       "1, 2, 3, 4.",
       "a, b, c."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kako delimo gasilne cevi glede na vrsto?",
@@ -219,7 +219,7 @@
       "Mehke in trdne.",
       "Sesalne in tlačne."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Za kaj uporabljamo gasilne spojke?",
@@ -228,7 +228,7 @@
       "Spajanje vrvi.",
       "Za spajanje blaga."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kaj je gasilski prapor?",
@@ -237,7 +237,7 @@
       "Zaščitena rastlina, ki predstavlja simbol gasilcev.",
       "Nagrada za najbolj požrtovalenga gasilca."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Koliko pionirjev tekmuje pri vaji z vedrovko?",
@@ -246,7 +246,7 @@
       "Deset.",
       "Tri."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kako imenujemo tekmovalce, ki imajo rumene oznake?",
@@ -255,7 +255,7 @@
       "Napadalci.",
       "Vodarji."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kako imenujemo tekmovalce, ki imajo rdeče oznake?",
@@ -264,7 +264,7 @@
       "Vodarji.",
       "Cevarji."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kako imenujemo tekmovalce, ki imajo modre oznake?",
@@ -273,7 +273,7 @@
       "Napadalci.",
       "Cevarji."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Koliko vode je v enem vedru, ki ga tekmovalca neseta pri vaji z vedrovko?",
@@ -282,7 +282,7 @@
       "15 litrov.",
       "3 litrov."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Katero povelje mora izdati tekmovalec, ki meri s curkom v tarčo pri vaji z vedrovko?",
@@ -291,7 +291,7 @@
       "»start!«",
       "»zdaj!«"
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kako morajo biti oblečeni tekmovalci pri kvizu?",
@@ -300,7 +300,7 @@
       "Ni pomembno.",
       "Kavbojke in kratka majica."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kakšen ročnik predajajo pionirji pri štafeti?",
@@ -309,7 +309,7 @@
       "Navadni b-ročnik",
       "Navadni c-ročnik."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Koliko gasilskih regij je v sloveniji?",
@@ -318,7 +318,7 @@
       "170.",
       "13."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kateri organ voli poveljnika in predsednika pgd?",
@@ -327,7 +327,7 @@
       "Vaščani.",
       "Operativni gasilci."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kako je organizirano gasilstvo v sloveniji?",
@@ -336,7 +336,7 @@
       "Po različnih vaseh/mestih.",
       "V poklicnih gasilskih organizacijah."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Koliko prostovoljnih gasilskih društev je v sloveniji?",
@@ -345,7 +345,7 @@
       "Okrog 2400.",
       "Okrog 130."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kje opravimo registracijo gasilskega društva?",
@@ -354,7 +354,7 @@
       "V gasilskem društvu.",
       "Na ministrstvu za obrambo."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kje na gasilski uniformi nosimo oznake činov?",
@@ -363,7 +363,7 @@
       "Na čeladi.",
       "Na prsih."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Na katerem rokavu delovne obleke nosimo znak pripadnosti gasilski organizaciji?",
@@ -372,7 +372,7 @@
       "Na desnem.",
       "Znak pripadnosti gasilski organizaciji nosimo na kapi."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kako gasilci pozdravljajo?",
@@ -381,7 +381,7 @@
       "Pozdravimo se z besedami kot so živjo, se vidimo, ...",
       "S stiskom roke."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "S katero nogo se začne premikanje pri vaji razvrščanja?",
@@ -389,7 +389,7 @@
     "wrongAnswers": [
       "Z desno nogo."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Katere vrste radijskih postaj poznamo?",
@@ -398,7 +398,7 @@
       "Telefonske",
       "Telefonske, mobilne in stabilne."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kako se imenuje informacijski sistem za vodenje evidenc prostovoljnih gasilcev?",
@@ -407,7 +407,7 @@
       "Meteor.",
       "Triglav."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kaj je evakuacija?",
@@ -415,7 +415,7 @@
     "wrongAnswers": [
       "Predaja nove gasilske opreme gasilskemu društvu."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kaj pomeni, če je številu nevarnosti na opozorilni tabli za označevanje vozil dodana črka x?",
@@ -424,7 +424,7 @@
       "Snov nevarno reagira z prahom.",
       "Snov ni primerna za uživanje."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Koliko časa je potrebna požarna straža?",
@@ -433,7 +433,7 @@
       "2 uri.",
       "2 dneva."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Ko se pojavi katastrofalni požar v naravi, lahko gasimo tudi s/z?",
@@ -441,7 +441,7 @@
     "wrongAnswers": [
       "Helikopterji in letali, ki prevažajo vodo."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kdo je v društvu odgovoren za delo z gasilsko mladino?",
@@ -450,7 +450,7 @@
       "Predsednik.",
       "Poveljnik."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kaj je gasilnik ali gasilni aparat?",
@@ -458,6 +458,6 @@
     "wrongAnswers": [
       "Je naprava za gašenje velikih/katastrofalnih požarov."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   }
 ]

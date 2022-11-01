@@ -18,7 +18,7 @@ function handleUserTrueFalseSelection(question, trueFalse) {
 
 let TrueFalse = {
     oninit: function() {
-        state.trueFalseQuestions = generateTrueFalseQuestions(Constants.Pioner, 10);
+        state.trueFalseQuestions = generateTrueFalseQuestions(Constants.Pionir, 10);
     },
     view: function() {
         return <div className="my-4">
