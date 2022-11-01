@@ -39,7 +39,7 @@ let TrueFalse = {
                             randomAnswer={q.randomAnswer} 
                             userAnswer={q.userAnswer}
                             questionNumber={index}
-                            showTrueFalseQuestionsResult={state.showTrueFalseQuestionsResult} 
+                            showResults={state.showTrueFalseQuestionsResult} 
                             onAnswerSelection={handleUserTrueFalseSelection} 
                         />
                     })

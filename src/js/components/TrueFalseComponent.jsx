@@ -69,7 +69,7 @@ var TrueFalseComponent = {
             </div>
             <div>
                 { 
-                    properties.showTrueFalseQuestionsResult && <ShowCorrectAnswers userAnswer={properties.userAnswer} correctAnswers={properties.correctAnswers} randomAnswer={properties.randomAnswer} />
+                    properties.showResults && <ShowCorrectAnswers userAnswer={properties.userAnswer} correctAnswers={properties.correctAnswers} randomAnswer={properties.randomAnswer} />
                 }
             </div>
         </div>
