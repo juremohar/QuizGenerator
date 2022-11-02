@@ -1,6 +1,7 @@
 import m from 'mithril';
 
 import { PionirjiView } from './views/Pionirji';
+import { MladinciView } from './views/Mladinci';
 import { MainLayout } from './layouts/MainLayout';
 import { HomeView } from './views/Home';
 
@@ -25,7 +26,7 @@ function initRouter(el) {
         '/mladinci': {
             render: function() {
                 return <MainLayout>
-                    <PionirjiView />
+                    <MladinciView />
                 </MainLayout>
             }
         }

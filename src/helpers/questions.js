@@ -1,9 +1,12 @@
-function generateTrueFalseQuestions(category, numberOfQuestions) {
-    let trueFalseQuestions = require('../../data/ves_neves.json').filter(q => q.ages.includes(category));
-    let historyQuestions = require('../../data/zgodovina.json').filter(q => q.ages.includes(category));
+function generateTrueFalseQuestions(category, fields, numberOfQuestions) {
+    let allQuestions = [];
+    
+    fields.forEach(field => {
+        let fieldQuestions = require(`../../data/${field}.json`).filter(q => q.ages.includes(category));
+        allQuestions.push(...fieldQuestions);
+    });
 
-    let questions = [...trueFalseQuestions, ...historyQuestions];
-    let list = questions.sort(() => 0.5 - Math.random()).slice(0, numberOfQuestions);
+    let list = allQuestions.sort(() => 0.5 - Math.random()).slice(0, numberOfQuestions);
 
     return list.map(q => {
         let pickCorrect = Math.random() < 0.5;
@@ -23,8 +26,6 @@ function generateTrueFalseQuestions(category, numberOfQuestions) {
 
 function generateMultipleChoiceQuestions(category, fields, numberOfQuestions) {
     let allQuestions = [];
-
-    console.log(fields)
 
     fields.forEach(field => {
         let fieldQuestions = require(`../../data/${field}.json`).filter(q => q.ages.includes(category));

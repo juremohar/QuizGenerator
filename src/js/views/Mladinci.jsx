@@ -45,7 +45,7 @@ function handleFirePreventionSelection(question, userAnswer) {
 
 let TrueFalse = {
     oninit: function() {
-        state.trueFalseQuestions = generateTrueFalseQuestions(Constants.Pionir, ["ves_neves", "zgodovina"], 10);
+        state.trueFalseQuestions = generateTrueFalseQuestions(Constants.Mladinec, ["ves_neves", "zgodovina"], 10);
     },
     view: function() {
         return <div className="my-4">
@@ -84,7 +84,7 @@ let TrueFalse = {
 
 let FirstAid = {
     oninit: function() {
-        state.firstAidQuestions = generateMultipleChoiceQuestions(Constants.Pionir, ["prva_pomoc"], 10);
+        state.firstAidQuestions = generateMultipleChoiceQuestions(Constants.Mladinec, ["prva_pomoc"], 10);
     },
     view: function() {
         return <div className="my-4">
@@ -123,7 +123,7 @@ let FirstAid = {
 
 let FirePrevention = {
     oninit: function() {
-        state.firePreventionQuestions = generateMultipleChoiceQuestions(Constants.Pionir, ["ves_neves", "zgodovina"], 10);
+        state.firePreventionQuestions = generateMultipleChoiceQuestions(Constants.Mladinec, ["ves_neves", "zgodovina"], 10);
     },
     view: function() {
         return <div className="my-4">
@@ -160,7 +160,7 @@ let FirePrevention = {
     }
 }
 
-var PionirjiView = {
+var MladinciView = {
     oninit: function() {
     },
     view: function() {
@@ -172,4 +172,4 @@ var PionirjiView = {
     }
 }
 
-export { PionirjiView }
+export { MladinciView }
