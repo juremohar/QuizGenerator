@@ -533,8 +533,8 @@
     "question": "Kaj je statut društva?",
     "correctAnswer": "Listina, ki določa: ime in sedež društva, namen in naloge, način včlanjevanja in prenehanja članstva, organe društva, sestavo organov, način volitve organov, pravice in dolžnosti, zastopanje društva, financiranje, način prenehanja, način zagotavljanja javnosti del.",
     "wrongAnswers": [
-      "",
-      ""
+      "Dokument v katerem so zapisani vsi člani gasilskega društva.",
+      "Izjava, ki jo podpiše posamenznik, ko se pridruži gasilskemu društvu."
     ],
     "ages": ["mladinec"]
   },
@@ -631,8 +631,8 @@
     "question": "Opiši pravilni vrstni red prižiganja plinskega gorilnika.",
     "correctAnswer": "Odpremo ventil na jeklenki, prižgemo plin pri ustju gorilnika in odpremo ventil na gorilniku.",
     "wrongAnswers": [
-      "",
-      ""
+      "Odpremo ventil na gorilniku, prižgemo plin pri ustju gorilnika in odpremo ventil na jeklenki.",
+      "Prižgemo plin pri ustju gorilnika, odpremo ventil na jeklenki odpremo ventil na gorilniku."
     ],
     "ages": ["mladinec"]
   },
@@ -649,8 +649,8 @@
     "question": "Kako preprečimo dimniški požar?",
     "correctAnswer": "S pravilno izgradnjo dimnika in rednim čiščenjem dimnika.",
     "wrongAnswers": [
-      "",
-      ""
+      "S kurjenjem mokrih in vlažnih drv.",
+      "Dimnik mora biti zgrajen iz plastike."
     ],
     "ages": ["mladinec"]
   },
@@ -658,8 +658,8 @@
     "question": "Kako morajo biti urejena podstrešja, da ne pride do požara?",
     "correctAnswer": "Podstrešni prostor mora biti prazen in čist, strešne in druge lesene konstrukcije naj bodo zaščitno premazane; nesnaga, pajčevine in prah se hitro vnamejo, zato na podstrešje ne zahajamo z odprtim ognjem; električna napeljava mora biti zaščitena pred poškodbami.",
     "wrongAnswers": [
-      "",
-      ""
+      "Podstrejše mora imeti veliko oken, da gasilci čimlažje pridejo do požara.",
+      "Podstrešni prostor mora imeti napeljan vodni vir."
     ],
     "ages": ["mladinec"]
   },
@@ -676,8 +676,8 @@
     "question": "Kako morajo biti urejeni hodniki in stopnišča v večjih stavbah?",
     "correctAnswer": "Ne smejo biti založeni z raznimi predmeti, stenski hidranti morajo biti označeni, v omaricah mora biti ustrezna oprema za njihovo uporabo, na vidnih mestih morajo biti obešeni požarni redi in gasilniki.",
     "wrongAnswers": [
-      "",
-      ""
+      "Hodniki morajo biti veliki in prostorni. Ne smejo biti iz lesa, ter morajo vsebovati čimveč ne gorljivih elementov.",
+      "Ni pomembno, kako so urejeni hodniki, dokler so veliki in prostorni."
     ],
     "ages": ["mladinec"]
   },
@@ -712,8 +712,8 @@
     "question": "Naštej nekaj primerov samopomoči ob začetku požara!",
     "correctAnswer": "Za zaščito dihal lahko uporabimo mokro krpo, za izhod iz gorečega prostora uporabimo zasilne izhode, skozi goreč prostor se lahko umaknemo pokriti z mokrim, navlaženim pregrinjalom.",
     "wrongAnswers": [
-      "",
-      ""
+      "Čimprej razbijemo okno in skušamo skozi njega uiti požaru.",
+      "Ob primeru ognja, se skrijemo pod mizo in počakamo na navodila gasilcev."
     ],
     "ages": ["mladinec"]
   },
@@ -730,8 +730,8 @@
     "question": "Navedi primer, kako pogasimo požar z dušenjem!",
     "correctAnswer": "S primernim gasilnim sredstvom prekrijemo gorljivo površino.",
     "wrongAnswers": [
-      "",
-      ""
+      "Z kosom lesa udarjamo po razširnjem požaru.",
+      "Z usti pihamo v plamen, dokler se požar ne pogasi."
     ],
     "ages": ["mladinec"]
   },
@@ -739,17 +739,8 @@
     "question": "Navedi primer gašenja požara z odstranjevanjem gorljive snovi!",
     "correctAnswer": "Kadarkoli odstranimo gorljivo snov z območja požara: na primer zaprtje ventila dotoka gorljive snovi.",
     "wrongAnswers": [
-      "",
-      ""
-    ],
-    "ages": ["mladinec"]
-  },
-  {
-    "question": "Katere nevarnosti prežijo na gasilce pri gašenju požarov v naravi?",
-    "correctAnswer": "Piki strupenih kač, neeksplodirana ubojna telesa, pokanje storžev, pokanje kamenja, udar električne strele ob nevihtah, podiranje dreves, zastrupitev z dimom.",
-    "wrongAnswers": [
-      "",
-      ""
+      "Goreč predmet polijemo z vodo ali peno.",
+      "Kadarkoli gorljivo snov pričnemo gasiti z gasilskim aparatom."
     ],
     "ages": ["mladinec"]
   },
@@ -757,8 +748,8 @@
     "question": "Katere so metode gašenja z gasilnimi sredstvi?",
     "correctAnswer": "Odstranitev kisika – dušenje, odstranitev toplote – ohlajanje, motnja kemijskih reakcij gorenja.",
     "wrongAnswers": [
-      "",
-      ""
+      "Odstranitev kisika in ohlajanje.",
+      "Notranje in vodne."
     ],
     "ages": ["mladinec"]
   },
@@ -927,8 +918,8 @@
     "question": "Za kaj uporabljamo gasilske vodne črpalke?",
     "correctAnswer": "Uporabljamo jih za dovajanje vode na večje razdalje in zato, da na požarišču dosegamo zaželene količine vode in ustrezen tlak.",
     "wrongAnswers": [
-      "",
-      ""
+      "Uporabljamo jih za gasilske vaje.",
+      "Uporabljamo jih za raznih prireditvah."
     ],
     "ages": ["mladinec"]
   },
@@ -964,7 +955,7 @@
     "correctAnswer": "Tlačne cevi so namenjene pretoku vode, ki je pod tlakom, speljane so od vodne črpalke do ročnika.",
     "wrongAnswers": [
       "Uporabljamo jih za sesanje oziroma črpanje vode iz vodnih zajetij, rek in jezer s pomočjo vodnih črpalk.",
-      ""
+      "Tlačne cevi se uporabljajo, kadar potrebujemo pretok vode, pod zelo visokim tlakom."
     ],
     "ages": ["mladinec"]
   },
@@ -972,8 +963,8 @@
     "question": "Za kaj se uporablja sesalni koš?",
     "correctAnswer": "Sesalni koš preprečuje dostop trdim delcem v črpalko med črpanjem vode iz vodnih zajetij.",
     "wrongAnswers": [
-      "",
-      ""
+      "Sesalni koš se uporablja, ko iz cisterne dovajamo vodo.",
+      "Sesalni koš se uporablja pri mladinskih vajah."
     ],
     "ages": ["mladinec"]
   },
@@ -1053,8 +1044,8 @@
     "question": "Kako delimo osebna zaščitna sredstva in opremo glede na namen in način zaščite?",
     "correctAnswer": "Na sredstva za zaščito glave in obraza, sredstva za zaščito dihalnih organov, sredstva za zaščito rok in nog, sredstva za zaščito telesa ter na drugo osebno zaščitno in varovalno opremo.",
     "wrongAnswers": [
-      "",
-      ""
+      "Na osebno zaščitno in skupinsko zaščitno opremo.",
+      "Na sredstva za zaščito glave in obraza, sredstva za zaščito dihalnih organov in zaščitno opremo za opremo, ki jo uporabljamo."
     ],
     "ages": ["mladinec"]
   },
@@ -1098,8 +1089,8 @@
     "question": "Sredstva za zaščito dihal delimo v dve skupini in sicer?",
     "correctAnswer": "Tista, ki delujejo odvisno od zunanjega zraka iz okolja in tiste, ki delujejo neodvisno od zunanjega zraka.",
     "wrongAnswers": [
-      "",
-      ""
+      "Delimo jih na težko in lahko skupino.",
+      "Tista, ki zaščitijo pred kemičnimi snovmi in tista, ki zaščitijo pred radioaktivnimi snovmi."
     ],
     "ages": ["mladinec"]
   },
