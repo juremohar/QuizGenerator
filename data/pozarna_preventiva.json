@@ -8,53 +8,5 @@
       "napacn odg c"
     ],
     "ages": ["pioner", "mladinec"]
-  },
-  {
-    "question": "Q2",
-    "correctAnswear": "pravilen odg",
-    "wrongAnswears": [
-      "napacn odg a",
-      "napacn odg b",
-      "napacn odg c"
-    ],
-<<<<<<< HEAD
-    "ages": ["pioner"]
-  },
-  {
-    "question": "Q3",
-    "correctAnswear": "pravilen odg",
-    "wrongAnswears": [
-=======
-    "ages": ["pionir"]
-  },
-  {
-    "question": "Q3",
-    "correctAnswer": "pravilen odg",
-    "wrongAnswers": [
->>>>>>> 51ddf1a3375e3e746de762970c3dadc95eb07bf4
-      "napacn odg a",
-      "napacn odg b",
-      "napacn odg c"
-    ],
-    "ages": ["mladinec"]
-  },
-  {
-    "question": "Q4",
-<<<<<<< HEAD
-    "correctAnswear": "pravilen odg",
-    "wrongAnswears": [
-=======
-    "correctAnswer": "pravilen odg",
-    "wrongAnswers": [
->>>>>>> 51ddf1a3375e3e746de762970c3dadc95eb07bf4
-      "napacn odg a",
-      "napacn odg b",
-      "napacn odg c"
-    ],
-<<<<<<< HEAD
-    "ages": ["pioner", "mladinec"]
-=======
-    "ages": ["pionir", "mladinec"]
->>>>>>> 51ddf1a3375e3e746de762970c3dadc95eb07bf4
   }
 ]
