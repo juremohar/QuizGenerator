@@ -1,6 +1,10 @@
 @import "~bootstrap/scss/bootstrap";
 @import "bootstrap-icons/font/bootstrap-icons.css";
 
+* {
+    caret-color: transparent;
+}
+
 
 .callout {
     padding: 10px;

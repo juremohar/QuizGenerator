@@ -1,12 +1,11 @@
 [
   {
-    "question": "Q1",
-    "correctAnswear": "pravilen odg",
-    "wrongAnswears": [
-      "napacn odg a",
-      "napacn odg b",
-      "napacn odg c"
+    "question": "Kje je bilo ustanovljeno prvo gasilsko društvo?",
+    "correctAnswer": "Metlika.",
+    "wrongAnswers": [
+      "Ljubljana.",
+      "Celje."
     ],
-    "ages": ["pioner", "mladinec"]
+    "ages": ["pionir", "mladinec"]
   }
 ]

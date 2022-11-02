@@ -1,5 +1,8 @@
 function generateTrueFalseQuestions(category, numberOfQuestions) {
-    let questions = require('../../data/ves_neves.json').filter(q => q.ages.includes(category));;
+    let trueFalseQuestions = require('../../data/ves_neves.json').filter(q => q.ages.includes(category));
+    let historyQuestions = require('../../data/zgodovina.json').filter(q => q.ages.includes(category));
+
+    let questions = [...trueFalseQuestions, ...historyQuestions];
     let list = questions.sort(() => 0.5 - Math.random()).slice(0, numberOfQuestions);
 
     return list.map(q => {
