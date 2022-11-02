@@ -100,13 +100,8 @@
   },
   {
     "question": "Kaj je navadno spodbudilo nastanek gasilskih društev? ",
-<<<<<<< HEAD
-    "correctAnswear": "Manjši ali večji požari pri katerih so bili ljudje nemočni.",
-    "wrongAnswears": [
-=======
     "correctAnswer": "Manjši ali večji požari pri katerih so bili ljudje nemočni.",
     "wrongAnswers": [
->>>>>>> 51ddf1a3375e3e746de762970c3dadc95eb07bf4
       "Želja po druženju.",
       "Popravle, viharji, toča."
     ],
@@ -114,13 +109,8 @@
   },
   {
     "question": "V kateri državi je dr. Josip Savinšek spoznal delovanje prostovoljnih požarnih bramb?",
-<<<<<<< HEAD
-    "correctAnswear": "Na Hrvaškem.",
-    "wrongAnswears": [
-=======
     "correctAnswer": "Na Hrvaškem.",
     "wrongAnswers": [
->>>>>>> 51ddf1a3375e3e746de762970c3dadc95eb07bf4
       "V Franciji.",
       "V Italiji"
     ],
@@ -128,13 +118,8 @@
   },
   {
     "question": "Po kom se imenuje slovenski gasilski muzej v Metliki?",
-<<<<<<< HEAD
-    "correctAnswear": "Po dr. Branku Božiču",
-    "wrongAnswears": [
-=======
     "correctAnswer": "Po dr. Branku Božiču",
     "wrongAnswers": [
->>>>>>> 51ddf1a3375e3e746de762970c3dadc95eb07bf4
       "Po Franci Petku",
       "Po Matevžu Hacetu."
     ],
@@ -142,13 +127,8 @@
   },
   {
     "question": "Kdo je prvi slovenskim gasilcem poveljeval v slovenskem jeziku?",
-<<<<<<< HEAD
-    "correctAnswear": "Ignacij Merhar.",
-    "wrongAnswears": [
-=======
     "correctAnswer": "Ignacij Merhar.",
     "wrongAnswers": [
->>>>>>> 51ddf1a3375e3e746de762970c3dadc95eb07bf4
       "Matevž Hace",
       "Janko Kosernik."
     ],
@@ -156,13 +136,8 @@
   },
   {
     "question": "Kako so se preimenovala gasilska društva po zakon o organizaciji gasilstva, je izšel 15. Julija 1933?",
-<<<<<<< HEAD
-    "correctAnswear": "V gasilske čete.",
-    "wrongAnswears": [
-=======
     "correctAnswer": "V gasilske čete.",
     "wrongAnswers": [
->>>>>>> 51ddf1a3375e3e746de762970c3dadc95eb07bf4
       "Požarne straže.",
       "Prostovoljna gasilka društva."
     ],
@@ -170,13 +145,8 @@
   },
   {
     "question": "Katerega leta je bila ustanovljena gasilske zveze ljudske republike Slovenije?",
-<<<<<<< HEAD
-    "correctAnswear": "1949.",
-    "wrongAnswears": [
-=======
     "correctAnswer": "1949.",
     "wrongAnswers": [
->>>>>>> 51ddf1a3375e3e746de762970c3dadc95eb07bf4
       "1992.",
       "1918."
     ],
@@ -184,13 +154,8 @@
   },
   {
     "question": "Kdo je bil na 1. Kongresu gasilske zveze ljudske republike Slovenije izvoljen za poveljnika?",
-<<<<<<< HEAD
-    "correctAnswear": "Miran Špricar.",
-    "wrongAnswears": [
-=======
     "correctAnswer": "Miran Špricar.",
     "wrongAnswers": [
->>>>>>> 51ddf1a3375e3e746de762970c3dadc95eb07bf4
       "Franci Petek.",
       "Janez Kastelic."
     ],
@@ -198,13 +163,8 @@
   },
   {
     "question": "Kako je delovalo gasilstvo v času 2. Svetovne vojne?",
-<<<<<<< HEAD
-    "correctAnswear": "Delovanje društev je bilo zelo oteženo, omejeno in marsikje prekinjeno.",
-    "wrongAnswears": [
-=======
     "correctAnswer": "Delovanje društev je bilo zelo oteženo, omejeno in marsikje prekinjeno.",
     "wrongAnswers": [
->>>>>>> 51ddf1a3375e3e746de762970c3dadc95eb07bf4
       "Društva so postala vse večja.",
       "Gasilci so dobili veliko denarja, da so si lahko posodobili opremo."
     ],
@@ -212,13 +172,8 @@
   },
   {
     "question": "Prva gasilska šola je leta 1950 začela delovati v žireh. Za kateri čin je izobraževala gasilce?",
-<<<<<<< HEAD
-    "correctAnswear": "Za gasilske častnike.",
-    "wrongAnswears": [
-=======
     "correctAnswer": "Za gasilske častnike.",
     "wrongAnswers": [
->>>>>>> 51ddf1a3375e3e746de762970c3dadc95eb07bf4
       "Za operativne gasilce.",
       "Za desetarje."
     ],
