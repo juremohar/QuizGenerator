@@ -1,270 +1,270 @@
 [
   {
     "question": "Kaj je prva pomoč?",
-    "correctAnswear": "Prva pomoč je niz ukrepov, ki jih izvajamo, da bi pomagali poškodovanemu ali obolelemu pred prihodom reševalcev.",
-    "wrongAnswears": [
+    "correctAnswer": "Prva pomoč je niz ukrepov, ki jih izvajamo, da bi pomagali poškodovanemu ali obolelemu pred prihodom reševalcev.",
+    "wrongAnswers": [
    
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kaj potrebujemo za nudenje prve pomoči?",
-    "correctAnswear": "Običajno jo lahko nudimo zgolj s preprostimi pripomočki npr. Torbica s prvo pomočjo v avtu, velikokrat pa je potrebno improvizirati.",
-    "wrongAnswears": [
+    "correctAnswer": "Običajno jo lahko nudimo zgolj s preprostimi pripomočki npr. Torbica s prvo pomočjo v avtu, velikokrat pa je potrebno improvizirati.",
+    "wrongAnswers": [
   
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kako dolgo nudimo prvo pomoč?",
-    "correctAnswear": "Prva pomoč se nudi dokler reševalec ne omaga, dokler ne dobi menjave za nudenje prve pomoči oziroma do prihoda ekipe nujne medicinske pomoči.",
-    "wrongAnswears": [
+    "correctAnswer": "Prva pomoč se nudi dokler reševalec ne omaga, dokler ne dobi menjave za nudenje prve pomoči oziroma do prihoda ekipe nujne medicinske pomoči.",
+    "wrongAnswers": [
       "Nekaj minut",
       "Prva pomoč vedno nudi do prihoda ekipe nujne medicinske pomoči."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Ali imamo v sloveniji helikopter, ki je namenjen zgolj reševanju?",
-    "correctAnswear": "Ne.",
-    "wrongAnswears": [
+    "correctAnswer": "Ne.",
+    "wrongAnswers": [
       "Da.",
       "Da. Delimo si ga s sosednjimi državami."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kdo opravlja helikopterske prevoze nenadno obolelih/poškodovanih pri nas v sloveniji?",
-    "correctAnswear": "Helikopterji letalske policijske enote in slovenske vojske.",
-    "wrongAnswears": [
+    "correctAnswer": "Helikopterji letalske policijske enote in slovenske vojske.",
+    "wrongAnswers": [
       "Sosednje države.",
       "Helikopterji gasilskih društev."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Katero številko je potrebno poklicati kadar potrebujemo reševalce?",
-    "correctAnswear": "Poklicati je potrebno številko 112.",
-    "wrongAnswears": [
+    "correctAnswer": "Poklicati je potrebno številko 112.",
+    "wrongAnswers": [
       "Poklicati je potrebno številko 911.",
       "Poklicati je potrebno številko 113."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kaj naredimo najprej, preden pristopimo do ponesrečenca?",
-    "correctAnswear": "Poskrbeti moramo za našo lastno varnost in seveda tudi za varnost poškodovancev in varnost vseh ostalih prisotnih.",
-    "wrongAnswears": [
+    "correctAnswer": "Poskrbeti moramo za našo lastno varnost in seveda tudi za varnost poškodovancev in varnost vseh ostalih prisotnih.",
+    "wrongAnswers": [
       "Preveriti, če oseba še diha.",
       "Pokličemo 112 in povemo, da imamo ponesrečenca."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kako ugotoviš ali je poškodovanec (zboleli) pri zavesti?",
-    "correctAnswear": "Poškodovanca (zbolelega) primemo za ramena, ga nežno stresemo in glasno ogovorimo.",
-    "wrongAnswears": [
+    "correctAnswer": "Poškodovanca (zbolelega) primemo za ramena, ga nežno stresemo in glasno ogovorimo.",
+    "wrongAnswers": [
       "Poškodovanca sprašujemo vprašanja.",
       "Poškodovanca vščipnemo in počakamo, če nas bo ogovoril."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kako ravnamo, ko nekdo omedli?",
-    "correctAnswear": "Osebo poležemo in ji nekoliko dvignemo noge. Odpnemo ji ovratnik, razrahljamo pas in omogočimo svež zrak.",
-    "wrongAnswears": [
+    "correctAnswer": "Osebo poležemo in ji nekoliko dvignemo noge. Odpnemo ji ovratnik, razrahljamo pas in omogočimo svež zrak.",
+    "wrongAnswers": [
       "Osebo postavimo v stabilni bočni položaj.",
       "Osebo ne smemo premikati, dokler ne pride zdravnik."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kako se imenuje položaj za nezavestnega?",
-    "correctAnswear": "Stabilni bočni položaj.",
-    "wrongAnswears": [
+    "correctAnswer": "Stabilni bočni položaj.",
+    "wrongAnswers": [
       "Stabilni stoječi položaj.",
       "Nestabilen bočni položaj."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kakšno je razmerje pri oživljanju odraslih?",
-    "correctAnswear": "30 stisov prsnega koša in 2 vpiha.",
-    "wrongAnswears": [
+    "correctAnswer": "30 stisov prsnega koša in 2 vpiha.",
+    "wrongAnswers": [
       "40 stisov prsnega koša in 2 vpiha.",
       "30 stisov prsnega koša in 4 vpiha."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "S čim se zaščitimo pri oživljanju?",
-    "correctAnswear": "Z obrazno masko.",
-    "wrongAnswears": [
-      "Z obrazno masko.",
+    "correctAnswer": "Z obrazno masko.",
+    "wrongAnswers": [
+      "Z kosom oblačila.",
       "Z trikotno ruto."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Ali moramo dajati vpihe osebi, ki ne diha in se ne odziva?",
-    "correctAnswear": "Ne. Kadar ne želite dati vpihov ali za to niste usposobljeni, izvajajte neprekinjeno masažo srca.",
-    "wrongAnswears": [
+    "correctAnswer": "Ne. Kadar ne želite dati vpihov ali za to niste usposobljeni, izvajajte neprekinjeno masažo srca.",
+    "wrongAnswers": [
       "Da. Ni razlagov, da tega ne bi počeli.",
       "Ne. To potrebujemo početi, le ko osebo poznamo."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kaj naredimo, če ima nekdo lažjo zaporo dihalne poti?",
-    "correctAnswear": "Spodbujamo, da se odkašlja.",
-    "wrongAnswears": [
+    "correctAnswer": "Spodbujamo, da se odkašlja.",
+    "wrongAnswers": [
       "Postavimo ga v stabilni bočni položaj.",
       "Pokličemo reševalce in počakamo ob ponesrečencu."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kako pravilno shranjujemo zdravila?",
-    "correctAnswear": "Zdravila shranjujemo na hladnih in temnih mestih ter izven dosega otrok (npr. Na višji polici v omari).",
-    "wrongAnswears": [
+    "correctAnswer": "Zdravila shranjujemo na hladnih in temnih mestih ter izven dosega otrok (npr. Na višji polici v omari).",
+    "wrongAnswers": [
       "Zdravila shranjujemo na prostorih, do katerih imajo vsi dostop.",
       "Vseeno je, kje se zdravila nahajajo, saj na njih ne vpliva nič."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Zakaj je nevaren skok na glavo v plitvo vodo?",
-    "correctAnswear": "Ker lahko pride do poškodbe hrbtenice in poškodbe glave.",
-    "wrongAnswears": [
+    "correctAnswer": "Ker lahko pride do poškodbe hrbtenice in poškodbe glave.",
+    "wrongAnswers": [
       "Ker lahko pošpricamo mimoidoče.",
       "Ker nismo preverili, ali se v vodi morda skriva morski pes."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kje se uporabljajo trikotne rute?",
-    "correctAnswear": "Uporabljamo jo za obveze, za imobilizacijo in začasno ustavitev krvavitve.",
-    "wrongAnswears": [
+    "correctAnswer": "Uporabljamo jo za obveze, za imobilizacijo in začasno ustavitev krvavitve.",
+    "wrongAnswers": [
       "Uporabljamo jo za prenos gasilske opreme.",
       "Uporabljamo jo za zaščito pred soncem."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kaj dosežemo z imobilizacijo?",
-    "correctAnswear": "Da se poškodovani del telesa ne premika.",
-    "wrongAnswears": [
+    "correctAnswer": "Da se poškodovani del telesa ne premika.",
+    "wrongAnswers": [
       "Za zaustavitev krvi.",
       "Ponesrečencu s tem olajšamo bolečine"
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "S čim lahko pokrijemo vsako rano?",
-    "correctAnswear": "S sterilno gazo.",
-    "wrongAnswears": [
+    "correctAnswer": "S sterilno gazo.",
+    "wrongAnswers": [
       "S kosom oblačila.",
       "Z dlanjo."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kako oskrbimo manjše poškodbe (vreznina na prstu, odrgnina …)?",
-    "correctAnswear": "Manjše poškodbe oskrbimo tako, da rano operemo s čisto vodo in na rano namestimo obliž.",
-    "wrongAnswears": [
-      "Rano si lahko pokrijemo z dlanjo, ki bo ustavilo krvavite.v",
+    "correctAnswer": "Manjše poškodbe oskrbimo tako, da rano operemo s čisto vodo in na rano namestimo obliž.",
+    "wrongAnswers": [
+      "Rano si lahko pokrijemo z dlanjo, ki bo ustavilo krvavitev.",
       "AED."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kako oskrbimo rano, ki je nastala zaradi ugriza živali?",
-    "correctAnswear": "Najprej obrišemo slino, rano speremo in obvežemo ter poškodovanca pošljemo k zdravniku.",
-    "wrongAnswears": [
+    "correctAnswer": "Najprej obrišemo slino, rano speremo in obvežemo ter poškodovanca pošljemo k zdravniku.",
+    "wrongAnswers": [
       "Rano imobiliziramo in obiščemo zdravnika.",
       "Rano razkužimo z vrelo vodo in obiščemop zdravnika."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kako zaustavimo krvavitev iz nosu?",
-    "correctAnswear": "Oseba naj sede, se nagne naprej in stisne nosnici. Na tilnik mu lahko položimo hladen obkladek.",
-    "wrongAnswears": [
+    "correctAnswer": "Oseba naj sede, se nagne naprej in stisne nosnici. Na tilnik mu lahko položimo hladen obkladek.",
+    "wrongAnswers": [
       "Osebo postavimo v stabilni bočni položaj.",
       "Oseba naj sede, se nagne nazaj in stisne nosnici. Na tilnik mu lahko položimo hladen obkladek."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Ali lahko osebo, ki ima poškodovano hrbtenico premikamo?",
-    "correctAnswear": "Osebo s poškodovano hrbtenico lahko premikamo  samo takrat, kadar je neposredno ogrožena (ogenj, nevarne snovi …) in ne more ostati na določenem mestu ter v takem položaju, v katerem s trenutno nahaja.",
-    "wrongAnswears": [
+    "correctAnswer": "Osebo s poškodovano hrbtenico lahko premikamo  samo takrat, kadar je neposredno ogrožena (ogenj, nevarne snovi …) in ne more ostati na določenem mestu ter v takem položaju, v katerem s trenutno nahaja.",
+    "wrongAnswers": [
       "Osebo s poškodovano hrbtenico lahko vedno premaknemo, saj to ni hujša poškodba.",
       "Osebo s poškodovano hrbtenico lahko premaknemo samo če je odzivna."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kako se imenuje pripomoček za oskrbo opeklin?",
-    "correctAnswear": "Opeklinski obkladek.",
-    "wrongAnswears": [
+    "correctAnswer": "Opeklinski obkladek.",
+    "wrongAnswers": [
       "Kompresijska obveza.",
       "Trikotna obveza."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kako se imenuje postopek razvrščanja poškodovanih oseb glede na vrsto in težo poškodbe ter nujnost oskrbe?",
-    "correctAnswear": "Triaža.",
-    "wrongAnswears": [
+    "correctAnswer": "Triaža.",
+    "wrongAnswers": [
       "Štiriaža.",
       "Kompresijski postopek."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kdo je triažer?",
-    "correctAnswear": "Oseba, ki izvaja triažo.",
-    "wrongAnswears": [
+    "correctAnswer": "Oseba, ki izvaja triažo.",
+    "wrongAnswers": [
       "Oseba, ki vodi intervencijo.",
       "Oseba, ki se javi v klicnem centru, ko potrebujemo pomoč."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "S katerimi barvami označujemo triažne skupine?",
-    "correctAnswear": "Rdeča, rumena, zelena in črna.",
-    "wrongAnswears": [
+    "correctAnswer": "Rdeča, rumena, zelena in črna.",
+    "wrongAnswers": [
       "Rdeča, rumena, zelena in bela.",
       "Oranžna, rumena, zelena in črna."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kako označujemo poškodovane pri triaži?",
-    "correctAnswear": "S posebnimi triažnimi kartončki.",
-    "wrongAnswears": [
+    "correctAnswer": "S posebnimi triažnimi kartončki.",
+    "wrongAnswers": [
       "S posebno barvo.",
       "Oseb ne označujemo."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kaj je najpogostejši način zaustavljanja večjih krvavitev?",
-    "correctAnswear": "Kompresijska obveza.",
-    "wrongAnswears": [
+    "correctAnswer": "Kompresijska obveza.",
+    "wrongAnswers": [
       "Imobilizacijska obveza.",
       "Trikotna obveza."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   },
   {
     "question": "Kaj pomeni kratica AED?",
-    "correctAnswear": "Avtomatski eksterni defibrilator.",
-    "wrongAnswears": [
+    "correctAnswer": "Avtomatski eksterni defibrilator.",
+    "wrongAnswers": [
       "Avtomatski energetski defibrilator.",
       "Avtomatski eksterni daljnovod."
     ],
-    "ages": ["pioner"]
+    "ages": ["pionir"]
   }
 ]
