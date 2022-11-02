@@ -21,9 +21,17 @@ function generateTrueFalseQuestions(category, numberOfQuestions) {
     });
 }
 
-function generateMultipleChoiceQuestions(category, field, numberOfQuestions) {
-    let questions = require(`../../data/${field}.json`).filter(q => q.ages.includes(category));;
-    let list = questions.sort(() => 0.5 - Math.random()).slice(0, numberOfQuestions);
+function generateMultipleChoiceQuestions(category, fields, numberOfQuestions) {
+    let allQuestions = [];
+
+    console.log(fields)
+
+    fields.forEach(field => {
+        let fieldQuestions = require(`../../data/${field}.json`).filter(q => q.ages.includes(category));
+        allQuestions.push(...fieldQuestions);
+    });
+
+    let list = allQuestions.sort(() => 0.5 - Math.random()).slice(0, numberOfQuestions);
 
     return list.map(q => {
         let answers = q.wrongAnswers.sort(function() {return 0.5 - Math.random()}).slice(0, 2);

@@ -8,7 +8,9 @@ let state = {
     trueFalseQuestions: [],
     showTrueFalseQuestionsResult: false,
     firstAidQuestions: [],
-    showFirstAidQuestionsResult: false
+    showFirstAidQuestionsResult: false,
+    firePreventionQuestions: [],
+    showFirePreventionQuestionsResult: false
 };
 
 function handleUserTrueFalseSelection(question, trueFalse) {
@@ -25,6 +27,16 @@ function handleFirstAidSelection(question, userAnswer) {
     if (state.showFirstAidQuestionsResult) return;
 
     let questionsRecord = state.firstAidQuestions.find(q => {
+        return q.question == question;
+    });
+
+    questionsRecord.userAnswer = userAnswer;
+}
+
+function handleFirePreventionSelection(question, userAnswer) {
+    if (state.showFirePreventionQuestionsResult) return;
+
+    let questionsRecord = state.firePreventionQuestions.find(q => {
         return q.question == question;
     });
 
@@ -72,8 +84,7 @@ let TrueFalse = {
 
 let FirstAid = {
     oninit: function() {
-        state.firstAidQuestions = generateMultipleChoiceQuestions(Constants.Pionir, "prva_pomoc", 10);
-        console.log(state)
+        state.firstAidQuestions = generateMultipleChoiceQuestions(Constants.Pionir, ["prva_pomoc"], 10);
     },
     view: function() {
         return <div className="my-4">
@@ -110,6 +121,45 @@ let FirstAid = {
     }
 }
 
+let FirePrevention = {
+    oninit: function() {
+        state.firePreventionQuestions = generateMultipleChoiceQuestions(Constants.Pionir, ["ves_neves", "zgodovina"], 10);
+    },
+    view: function() {
+        return <div className="my-4">
+            <div className='fs-4 fw-bold'>
+                Požarna preventiva
+            </div>
+
+            <div className='mb-2 fw-light'>
+                Spodaj je 10 vprašanj. Izberite kateri odgovor je pravilen.
+            </div>
+
+            <div className='mb-2'>
+                {
+                    state.firePreventionQuestions.map((q, index) => {
+                        return <MultipleChoiceComponent 
+                            question={q.question} 
+                            correctAnswer={q.correctAnswer}
+                            answers={q.answers} 
+                            userAnswer={q.userAnswer}
+                            questionNumber={index}
+                            showResults={state.showFirePreventionQuestionsResult} 
+                            onAnswerSelection={handleFirePreventionSelection} 
+                        />
+                    })
+                }
+            </div>
+
+            <button 
+                type="button" 
+                class="btn btn-primary check-result-button"
+                onclick={() => { state.showFirePreventionQuestionsResult = true }}
+            >Preveri</button>
+        </div>
+    }
+}
+
 var PionirjiView = {
     oninit: function() {
     },
@@ -117,6 +167,7 @@ var PionirjiView = {
         return <div>
            <TrueFalse />
            <FirstAid />
+           <FirePrevention />
         </div>
     }
 }
