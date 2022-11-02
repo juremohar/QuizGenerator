@@ -72,12 +72,12 @@ var TrueFalseComponent = {
                 <button 
                     type="button" 
                     className={`btn btn-outline-dark btn-sm me-2 ${ isAnswerSelected(properties.userAnswer, true) }`}
-                    onclick={() => properties.onAnswerSelection(properties.question, true) }
+                    onclick={() => properties.onAnswerSelection(properties.questionNumber, true) }
                 >Drži</button>
                 <button
                     type="button" 
                     className={`btn btn-outline-dark btn-sm ${ isAnswerSelected(properties.userAnswer, false) }`}
-                    onclick={() => properties.onAnswerSelection(properties.question, false) }
+                    onclick={() => properties.onAnswerSelection(properties.questionNumber, false) }
                 >Ne drži</button>
             </div>
             <div>

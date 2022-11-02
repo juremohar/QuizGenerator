@@ -13,34 +13,19 @@ let state = {
     showFirePreventionQuestionsResult: false
 };
 
-function handleUserTrueFalseSelection(question, trueFalse) {
+function handleUserTrueFalseSelection(questionNumber, trueFalse) {
     if (state.showTrueFalseQuestionsResult) return;
-
-    let questionsRecord = state.trueFalseQuestions.find(q => {
-        return q.question == question;
-    });
-
-    questionsRecord.userAnswer = trueFalse;
+    state.trueFalseQuestions[questionNumber].userAnswer = trueFalse;
 }
 
-function handleFirstAidSelection(question, userAnswer) {
+function handleFirstAidSelection(questionNumber, userAnswer) {
     if (state.showFirstAidQuestionsResult) return;
-
-    let questionsRecord = state.firstAidQuestions.find(q => {
-        return q.question == question;
-    });
-
-    questionsRecord.userAnswer = userAnswer;
+    state.firstAidQuestions[questionNumber].userAnswer = userAnswer;
 }
 
-function handleFirePreventionSelection(question, userAnswer) {
+function handleFirePreventionSelection(questionNumber, userAnswer) {
     if (state.showFirePreventionQuestionsResult) return;
-
-    let questionsRecord = state.firePreventionQuestions.find(q => {
-        return q.question == question;
-    });
-
-    questionsRecord.userAnswer = userAnswer;
+    state.firePreventionQuestions[questionNumber].userAnswer = userAnswer;
 }
 
 let TrueFalse = {

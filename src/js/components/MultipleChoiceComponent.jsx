@@ -66,11 +66,11 @@ var MultipleChoiceComponent = {
                         return <div className="form-check">
                             <input 
                                 className="form-check-input" 
-                                type="radio" id={answer}
+                                type="radio" id={`${answer}-${properties.questionNumber}`}
                                 checked={isAnswerSelected(properties.userAnswer, answer)}
-                                onclick={() => properties.onAnswerSelection(properties.question, answer) }
+                                onclick={() => properties.onAnswerSelection(properties.questionNumber, answer) }
                             />
-                            <label class="form-check-label" for={answer}>{ answer }</label>
+                            <label class="form-check-label" for={`${answer}-${properties.questionNumber}`}>{ answer }</label>
                         </div>
                     })
                 }
