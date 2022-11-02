@@ -1,6 +1,6 @@
 function generateTrueFalseQuestions(category, fields, numberOfQuestions) {
     let allQuestions = [];
-    
+
     fields.forEach(field => {
         let fieldQuestions = require(`../../data/${field}.json`).filter(q => q.ages.includes(category));
         allQuestions.push(...fieldQuestions);
@@ -18,6 +18,7 @@ function generateTrueFalseQuestions(category, fields, numberOfQuestions) {
         return {
             question: q.question,
             correctAnswer: q.correctAnswer,
+            source: q.source ?? null,
             randomAnswer: randomAnswer,
             userAnswer: null
         }
@@ -40,8 +41,9 @@ function generateMultipleChoiceQuestions(category, fields, numberOfQuestions) {
 
         return {
             question: q.question,
-            answers: answers.sort(function() {return 0.5 - Math.random()}),
             correctAnswer: q.correctAnswer,
+            source: q.source ?? null,
+            answers: answers.sort(function() {return 0.5 - Math.random()}),
             userAnswer: null
         }
     });

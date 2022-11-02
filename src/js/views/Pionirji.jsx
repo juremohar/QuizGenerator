@@ -45,7 +45,7 @@ function handleFirePreventionSelection(question, userAnswer) {
 
 let TrueFalse = {
     oninit: function() {
-        state.trueFalseQuestions = generateTrueFalseQuestions(Constants.Pionir, ["ves_neves", "zgodovina"], 10);
+        state.trueFalseQuestions = generateTrueFalseQuestions(Constants.Pionir, ["ves_neves", "zgodovina", "vescine"], 10);
     },
     view: function() {
         return <div className="my-4">
@@ -63,6 +63,7 @@ let TrueFalse = {
                         return <TrueFalseComponent 
                             question={q.question} 
                             correctAnswer={q.correctAnswer}
+                            source={q.source}
                             randomAnswer={q.randomAnswer} 
                             userAnswer={q.userAnswer}
                             questionNumber={index}
@@ -123,7 +124,7 @@ let FirstAid = {
 
 let FirePrevention = {
     oninit: function() {
-        state.firePreventionQuestions = generateMultipleChoiceQuestions(Constants.Pionir, ["ves_neves", "zgodovina"], 10);
+        state.firePreventionQuestions = generateMultipleChoiceQuestions(Constants.Pionir, ["ves_neves", "zgodovina", "vescine"], 10);
     },
     view: function() {
         return <div className="my-4">
@@ -141,6 +142,7 @@ let FirePrevention = {
                         return <MultipleChoiceComponent 
                             question={q.question} 
                             correctAnswer={q.correctAnswer}
+                            source={q.source}
                             answers={q.answers} 
                             userAnswer={q.userAnswer}
                             questionNumber={index}

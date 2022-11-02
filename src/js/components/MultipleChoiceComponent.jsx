@@ -38,6 +38,16 @@ let CorrectAnswers = {
     }
 }
 
+let Image = {
+    source: null,
+    oninit: function(vnode) {
+        this.source = require(`../../assets/images/vescine/${vnode.attrs.source}`)
+    },
+    view: function() {
+        return <img src={this.source} className="img-thumbnail mb-1" />
+    }
+}
+
 var MultipleChoiceComponent = {
     view: function(vnode) {
         let properties = vnode.attrs
@@ -45,9 +55,11 @@ var MultipleChoiceComponent = {
             <div className="mb-1 fw-bold">
                 { properties.questionNumber + 1 }. { properties.question }
             </div>
-            <div className="random-answer">
-                { properties.randomAnswer }
-            </div>
+            
+            {
+                properties.source && <Image source={properties.source} />
+            }
+
             <div className="mt-2">
                 {
                     properties.answers.map(answer => {

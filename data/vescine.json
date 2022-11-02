@@ -1,0 +1,122 @@
+[
+    {
+        "question": "Katero veščino predstavlja spodnja slika?",
+        "source": "kolesar.png",
+        "correctAnswer": "Kolesar.",
+        "wrongAnswers": [
+        "Promet.",
+        "Pešec."
+        ],
+        "ages": ["pionir", "mladinec"]
+    },
+    {
+        "question": "Katero veščino predstavlja spodnja slika?",
+        "source": "plavalec.png",
+        "correctAnswer": "Plavalec.",
+        "wrongAnswers": [
+          "Prepoved plavanja.",
+          "Dovoljeno plavanje."
+        ],
+        "ages": ["pionir", "mladinec"]
+    },
+    {
+        "question": "Katero veščino predstavlja spodnja slika?",
+        "source": "preventivec.png",
+        "correctAnswer": "Preventivec.",
+        "wrongAnswers": [
+          "Prepoved kurjenja.",
+          "Likovnik."
+        ],
+        "ages": ["pionir", "mladinec"]
+    },
+    {
+        "question": "Katero veščino predstavlja spodnja slika?",
+        "source": "kurir.png",
+        "correctAnswer": "Kurir.",
+        "wrongAnswers": [
+          "Pisanje pisem."
+        ],
+        "ages": ["pionir", "mladinec"]
+    },
+    {
+        "question": "Katero veščino predstavlja spodnja slika?",
+        "source": "arhivar.png",
+        "correctAnswer": "Arhivar.",
+        "wrongAnswers": [
+          "Knjižničar.",
+          "Kurir."
+        ],
+        "ages": ["pionir", "mladinec"]
+    },
+    {
+        "question": "Katero veščino predstavlja spodnja slika?",
+        "source": "likovnik.png",
+        "correctAnswer": "Likovnik.",
+        "wrongAnswers": [
+          "Kurir.",
+          "Glasbenik."
+        ],
+        "ages": ["pionir", "mladinec"]
+    },
+    {
+        "question": "Katero veščino predstavlja spodnja slika?",
+        "source": "naravoslovec_gozdar.png",
+        "correctAnswer": "Naravoslovec/gozdar.",
+        "wrongAnswers": [
+          "Vodič.",
+          "Preventivec."
+        ],
+        "ages": ["pionir", "mladinec"]
+    },
+    {
+        "question": "Katero veščino predstavlja spodnja slika?",
+        "source": "racunalnicar.png",
+        "correctAnswer": "Računalničar.",
+        "wrongAnswers": [
+          "Arhivar.",
+          "Strojnik."
+        ],
+        "ages": ["pionir", "mladinec"]
+    },
+    {
+        "question": "Katero veščino predstavlja spodnja slika?",
+        "source": "bolnicar.png",
+        "correctAnswer": "Bolničar.",
+        "wrongAnswers": [
+          "Zdravnik.",
+          "Likovnik."
+        ],
+        "ages": ["pionir", "mladinec"]
+    },
+    {
+        "question": "Katero veščino predstavlja spodnja slika?",
+        "source": "vodic.png",
+        "correctAnswer": "Vodič.",
+        "wrongAnswers": [
+          "Naravoslovec/gozdar.",
+          "Preventivec."
+        ],
+        "ages": ["pionir", "mladinec"]
+    },
+    {
+        "question": "Katero veščino predstavlja spodnja slika?",
+        "source": "novinar_fotograf.png",
+        "correctAnswer": "Novinar/fotograf.",
+        "wrongAnswers": [
+          "Računalničar.",
+          "Likovnik."
+        ],
+        "ages": ["pionir", "mladinec"]
+    },
+    {
+        "question": "Katero veščino predstavlja spodnja slika?",
+        "source": "glasbenik.png",
+        "correctAnswer": "Glasbenik.",
+        "wrongAnswers": [
+          "Likovnik.",
+          "Pisatelj."
+        ],
+        "ages": ["pionir", "mladinec"]
+    }
+]
+  
