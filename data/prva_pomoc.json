@@ -3,7 +3,8 @@
     "question": "Kaj je prva pomoč?",
     "correctAnswer": "Prva pomoč je niz ukrepov, ki jih izvajamo, da bi pomagali poškodovanemu ali obolelemu pred prihodom reševalcev.",
     "wrongAnswers": [
-   
+      "Prva pomoč je postopek, ki ga uporabimo, ko pričenmo gasiti požar.",
+      "Prva pomoč je gasilski pozdrav."
     ],
     "ages": ["pionir", "mladinec"]
   },
@@ -11,7 +12,8 @@
     "question": "Kaj potrebujemo za nudenje prve pomoči?",
     "correctAnswer": "Običajno jo lahko nudimo zgolj s preprostimi pripomočki npr. Torbica s prvo pomočjo v avtu, velikokrat pa je potrebno improvizirati.",
     "wrongAnswers": [
-  
+      "Da lahko nudimo prvo pomoč potrebujemo kiruruško opremo, ki jo ponavadi dobimo v bolnišnicah.",
+      "Da nudimo prvo pomoč potrebujemo več let zdravstvenega treninga."
     ],
     "ages": ["pionir", "mladinec"]
   },
