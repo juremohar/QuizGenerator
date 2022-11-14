@@ -3,6 +3,12 @@ function generateTrueFalseQuestions(category, fields, numberOfQuestions) {
 
     fields.forEach(field => {
         let fieldQuestions = require(`../../data/${field}.json`).filter(q => q.ages.includes(category));
+
+        fieldQuestions = fieldQuestions.map(q => {
+            q.field = field;
+            return q;
+        });
+
         allQuestions.push(...fieldQuestions);
     });
 
@@ -19,6 +25,7 @@ function generateTrueFalseQuestions(category, fields, numberOfQuestions) {
             question: q.question,
             correctAnswer: q.correctAnswer,
             source: q.source ?? null,
+            field: q.field,
             randomAnswer: randomAnswer,
             userAnswer: null
         }
@@ -30,6 +37,12 @@ function generateMultipleChoiceQuestions(category, fields, numberOfQuestions) {
 
     fields.forEach(field => {
         let fieldQuestions = require(`../../data/${field}.json`).filter(q => q.ages.includes(category));
+
+        fieldQuestions = fieldQuestions.map(q => {
+            q.field = field;
+            return q;
+        });
+
         allQuestions.push(...fieldQuestions);
     });
 
@@ -43,6 +56,7 @@ function generateMultipleChoiceQuestions(category, fields, numberOfQuestions) {
             question: q.question,
             correctAnswer: q.correctAnswer,
             source: q.source ?? null,
+            field: q.field,
             answers: answers.sort(function() {return 0.5 - Math.random()}),
             userAnswer: null
         }

@@ -48,7 +48,7 @@ let CorrectAnswers = {
 let Image = {
     source: null,
     oninit: function(vnode) {
-        this.source = require(`../../assets/images/vescine/${vnode.attrs.source}`)
+        this.source = require(`../../assets/images/${vnode.attrs.field}/${vnode.attrs.source}`)
     },
     view: function() {
         return <img src={this.source} className="img-thumbnail mb-1" />
@@ -63,7 +63,7 @@ var TrueFalseComponent = {
                 { properties.questionNumber + 1 }. { properties.question }
             </div>
             {
-                properties.source && <Image source={properties.source} />
+                properties.source && <Image source={properties.source} field={properties.field} />
             }
             <div className="random-answer">
                 { properties.randomAnswer }
