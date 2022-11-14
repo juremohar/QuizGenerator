@@ -22,6 +22,7 @@
   "private": "true",
   "dependencies": {
     "@popperjs/core": "^2.11.6",
+    "@vercel/analytics": "^0.1.5",
     "acorn": "^8.8.1",
     "acorn-import-assertions": "^1.8.0",
     "ajv": "^6.12.6",
