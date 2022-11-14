@@ -268,5 +268,245 @@
       "Avtomatski eksterni daljnovod."
     ],
     "ages": ["pionir", "mladinec"]
+  },
+  {
+    "question": "Kaj pomeni beseda triaža?",
+    "correctAnswer": "Postopek, ki se ga uporablja pri množičnih nesrečah, za razvrščanje.",
+    "wrongAnswers": [
+      "Postopek, ki se ga uporablja pr množičnih nesrečah.",
+      "Postopek, ki se ga uporablja pri povijanju hujših ran."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Koliko primarnih triažnih skupin poznamo?",
+    "correctAnswer": "4.",
+    "wrongAnswers": [
+      "2.",
+      "3."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kateri predmet je na sliki?",
+    "source": "prva_pomoc_oprema.png",
+    "correctAnswer": "Opremo za prvo pomoč - torbica in celotna oprema",
+    "wrongAnswers": [
+      "Oprema za nudenje triažnega postopka.",
+      "Oprema, ki jo pošlje dispačer."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kateri predmet je na sliki?",
+    "source": "opeklinski_obkladki.png",
+    "correctAnswer": "Opeklinske obkladki iz hidrogelov.",
+    "wrongAnswers": [
+      "Obkladki za lajšanje zloma hrbtenice.",
+      "Oprema za nudenje triažnega postopka."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kaj potrebujemo, da se zaščitimo pri oživljanju poškodovanca?",
+    "correctAnswer": "Obrazno masko in zaščitne folije.",
+    "wrongAnswers": [
+      "Obrazno masko in folije za sendvič.",
+      "Masko za lepšo kožo in zaščitne folije."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Zakaj je priporočljivo uporabljati obrazno masko pri oživljanju",
+    "correctAnswer": "Omogoča nam izvajanje umetnega dihanja brez neposrednega stika z žrtvijo.",
+    "wrongAnswers": [
+      "Omogoča nam izvajanje umetnega dihanja na način, da se manj utrudimo.",
+      "Omogoče nam izvajanje umetnega predihavanja brez neposrednega stika z žrtvijo."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kako se imenuje položaj na sliki?",
+    "source": "nosecnica.png",
+    "correctAnswer": "Položaj za nosečnico.",
+    "wrongAnswers": [
+      "Položaj pri sumu za poškodbo hrbtenice.",
+      "Položaj pri poškodbah trebuha in bolečinah v trebuhu."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kaj je posebnost položaja na fotografiji?",
+    "source": "nosecnica.png",
+    "correctAnswer": "Žensko, ki je visoko noseča, damo nekoliko na LEVI bok - pod desno stran podložimo zvito odejo, blazino.",
+    "wrongAnswers": [
+      "Žensko, ki je visoko noseča, damo nekoliko na DESNI bok - pod desno stran podložimo zvito odejo, blazino.",
+      "Žensko, ki je visoko noseča, damo nekoliko na DESNI bok - pod levo stran podložimo zvito odejo, blazino."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Zakaj je potrebno nosečnico prestaviti na LEVI bok?",
+    "correctAnswer": "To je potrebno, da otroku zagotovimo dobro oskrbo s kisikom in hrano.",
+    "wrongAnswers": [
+      "To je potrebno, da otroku zagotovimo dobro oskrbo s črevesjem mame.",
+      "To je potrebno, da otroku zagotovimo dobro oskrbo s srcem."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kako se imenuje položaj na sliki?",
+    "source": "nezavestni_polozaj.png",
+    "correctAnswer": "Položaj za nezavestnega.",
+    "wrongAnswers": [
+      "Položaj pri šoku zaradi krvavitve, alergične reakcije ali oživljanju.",
+      "Položaj pri sumu za poškodbo hrbtenice."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kaj je posebnost položaja na fotografiji?",
+    "source": "nezavestni_polozaj.png",
+    "correctAnswer": "Poškodovanec pri tem položaju leži na ravnem in trdnem, ga nadziramo do prihoda ekipe nujne medicinske pomoči.",
+    "wrongAnswers": [
+      "Pri tem položaju pacient leži na ravni podlagi z dvignjenima nogama.",
+      "Položaj je stabilen, skoraj popolnoma bočni, z nižje ležečo glavo in da je prsni koš prost - ni ovir dihanje."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kako se imenuje položaj na sliki?",
+    "source": "sok_polozaj.png",
+    "correctAnswer": "Položaj pri šoku zaradi krvavitve ali alergične reakcije in oživljanju.",
+    "wrongAnswers": [
+      "Položaj za nezavestnega.",
+      "Položaj pri sumu za poškodbo hrbtenice."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kaj je posebnost položaja na sliki?",
+    "source": "sok_polozaj.png",
+    "correctAnswer": "Pri tem položaju pacient leži na ravni podlagi z dvignjenima nogama.",
+    "wrongAnswers": [
+      "Položaj je stabilen, skoraj popolnoma bočni, z nižje ležečo glavo in da je prsni koš prost - ni ovir dihanja.",
+      "Poškodovanec pri tem položaju leži na ravnem in trdnem, ga nadziramo do prihoda ekipe nujne medicinske pomoči."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Koga razvrsti triažer v rdečo skupino?",
+    "correctAnswer": "Tiste, ki potrebujejo pomoč takoj, npr. hujše krvavitve.",
+    "wrongAnswers": [
+      "Tiste, ki lahko nekoliko počakajo in oskrbo odložimo, recimo zlom golence.",
+      "Tiste, ki so z lažjimi poškodbami, odrgnine, manjše vreznine oz. so nepoškodovani - lahko hodijo."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Koga razvrsti triažer v rumeno skupino?",
+    "correctAnswer": "Tiste, ki lahko nekoliko počakajo in oskrbo odložimo, recimo zlom golence.",
+    "wrongAnswers": [
+      "Tiste, ki potrebujejo pomoč takoj, npr. hujše krvavitve.",
+      "Tiste, ki so z lažjimi poškodbami, odrgnine, manjše vreznine oz. so nepoškodovani - lahko hodijo."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Koga razvrsti triažer v zeleno skupino?",
+    "correctAnswer": "Tiste, ki so z lažjimi poškodbami, odrgnine, manjše vreznine oz. so nepoškodovani - lahko hodio.",
+    "wrongAnswers": [
+      "Tiste, ki lahko nekoliko počakajo in oskrbo odložimo, recimo zlom golence.",
+      "Tiste, ki potrebujejo pomoč takoj, npr. hujše krvavitve."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Koga razvrsti triažer v črno skupino?",
+    "correctAnswer": "Tiste, ki so mrtvi.",
+    "wrongAnswers": [
+      "Tiste, ki potrebujejo pomoč takoj, npr. hujše krvavitve.",
+      "Tiste, ki so z lažjimi poškodbami, odrgnine, manjše vreznine oz. so nepoškodovani - lahko hodijo."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kateri dve triaži poznamo?",
+    "correctAnswer": "Primarna in sekundarna.",
+    "wrongAnswers": [
+      "Primarna in triarna.",
+      "Sekundarna in kvartarna."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kaj predstavlja fotografija?",
+    "source": "triaza_kartica.png",
+    "correctAnswer": "Ena izmed pogostejših oblik SIEVE triažnih kartončkov - sprednja in zadnja stran.",
+    "wrongAnswers": [
+      "Ena izmed pogostejših oblik za označevanje motornih koles.",
+      "Ena izmed pogostejših oblik za označevanje gasilske opreme."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kako se imenuje položaj na sliki?",
+    "source": "poskodba_hrbtenice.png",
+    "correctAnswer": "Položaj pri sumu za poškodbo hrbtenice.",
+    "wrongAnswers": [
+      "Položaj za nezavestnega.",
+      "Položaj pri šoku zaradi krvavitve ali alergične reakcije in oživljanju."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kaj je posebnost položaja na sliki?",
+    "source": "poskodba_hrbtenice.png",
+    "correctAnswer": "Poškodovanec pri tem položaju leži na ravnem in trdnem, ga nadziramo do prihoda ekipe nujne medicinske pomoči.",
+    "wrongAnswers": [
+      "Položaj je stabilen, skoraj popolnoma bočni, z nižje ležečo glavo in da je prsni koš prost - ni ovir dihanja.",
+      "Pri tem položaju pacient leži na ravni podlagi z dvignjenima nogama."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kako se imenuje položaj na sliki?",
+    "source": "polozaj_tezko_dihanje.png",
+    "correctAnswer": "Položaj pri poškodbah prsnega koša, težavah dihanja in bolečinah prsnega koša.",
+    "wrongAnswers": [
+      "Položaj za nezavestnega.",
+      "Položaj pri šoku zaradi krvavitve ali alergične reakcije in oživljanju."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kaj je posebnost položaja na sliki?",
+    "source": "polozaj_tezko_dihanje.png",
+    "correctAnswer": "Pri tem položaju pacient sedi v polsedečm položaju in ne sme ležati, ekr bi zelo težko dihal.",
+    "wrongAnswers": [
+      "Položaj je stabilen, skoraj popolnoma bočni, z nižje ležečo glavo in da je prsni koš prost - ni ovir dihanja.",
+      "Pri tem položaju pacient leži na ravni podlagi z dvignjenima nogama."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kako se imenuje položaj na sliki?",
+    "source": "poskodba_trebuha.png",
+    "correctAnswer": "Položaj pri poškodbah trebuha in bolečinah v trebuhu.",
+    "wrongAnswers": [
+      "Položaj za nezavestnega.",
+      "Položaj pri šoku zaradi krvavitve ali alergične reakcije in oživljanju."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kaj je posebnost položaja na sliki?",
+    "source": "poskodba_trebuha.png",
+    "correctAnswer": "Pacient ima nekoliko dvignjeno vzglavje ter podložena kolena. Položaj primeren le, če ni suma poškodbe hrbtenice in če ni v šoku.",
+    "wrongAnswers": [
+      "Položaj je stabilen, skoraj popolnoma bočni, z nižje ležečo glavo in da je prsni koš prost - ni ovir dihanja.",
+      "Pri tem položaju pacient leži na ravni podlagi z dvignjenima nogama."
+    ],
+    "ages": ["mladinec"]
   }
 ]
