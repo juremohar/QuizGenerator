@@ -40,7 +40,7 @@ var PripravnikCard = {
             <div className="card-body border" style="flex: 0;">
                 <h5 className="card-title">Pripravnik</h5>
                 <p>Kviz za pripravnike.</p>
-                <a class="btn btn-primary" onclick={ () => { alert("Kviz še ni na voljo.") }}>Kviz</a>
+                <a class="btn btn-primary" onclick={ () => { alert("Kviz še ni na voljo. ") }}>Kviz</a>
             </div>
         </div>
     }
