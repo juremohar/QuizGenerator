@@ -3,7 +3,7 @@
     "question": "Kaj je prva pomoč?",
     "correctAnswer": "Prva pomoč je niz ukrepov, ki jih izvajamo, da bi pomagali poškodovanemu ali obolelemu pred prihodom reševalcev.",
     "wrongAnswers": [
-      "Prva pomoč je postopek, ki ga uporabimo, ko pričenmo gasiti požar.",
+      "Prva pomoč je postopek, ki ga uporabimo, ko pričnemo gasiti požar.",
       "Prva pomoč je gasilski pozdrav."
     ],
     "ages": ["pionir", "mladinec"]
@@ -12,7 +12,7 @@
     "question": "Kaj potrebujemo za nudenje prve pomoči?",
     "correctAnswer": "Običajno jo lahko nudimo zgolj s preprostimi pripomočki npr. Torbica s prvo pomočjo v avtu, velikokrat pa je potrebno improvizirati.",
     "wrongAnswers": [
-      "Da lahko nudimo prvo pomoč potrebujemo kiruruško opremo, ki jo ponavadi dobimo v bolnišnicah.",
+      "Da lahko nudimo prvo pomoč potrebujemo kirurško opremo, ki jo po navadi dobimo v bolnišnicah.",
       "Da nudimo prvo pomoč potrebujemo več let zdravstvenega treninga."
     ],
     "ages": ["pionir", "mladinec"]
@@ -27,7 +27,7 @@
     "ages": ["pionir", "mladinec"]
   },
   {
-    "question": "Ali imamo v sloveniji helikopter, ki je namenjen zgolj reševanju?",
+    "question": "Ali imamo v Sloveniji helikopter, ki je namenjen zgolj reševanju?",
     "correctAnswer": "Ne.",
     "wrongAnswers": [
       "Da.",
@@ -36,7 +36,7 @@
     "ages": ["pionir", "mladinec"]
   },
   {
-    "question": "Kdo opravlja helikopterske prevoze nenadno obolelih/poškodovanih pri nas v sloveniji?",
+    "question": "Kdo opravlja helikopterske prevoze nenadno obolelih/poškodovanih pri nas v Sloveniji?",
     "correctAnswer": "Helikopterji letalske policijske enote in slovenske vojske.",
     "wrongAnswers": [
       "Sosednje države.",
@@ -67,7 +67,7 @@
     "correctAnswer": "Poškodovanca (zbolelega) primemo za ramena, ga nežno stresemo in glasno ogovorimo.",
     "wrongAnswers": [
       "Poškodovanca sprašujemo vprašanja.",
-      "Poškodovanca vščipnemo in počakamo, če nas bo ogovoril."
+      "Poškodovanca uščipnemo in počakamo, če nas bo ogovoril."
     ],
     "ages": ["pionir", "mladinec"]
   },
@@ -111,7 +111,7 @@
     "question": "Ali moramo dajati vpihe osebi, ki ne diha in se ne odziva?",
     "correctAnswer": "Ne. Kadar ne želite dati vpihov ali za to niste usposobljeni, izvajajte neprekinjeno masažo srca.",
     "wrongAnswers": [
-      "Da. Ni razlagov, da tega ne bi počeli.",
+      "Da. Ni razlogov, da tega ne bi počeli.",
       "Ne. To potrebujemo početi, le ko osebo poznamo."
     ],
     "ages": ["pionir", "mladinec"]
@@ -184,7 +184,7 @@
     "correctAnswer": "Najprej obrišemo slino, rano speremo in obvežemo ter poškodovanca pošljemo k zdravniku.",
     "wrongAnswers": [
       "Rano imobiliziramo in obiščemo zdravnika.",
-      "Rano razkužimo z vrelo vodo in obiščemop zdravnika."
+      "Rano razkužimo z vrelo vodo in obiščemo zdravnika."
     ],
     "ages": ["pionir", "mladinec"]
   },
@@ -273,7 +273,7 @@
     "question": "Kaj pomeni beseda triaža?",
     "correctAnswer": "Postopek, ki se ga uporablja pri množičnih nesrečah, za razvrščanje.",
     "wrongAnswers": [
-      "Postopek, ki se ga uporablja pr množičnih nesrečah.",
+      "Postopek, ki se ga uporablja pri množičnih nesrečah.",
       "Postopek, ki se ga uporablja pri povijanju hujših ran."
     ],
     "ages": ["mladinec"]
@@ -293,7 +293,7 @@
     "correctAnswer": "Opremo za prvo pomoč - torbica in celotna oprema",
     "wrongAnswers": [
       "Oprema za nudenje triažnega postopka.",
-      "Oprema, ki jo pošlje dispačer."
+      "Oprema, ki jo pošlje dispečer."
     ],
     "ages": ["mladinec"]
   },
@@ -321,7 +321,7 @@
     "correctAnswer": "Omogoča nam izvajanje umetnega dihanja brez neposrednega stika z žrtvijo.",
     "wrongAnswers": [
       "Omogoča nam izvajanje umetnega dihanja na način, da se manj utrudimo.",
-      "Omogoče nam izvajanje umetnega predihavanja brez neposrednega stika z žrtvijo."
+      "Omogoča nam izvajanje umetnega predihavanja brez neposrednega stika z žrtvijo."
     ],
     "ages": ["mladinec"]
   },
@@ -414,7 +414,7 @@
   },
   {
     "question": "Koga razvrsti triažer v zeleno skupino?",
-    "correctAnswer": "Tiste, ki so z lažjimi poškodbami, odrgnine, manjše vreznine oz. so nepoškodovani - lahko hodio.",
+    "correctAnswer": "Tiste, ki so z lažjimi poškodbami, odrgnine, manjše vreznine oz. so nepoškodovani - lahko hodijo.",
     "wrongAnswers": [
       "Tiste, ki lahko nekoliko počakajo in oskrbo odložimo, recimo zlom golence.",
       "Tiste, ki potrebujejo pomoč takoj, npr. hujše krvavitve."
@@ -482,7 +482,7 @@
   {
     "question": "Kaj je posebnost položaja na sliki?",
     "source": "polozaj_tezko_dihanje.png",
-    "correctAnswer": "Pri tem položaju pacient sedi v polsedečm položaju in ne sme ležati, ekr bi zelo težko dihal.",
+    "correctAnswer": "Pri tem položaju pacient sedi v pol sedečem položaju in ne sme ležati, ker bi zelo težko dihal.",
     "wrongAnswers": [
       "Položaj je stabilen, skoraj popolnoma bočni, z nižje ležečo glavo in da je prsni koš prost - ni ovir dihanja.",
       "Pri tem položaju pacient leži na ravni podlagi z dvignjenima nogama."
@@ -506,6 +506,148 @@
     "wrongAnswers": [
       "Položaj je stabilen, skoraj popolnoma bočni, z nižje ležečo glavo in da je prsni koš prost - ni ovir dihanja.",
       "Pri tem položaju pacient leži na ravni podlagi z dvignjenima nogama."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Vrstni red temeljnih postopkov oživljanja odraslega:",
+    "correctAnswer": "Najprej poskrbimo za svojo varnost, potem preverimo ali je žrtev pri zavesti in sprostimo dihalne poti …",
+    "wrongAnswers": [
+      "Vseeno nam je za svojo varnost, važno je da rešimo drugega …",
+      "Preverimo ali je žrtev pri zavesti, sprostitev dihalnih pot …"
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Vrstni red temeljnih postopkov oživljanja otrok in dojenčkov:",
+    "correctAnswer": "Otroka oz. dojenčka pri ugotavljanju zavesti primemo z eno roko na čelo in tako fiksiramo glavo, z drugo roko ga pocukamo za lase ali mu stresemo roko in ga glasno ogovorimo.",
+    "wrongAnswers": [
+      "Otroka oz. dojenčka pri ugotavljanju zavesti primemo z eno roko za nogo in tako fiksiramo ritnico, z drugo roko ga pocukamo za lase ali mu stresemo roko in ga glasno ogovorimo.",
+      "Otroka oz. dojenčka pri ugotavljanju zavesti primemo z eno roko za roko in tako fiksiramo ramenski del, z drugo roko ga pocukamo za lase ali mu stresemo roko in ga glasno ogovorimo."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kaj je Heimlichov prijem?",
+    "correctAnswer": "To je izveden prijem potiska na trebuh, če udarci po hrbtu niso uspešni.",
+    "wrongAnswers": [
+      "To je prijem za raztegovanje hrbtenice.",
+      "To je prijem za to, da žrtev hitreje pogoltne tujek."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Koliko časa izvajamo Heimlichov prijem?",
+    "correctAnswer": "Dokler žrtev ne izpljune tujek oz. izgubi zavest.",
+    "wrongAnswers": [
+      "Dokler žrtev ne poje tujek oz. izgubi zavest.",
+      "Dokler žrtev ne izpljune tujek oz. izgubi voljo do življenja."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kaj prikazuje fotografija?",
+    "correctAnswer": "Umetno dihanje na usta in nos s pomočjo otroške obrazne maske.",
+    "source": "prva_pomoc_dihanje_dojencek.png",
+    "wrongAnswers": [
+      "Umetno dihanje na usta in nos s pomočjo navadna obrazne maske.",
+      "Umetno dihanje na usta s pomočjo otroške obrazne maske."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kaj prikazuje fotografiji?",
+    "source": "avtomatski_defribliator.png",
+    "correctAnswer": "Zunanji avtomatski defibrilator.",
+    "wrongAnswers": [
+      "Avtomatski defibrilator.",
+      "Zunanji električni defribrilator."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kaj prikazuje fotografija?",
+    "source": "nezavesten_otrok_zapora.png",
+    "correctAnswer": "Izvajanje postopkov pri hudi zapori dihalne poti pri zavestnem dojenčku.",
+    "wrongAnswers": [
+      "Izvajanje postopkov pri lažji zapori dihalne poti pri zavestnem dojenčku.",
+      "Izvajanje postopkov pri hudi zapori dihalne poti pri zavestnem otroku."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kateri stvari ne smemo storiti, ko pomagamo osebi, ki je v šoku?",
+    "correctAnswer": "Žrtvi smemo dati piti, ker s tem lahko izboljšamo zdravstveno stanje.",
+    "wrongAnswers": [
+      "Žrtev moramo pomiriti, spodbujati in biti odločni.",
+      "V kolikor je tudi opeklina je pomembna čimprejšnja pravilna obravnava opeklinske rane, ki jo moramo pokriti.",
+      "Če so krvavitve pri človeku v šoku vidne, jih bomo želeli čimprej zaustavili.",
+      "Vedno bomo čimprej poklicali 112 in obvestili nujno medicinsko pomoč."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kateri stvari ne smemo storiti, ko pomagamo osebi, ki je v šoku?",
+    "correctAnswer": "Vmes se lahko sprehajamo po želji in pustimo človeka samega.",
+    "wrongAnswers": [
+      "Namestiti jo moramo v položaj za šokiranega.",
+      "Pred izgubo toplote jo zavarujemo tako, da jo pokrijemo z zaščitno folijo ali odejami.",
+      "Ob morebitnem bruhanju jo obrnemo na bok in s tem preprečimo, da bi se zadušila u izbruhano maso."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kaj je anafilaktični šok?",
+    "correctAnswer": "Šok, ki se razvije npr. po piku čebele, ose ali kako drugače (alergija na hrano, ali kakšno drugo snov) kot posledica alergične reakcije.",
+    "wrongAnswers": [
+      "Šok, kjer se človek sooča s težavami srca.",
+      "Šok, ki se razvije kot posledica krvavitve oz. izgube tekočine (npr. pri opeklinah)."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kaj je hipovolemični šok?",
+    "correctAnswer": "Šok, kjer se človek sooča s težavami srca.",
+    "wrongAnswers": [
+      "Šok, ki se razvije kot posledica krvavitve oz. izgube tekočine (npr. pri opeklinah).",
+      "Šok, ki se razvije npr. po piku čebele, ose ali kako drugače (alergija na hrano, ali kakšno drugo snov) kot posledica alergične reakcije."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kaj je kardiogeni šok?",
+    "correctAnswer": "Šok, ki se razvije kot posledica krvavitve oz. izgube tekočine (npr. pri opeklinah).",
+    "wrongAnswers": [
+      "Šok, kjer se človek sooča s težavami srca.",
+      "Šok, ki se razvije npr. po piku čebele, ose ali kako drugače (alergija na hrano, ali kakšno drugo snov) kot posledica alergične reakcije."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kateri odgovor ne drži, pri oživljanju osebe?",
+    "correctAnswer": "Vse postopke ni potrebno prilagoditi starosti oz. velikosti otroka, ki ga oživljamo.",
+    "wrongAnswers": [
+      "Pri dojenčku je dovolj, da imamo glavo v nevtralnem, vmesnem, položaju.",
+      "Pri odpiranju/sprostitvi dihalne poti pri odraslem in pri otroku glavo zvrnemo."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kateri odgovor ne drži?",
+    "correctAnswer": "Najbolj pomembno je, da je AED aparat pritrjen na steno.",
+    "wrongAnswers": [
+      "AED je sestavni del vseh tečajev temeljnih postopov oživljanja.",
+      "Aparat da uporabniku vsa potrebna navodila za uspešno delo.",
+      "AED priklopimo na bolnika, ko zaznamo, da se ne odziva in ne diha. Nalepimo elektrode in ga prižgemo."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kateri odgovor ni pravilen, pri izvajanju prve pomoči na otrocih/dojenčkih?",
+    "correctAnswer": "Četudi otroci/dojenčki uspešno izpljunejo tujek, je vseeno kaj se z njimi dogaja po tem v naslednjih urah, dneh …",
+    "wrongAnswers": [
+      "Pri dojenčkih in otrocih je potrebno prilagoditi položaj pri izvajanju tega postopka - glede na velikost otroka.",
+      "Pri dojenčkih namesto pritiskov na trebuh, izvajamo pritiske z dvema prstoma na prsni koš."
     ],
     "ages": ["mladinec"]
   }
