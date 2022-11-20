@@ -9,7 +9,7 @@
     "ages": ["pionir", "mladinec"]
   },
   {
-    "question": "Kako so se ob ustanovitvi imenovala najstarejša gasilska društva v sloveniji?",
+    "question": "Kako so se ob ustanovitvi imenovala najstarejša gasilska društva v Sloveniji?",
     "correctAnswer": "Požarne brambe.",
     "wrongAnswers": [
       "Straže.",
@@ -27,7 +27,7 @@
     "ages": ["pionir", "mladinec"]
   },
   {
-    "question": "Kdo je bil ustanovitelj najstarejšega gasilskega društva v sloveniji?",
+    "question": "Kdo je bil ustanovitelj najstarejšega gasilskega društva v Sloveniji?",
     "correctAnswer": "Dr. Josip Savinšek.",
     "wrongAnswers": [
       "Matevž Hace.",
@@ -36,7 +36,7 @@
     "ages": ["pionir", "mladinec"]
   },
   {
-    "question": "Kdo je bil prvi predsednik gasilske zveze slovenije? ",
+    "question": "Kdo je bil prvi predsednik gasilske zveze Slovenije? ",
     "correctAnswer": "Matevž Hace.",
     "wrongAnswers": [
       "Dr. Josip Savinšek.",
@@ -45,7 +45,7 @@
     "ages": ["pionir", "mladinec"]
   },
   {
-    "question": "Kje je bila v slovenije ustanovljena prva gasilska šola?",
+    "question": "Kje je bila v Slovenije ustanovljena prva gasilska šola?",
     "correctAnswer": "V Žireh.",
     "wrongAnswers": [
       "V Ljubljani.",
@@ -72,7 +72,7 @@
     "ages": ["pionir", "mladinec"]
   },
   {
-    "question": "Kdo je sedanji poveljnik gasilske zveze slovenije?",
+    "question": "Kdo je sedanji poveljnik gasilske zveze Slovenije?",
     "correctAnswer": "Franci Petek",
     "wrongAnswers": [
       "Janko Cerkvenik.",
@@ -81,7 +81,7 @@
     "ages": ["pionir", "mladinec"]
   },
   {
-    "question": "Kdo je sedanji predsednik gasilske zveze slovenije? ",
+    "question": "Kdo je sedanji predsednik gasilske zveze Slovenije? ",
     "correctAnswer": "Janko Cerkvenik.",
     "wrongAnswers": [
       "Franci Petek.",
@@ -90,7 +90,7 @@
     "ages": ["pionir", "mladinec"]
   },
   {
-    "question": "Po kom se imenuje najvišje gasilsko priznanje v sloveniji?",
+    "question": "Po kom se imenuje najvišje gasilsko priznanje v Sloveniji?",
     "correctAnswer": "Po Matevžu Hacetu.",
     "wrongAnswers": [
       "Po Franci Petek.",
@@ -103,7 +103,7 @@
     "correctAnswer": "Manjši ali večji požari pri katerih so bili ljudje nemočni.",
     "wrongAnswers": [
       "Želja po druženju.",
-      "Popravle, viharji, toča."
+      "Poplave, viharji, toča."
     ],
     "ages": ["mladinec"]
   },
@@ -171,7 +171,7 @@
     "ages": ["mladinec"]
   },
   {
-    "question": "Prva gasilska šola je leta 1950 začela delovati v žireh. Za kateri čin je izobraževala gasilce?",
+    "question": "Prva gasilska šola je leta 1950 začela delovati v Žireh. Za kateri čin je izobraževala gasilce?",
     "correctAnswer": "Za gasilske častnike.",
     "wrongAnswers": [
       "Za operativne gasilce.",

@@ -21,16 +21,16 @@
   },
   {
     "question": "Kdo je gasilec pripravnik?",
-    "correctAnswer": "Je član pgd v starosti od 16 do 18 let, oziroma nad 18 let v času strokovnega usposabljanja in priprave za operativnega gasilca.",
+    "correctAnswer": "Je član PGD v starosti od 16 do 18 let, oziroma nad 18 let v času strokovnega usposabljanja in priprave za operativnega gasilca.",
     "wrongAnswers": [
-      "Je član pgd v starosti od 16 do 18 let, oziroma nad 18 let brez želje da postane operativni gasilec.",
+      "Je član PGD v starosti od 16 do 18 let, oziroma nad 18 let brez želje da postane operativni gasilec.",
       "Je operativni gasilec, ki ni član gasilskega društva.",
       "Je gasilec, ki je v stalni pripravljenosti na intervencije."
     ],
     "ages": ["pionir", "mladinec"]
   },
   {
-    "question": "Ali lahko tujec postane član pgd?",
+    "question": "Ali lahko tujec postane član PGD?",
     "correctAnswer": "Da, pod enakimi pogoji, kot je za slovenske državljane.",
     "wrongAnswers": [
       "Ne.",
@@ -45,7 +45,7 @@
     "wrongAnswers": [
       "Gasilski znak in cev.",
       "Voda in ogenj.",
-      "Prapor in dobravolja."
+      "Prapor in dobra volja."
     ],
     "ages": ["pionir", "mladinec"]
   },
@@ -93,7 +93,7 @@
     "correctAnswer": "To je snov, ki gori, kadar so izpolnjeni vsi pogoji za gorenje; vsaka snov, ki gori.",
     "wrongAnswers": [
       "Snov, ki se nahaja na gori.",
-      "Snov, ki se nemore vneti."
+      "Snov, ki se ne more vneti."
     ],
     "ages": ["pionir", "mladinec"]
   },
@@ -109,7 +109,7 @@
   },
   {
     "question": "Kateri gospodinjski električni aparati so največkrat povzročitelji požarov?",
-    "correctAnswer": "Električni gospodinjski pripomočki, ki so v okvari (kuhalnik, likalnik, električne peči, ipd).",
+    "correctAnswer": "Električni gospodinjski pripomočki, ki so v okvari (kuhalnik, likalnik, električne peči, ipd.).",
     "wrongAnswers": [
       "Električni gospodinjski pripomočki, kot so recimo električna zobna ščetka, peč, kuhalnik, ipd.",
       "Električni pripomočki, kot so recimo telefon, televizija, ipd."
@@ -157,41 +157,41 @@
   },
   {
     "question": "Požari razreda a so požari:",
-    "correctAnswer": "Gorljivih trdnih snovi. (les, seno, obleka … ipd)",
+    "correctAnswer": "Gorljivih trdnih snovi. (les, seno, obleka … ipd.)",
     "wrongAnswers": [
-      "Gorljivih tekočih snovi. (bencin, olje, nafta, alkohol … ipd).",
-      "Požari lahkih kovin (aluminij, magnezij … ipd).",
-      "Gorljivih (vnetljivih) plinov (zemeljski plin ali metan, propan, butan, vodik, acetilen, amonijak … ipd)."
+      "Gorljivih tekočih snovi. (bencin, olje, nafta, alkohol … ipd.).",
+      "Požari lahkih kovin (aluminij, magnezij … ipd.).",
+      "Gorljivih (vnetljivih) plinov (zemeljski plin ali metan, propan, butan, vodik, acetilen, amonijak … ipd.)."
     ],
     "ages": ["pionir", "mladinec"]
   },
   {
     "question": "Požari razreda b so požari:",
-    "correctAnswer": "Gorljivih tekočih snovi. (bencin, olje, nafta, alkohol … ipd)",
+    "correctAnswer": "Gorljivih tekočih snovi. (bencin, olje, nafta, alkohol … ipd.)",
     "wrongAnswers": [
-      "Gorljivih trdnih snovi. (les, seno, obleka … ipd).",
-      "Požari lahkih kovin (aluminij, magnezij … ipd).",
-      "Gorljivih (vnetljivih) plinov (zemeljski plin ali metan, propan, butan, vodik, acetilen, amonijak … ipd)."
+      "Gorljivih trdnih snovi. (les, seno, obleka … ipd.).",
+      "Požari lahkih kovin (aluminij, magnezij … ipd.).",
+      "Gorljivih (vnetljivih) plinov (zemeljski plin ali metan, propan, butan, vodik, acetilen, amonijak … ipd.)."
     ],
     "ages": ["pionir", "mladinec"]
   },
   {
     "question": "požari razreda c so požari:",
-    "correctAnswer": "Gorljivih (vnetljivih) plinov (zemeljski plin ali metan, propan, butan, vodik, acetilen, amonijak … ipd)",
+    "correctAnswer": "Gorljivih (vnetljivih) plinov (zemeljski plin ali metan, propan, butan, vodik, acetilen, amonijak … ipd.)",
     "wrongAnswers": [
-      "Gorljivih tekočih snovi. (bencin, olje, nafta, alkohol … ipd).",
-      "Gorljivih trdnih snovi. (les, seno, obleka … ipd).",
-      "Gorljivih (vnetljivih) plinov (zemeljski plin ali metan, propan, butan, vodik, acetilen, amonijak … ipd)."
+      "Gorljivih tekočih snovi. (bencin, olje, nafta, alkohol … ipd.).",
+      "Gorljivih trdnih snovi. (les, seno, obleka … ipd.).",
+      "Gorljivih (vnetljivih) plinov (zemeljski plin ali metan, propan, butan, vodik, acetilen, amonijak … ipd.)."
     ],
     "ages": ["pionir", "mladinec"]
   },
   {
     "question": "Požari razreda d so požari:",
-    "correctAnswer": "Požari lahkih kovin (aluminij, magnezij … ipd)",
+    "correctAnswer": "Požari lahkih kovin (aluminij, magnezij … ipd.)",
     "wrongAnswers": [
-      "Gorljivih tekočih snovi. (bencin, olje, nafta, alkohol … ipd).",
-      "Gorljivih trdnih snovi. (les, seno, obleka … ipd).",
-      "Gorljivih (vnetljivih) plinov (zemeljski plin ali metan, propan, butan, vodik, acetilen, amonijak … ipd)."
+      "Gorljivih tekočih snovi. (bencin, olje, nafta, alkohol … ipd.).",
+      "Gorljivih trdnih snovi. (les, seno, obleka … ipd.).",
+      "Gorljivih (vnetljivih) plinov (zemeljski plin ali metan, propan, butan, vodik, acetilen, amonijak … ipd.)."
     ],
     "ages": ["pionir", "mladinec"]
   },
@@ -225,7 +225,7 @@
   },
   {
     "question": "Za kaj uporabljamo gasilne spojke?",
-    "correctAnswer": "Za spajanje sesalnih in tlačnih cevi ter gasilskih armatur (ročnik, trojak … ipd).",
+    "correctAnswer": "Za spajanje sesalnih in tlačnih cevi ter gasilskih armatur (ročnik, trojak … ipd.).",
     "wrongAnswers": [
       "Spajanje vrvi.",
       "Za spajanje blaga."
@@ -237,7 +237,7 @@
     "correctAnswer": "Gasilski prapor je simbol v prostovoljnem gasilstvu. izdelan je iz svilene tkanine in obrobljen z zlato vrvico. na njem so izvezeni simboli društva. uporablja se ob svečanih dogodkih in za predstavitev društva.",
     "wrongAnswers": [
       "Zaščitena rastlina, ki predstavlja simbol gasilcev.",
-      "Nagrada za najbolj požrtovalenga gasilca."
+      "Nagrada za najbolj požrtvovalnega gasilca."
     ],
     "ages": ["pionir", "mladinec"]
   },
@@ -314,7 +314,7 @@
     "ages": ["pionir", "mladinec"]
   },
   {
-    "question": "Koliko gasilskih regij je v sloveniji?",
+    "question": "Koliko gasilskih regij je v Sloveniji?",
     "correctAnswer": "17.",
     "wrongAnswers": [
       "170.",
@@ -323,7 +323,7 @@
     "ages": ["pionir", "mladinec"]
   },
   {
-    "question": "Kateri organ voli poveljnika in predsednika pgd?",
+    "question": "Kateri organ voli poveljnika in predsednika PGD?",
     "correctAnswer": "Občni zbor.",
     "wrongAnswers": [
       "Vaščani.",
@@ -332,7 +332,7 @@
     "ages": ["pionir", "mladinec"]
   },
   {
-    "question": "Kako je organizirano gasilstvo v sloveniji?",
+    "question": "Kako je organizirano gasilstvo v Sloveniji?",
     "correctAnswer": "V prostovoljnih in poklicnih gasilskih organizacijah.",
     "wrongAnswers": [
       "Po različnih vaseh/mestih.",
@@ -341,7 +341,7 @@
     "ages": ["pionir", "mladinec"]
   },
   {
-    "question": "Koliko prostovoljnih gasilskih društev je v sloveniji?",
+    "question": "Koliko prostovoljnih gasilskih društev je v Sloveniji?",
     "correctAnswer": "Okrog 1300.",
     "wrongAnswers": [
       "Okrog 2400.",
@@ -534,7 +534,7 @@
     "correctAnswer": "Listina, ki določa: ime in sedež društva, namen in naloge, način včlanjevanja in prenehanja članstva, organe društva, sestavo organov, način volitve organov, pravice in dolžnosti, zastopanje društva, financiranje, način prenehanja, način zagotavljanja javnosti del.",
     "wrongAnswers": [
       "Dokument v katerem so zapisani vsi člani gasilskega društva.",
-      "Izjava, ki jo podpiše posamenznik, ko se pridruži gasilskemu društvu."
+      "Izjava, ki jo podpiše posameznik, ko se pridruži gasilskemu društvu."
     ],
     "ages": ["mladinec"]
   },
@@ -615,7 +615,7 @@
     "correctAnswer": "Embalaža mora biti namenska in dobro označena, da lahko vsak trenutek ugotovimo pravo vsebino.",
     "wrongAnswers": [
       "Embalaža mora biti modre barve.",
-      "Embalaža mora biti iz plastnike, saj vnetljive tekočine ne reigerajo z njo."
+      "Embalaža mora biti iz plastike, saj vnetljive tekočine ne reagirajo z njo."
     ],
     "ages": ["mladinec"]
   },
@@ -658,7 +658,7 @@
     "question": "Kako morajo biti urejena podstrešja, da ne pride do požara?",
     "correctAnswer": "Podstrešni prostor mora biti prazen in čist, strešne in druge lesene konstrukcije naj bodo zaščitno premazane; nesnaga, pajčevine in prah se hitro vnamejo, zato na podstrešje ne zahajamo z odprtim ognjem; električna napeljava mora biti zaščitena pred poškodbami.",
     "wrongAnswers": [
-      "Podstrejše mora imeti veliko oken, da gasilci čimlažje pridejo do požara.",
+      "Podstrešje mora imeti veliko oken, da gasilci čim lažje pridejo do požara.",
       "Podstrešni prostor mora imeti napeljan vodni vir."
     ],
     "ages": ["mladinec"]
@@ -676,7 +676,7 @@
     "question": "Kako morajo biti urejeni hodniki in stopnišča v večjih stavbah?",
     "correctAnswer": "Ne smejo biti založeni z raznimi predmeti, stenski hidranti morajo biti označeni, v omaricah mora biti ustrezna oprema za njihovo uporabo, na vidnih mestih morajo biti obešeni požarni redi in gasilniki.",
     "wrongAnswers": [
-      "Hodniki morajo biti veliki in prostorni. Ne smejo biti iz lesa, ter morajo vsebovati čimveč ne gorljivih elementov.",
+      "Hodniki morajo biti veliki in prostorni. Ne smejo biti iz lesa, ter morajo vsebovati čim več ne gorljivih elementov.",
       "Ni pomembno, kako so urejeni hodniki, dokler so veliki in prostorni."
     ],
     "ages": ["mladinec"]
@@ -730,7 +730,7 @@
     "question": "Navedi primer, kako pogasimo požar z dušenjem!",
     "correctAnswer": "S primernim gasilnim sredstvom prekrijemo gorljivo površino.",
     "wrongAnswers": [
-      "Z kosom lesa udarjamo po razširnjem požaru.",
+      "Z kosom lesa udarjamo po razširjenem požaru.",
       "Z usti pihamo v plamen, dokler se požar ne pogasi."
     ],
     "ages": ["mladinec"]
@@ -1060,7 +1060,7 @@
   },
   {
     "question": "Kaj sestavlja skupno zaščitno opremo?",
-    "correctAnswer": "Zaščitna obleka pred visoko temperaturo, pred kemičnimi snovmi, pred radioaktivnimi snovmi; zaščitna obleka za reševanje iz vode in na vodi, protivrezne hlače, zaščitni predpasnik in zaščitne rokavice pred kemičnimi snovmi, gasilski zaščitni pas, hlačni ščitnik za zaščito nog in reševalna vrv.",
+    "correctAnswer": "Zaščitna obleka pred visoko temperaturo, pred kemičnimi snovmi, pred radioaktivnimi snovmi; zaščitna obleka za reševanje iz vode in na vodi, proti vrezne hlače, zaščitni predpasnik in zaščitne rokavice pred kemičnimi snovmi, gasilski zaščitni pas, hlačni ščitnik za zaščito nog in reševalna vrv.",
     "wrongAnswers": [
       "Zaščitna čelada, zaščitna kapa ali ruta, obrazni ščitniki, zaščitna očala, zaščita za sluh.",
       "Zaščitne rokavice, zaščitni čevlji, drugi pripomočki za zaščito komolcev, kolen, ramen in dlani."
@@ -1072,7 +1072,7 @@
     "correctAnswer": "Zaščitna čelada, zaščitna kapa ali ruta, obrazni ščitniki, zaščitna očala, zaščita za sluh.",
     "wrongAnswers": [
       "Zaščitne rokavice, zaščitni čevlji, drugi pripomočki za zaščito komolcev, kolen, ramen in dlani.",
-      "Zaščitna obleka pred visoko temperaturo, pred kemičnimi snovmi, pred radioaktivnimi snovmi; zaščitna obleka za reševanje iz vode in na vodi, protivrezne hlače, zaščitni predpasnik in zaščitne rokavice pred kemičnimi snovmi, gasilski zaščitni pas, hlačni ščitnik za zaščito nog in reševalna vrv."
+      "Zaščitna obleka pred visoko temperaturo, pred kemičnimi snovmi, pred radioaktivnimi snovmi; zaščitna obleka za reševanje iz vode in na vodi, proti vrezne hlače, zaščitni predpasnik in zaščitne rokavice pred kemičnimi snovmi, gasilski zaščitni pas, hlačni ščitnik za zaščito nog in reševalna vrv."
     ],
     "ages": ["mladinec"]
   },
@@ -1080,7 +1080,7 @@
     "question": "Naštej sredstva za zaščito rok in nog!",
     "correctAnswer": "Zaščitne rokavice, zaščitni čevlji, drugi pripomočki za zaščito komolcev, kolen, ramen in dlani.",
     "wrongAnswers": [
-      "Zaščitna obleka pred visoko temperaturo, pred kemičnimi snovmi, pred radioaktivnimi snovmi; zaščitna obleka za reševanje iz vode in na vodi, protivrezne hlače, zaščitni predpasnik in zaščitne rokavice pred kemičnimi snovmi, gasilski zaščitni pas, hlačni ščitnik za zaščito nog in reševalna vrv.",
+      "Zaščitna obleka pred visoko temperaturo, pred kemičnimi snovmi, pred radioaktivnimi snovmi; zaščitna obleka za reševanje iz vode in na vodi, proti vrezne hlače, zaščitni predpasnik in zaščitne rokavice pred kemičnimi snovmi, gasilski zaščitni pas, hlačni ščitnik za zaščito nog in reševalna vrv.",
       "Zaščitna čelada, zaščitna kapa ali ruta, obrazni ščitniki, zaščitna očala, zaščita za sluh."
     ],
     "ages": ["mladinec"]
@@ -1149,4 +1149,3 @@
     "ages": ["mladinec"]
   }
 ]
- 
