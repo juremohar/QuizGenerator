@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 module.exports = {
   entry: './src/js/index.js',
@@ -66,5 +67,6 @@ module.exports = {
       title: 'Gasilski kviz',
       template: 'index.html'
     }),
+    new FaviconsWebpackPlugin('./src/assets/images/favicon.png')
   ]
 };

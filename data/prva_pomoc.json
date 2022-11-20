@@ -606,7 +606,7 @@
     "ages": ["mladinec"]
   },
   {
-    "question": "Kaj je hipovolemični šok?",
+    "question": "Kaj je kardiogeni šok?",
     "correctAnswer": "Šok, kjer se človek sooča s težavami srca.",
     "wrongAnswers": [
       "Šok, ki se razvije kot posledica krvavitve oz. izgube tekočine (npr. pri opeklinah).",
@@ -615,7 +615,7 @@
     "ages": ["mladinec"]
   },
   {
-    "question": "Kaj je kardiogeni šok?",
+    "question": "Kaj je hipovolemični šok?",
     "correctAnswer": "Šok, ki se razvije kot posledica krvavitve oz. izgube tekočine (npr. pri opeklinah).",
     "wrongAnswers": [
       "Šok, kjer se človek sooča s težavami srca.",
