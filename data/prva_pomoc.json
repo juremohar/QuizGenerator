@@ -650,5 +650,23 @@
       "Pri dojenčkih namesto pritiskov na trebuh, izvajamo pritiske z dvema prstoma na prsni koš."
     ],
     "ages": ["mladinec"]
+  },
+  {
+    "question": "Kateri vrstni red je pravilen pri oživlanju odrasle osebe?",
+    "correctAnswer": "Kadar se žrtev ne odziva, je nezavestna, skušamo ugotoviti ali diha. Sprostimo dihalno pot, eno roko položimo na čelo. Glavo zvrnemo nežno nazaj in z dvema prstoma druge roke, ki sta pod koščenim delom brade, dvignemo brado.",
+    "wrongAnswers": [
+      "Sprostimo dihalno pot, eno roko položimo na čelo. Glavo zvrnemo nežno nazaj in z dvema prstoma druge roke, ki sta pod koščenim delom brade, dvignemo brado. Kadar se žrtev ne odziva, je nezavestna, skušamo ugotoviti ali diha.",
+      "Glavo zvrnemo nežno nazaj in z dvema prstoma druge roke, ki sta pod koščenim delom brade, dvignemo brado. Sprostimo dihalno pot, eno roko položimo na čelo. Kadar se žrtev ne odziva, je nezavestna, skušamo ugotoviti ali diha."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kakšen je pravilni vrstni red oživlanja otrok in dojenčkov?",
+    "correctAnswer": "Otroka oz. dojenčka pri ugotavljanju zavesti primemo z eno roko na čelo in tako fiksiramo glavo, z drugo roko ga pocukamo za lase ali mu stresemo roko in ga glasno ogovorimo.",
+    "wrongAnswers": [
+      "Otroka oz. dojenčka pri ugotavljanju zavesti primemo z eno roko za nogo in tako fiksiramo ritnico, z drugo roko ga pocukamo za lase ali mu stresemo roko in ga glasno ogovorimo.",
+      "Otroka oz. dojenčka pri ugotavljanju zavesti primemo z eno roko za roko in tako fiksiramo ramenski del, z drugo roko ga pocukamo za lase ali mu stresemo roko in ga glasno ogovorimo."
+    ],
+    "ages": ["mladinec"]
   }
 ]
