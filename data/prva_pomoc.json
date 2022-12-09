@@ -668,5 +668,145 @@
       "Otroka oz. dojenčka pri ugotavljanju zavesti primemo z eno roko za roko in tako fiksiramo ramenski del, z drugo roko ga pocukamo za lase ali mu stresemo roko in ga glasno ogovorimo."
     ],
     "ages": ["mladinec"]
+  },
+  {
+    "question": "Katere vzroke poškodb poznamo?",
+    "correctAnswer": "Mehanske poškodbe, toplotne poškodbe, kemične poškodbe, električne poškodbe.",
+    "wrongAnswers": [
+      "Mehanske poškodbe, toplotne poškodbe, kemične poškodbe, elektronske poškodbe.",
+      "Mehanične poškodbe, toplotne poškodbe, kemične poškodbe, električne poškodbe."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kateri tip poškodb je najpogostejši?",
+    "correctAnswer": "Mehanske poškodbe.",
+    "wrongAnswers": [
+      "Toplotne poškodbe.",
+      "Kemične poškodbe."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Katera vrsta poškodb je običajno najlažja oblika ran?",
+    "correctAnswer": "Odrgnine in praske.",
+    "wrongAnswers": [
+      "Ureznine.",
+      "Raztrganine.",
+      "Strelne rane",
+      "Ugriznine."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Katere vrste poškodbe je običajno največ?",
+    "correctAnswer": "Raztrganine.",
+    "wrongAnswers": [
+      "Vsekanine.",
+      "Ugriznine."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Katere vrste krvavitev poznamo?",
+    "correctAnswer": "Zunanje in notranje krvavitve.",
+    "wrongAnswers": [
+      "Leve in desne krvavitve.",
+      "Zgornje in spodnje krvavitve."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Katere vzroke krvavitev poznamo?",
+    "correctAnswer": "Poškodbene in bolezenske krvavitve ",
+    "wrongAnswers": [
+      "Zgornje in spodnje.",
+      "Zunanje in notranje krvavitve."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Katere izvore krvavitev poznamo?",
+    "correctAnswer": "Arterijske in venske krvavitve.",
+    "wrongAnswers": [
+      "Poškodbene in bolezenske krvavitve.",
+      "Leve in desne krvavitve."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kako se imenuje krvavitev, kjer so poškodovane najmanjše žile ali lasnice, ki so povezava med arterijami in venami?",
+    "correctAnswer": "Kapilarne krvavitve.",
+    "wrongAnswers": [
+      "Postopne krvavitve.",
+      "Kapljične krvavitve."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kako se imenuje preveza na sliki?",
+    "source": "esmarhova_preveza.png",
+    "correctAnswer": "Esmarchove preveze.",
+    "wrongAnswers": [
+      "Emarchove preveze.",
+      "Emarchove preveze."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kako se imenuje preveza na sliki?",
+    "source": "kompresijska_preveza.png",
+    "correctAnswer": "Kompresijska preveza poškodovanca.",
+    "wrongAnswers": [
+      "Imobilizacija poškodovanca.",
+      "Oživljanje poškodovanca."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kaj naredimo, če nam iz nosa prične teči kri?",
+    "correctAnswer": "Pri krvavitvi iz nosu naj se človek vsede in nagne glavo nazaj.",
+    "wrongAnswers": [
+      "Pri krvavitvi iz nosu naj se človek vsede in nagne glavo naprej.",
+      "Pri krvavitvi iz nosu naj se človek vleže in nagne glavo nazaj."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kateri dve enoti merjena uporabimo pri določanju površine opeklin?",
+    "correctAnswer": "Pravilo dlani in pravilo števila 9.",
+    "wrongAnswers": [
+      "Pravilo dlani in pravilo števila 6.",
+      "Pravilo števila 9 in pravilo števila 6."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kdaj uporabimo pravilo dlani pri opeklinah?",
+    "correctAnswer": "Pravilo dlani določa površine opekline in je veliko bolj primeren za manjše površine in pri otrocih.",
+    "wrongAnswers": [
+      "Pravilo dlani določa površine opekline in je veliko bolj primeren za večje površine in pri otrocih.",
+      "Pravilo dlani določa površine opekline in je primeren za določenje površine opeklin pri starejših."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Katere vrste opeklin poznamo?",
+    "correctAnswer": "Pri oceni opekline ločimo površinske in globoke opekline.",
+    "wrongAnswers": [
+      "Pri oceni opekline ločimo ozke in globoke opekline.",
+      "Pri oceni opekline ločimo široke in globoke opekline."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "",
+    "source": "znacilna_mesta_za_prekinitev.png",
+    "correctAnswer": "Značilna mesta za izvajanje pritiska področne arterije ob kosti.",
+    "wrongAnswers": [
+      "Značilna mesta za lajšanje bolečin ponesrečencu.",
+      "Kako človeka prijeti, da ga čim hitreje povlečeš iz bazena."
+    ],
+    "ages": ["mladinec"]
   }
 ]
