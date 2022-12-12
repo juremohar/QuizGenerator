@@ -800,12 +800,65 @@
     "ages": ["mladinec"]
   },
   {
-    "question": "",
-    "source": "znacilna_mesta_za_prekinitev.png",
-    "correctAnswer": "Značilna mesta za izvajanje pritiska področne arterije ob kosti.",
+    "question": "Kaj je omedlevica?",
+    "correctAnswer": "Omedlevica je lažja, prehodna motnja zavesti, ki traja kratek čas.",
     "wrongAnswers": [
-      "Značilna mesta za lajšanje bolečin ponesrečencu.",
-      "Kako človeka prijeti, da ga čim hitreje povlečeš iz bazena."
+      "Omedlevica je težja, prehodna motnja zavesti, ki traja kratek čas.",
+      "Omedlevica je lažja, prehodna motnja zavesti, ki traja dolgo časa."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kako pomagamo osebi, ki ima omedlevico?",
+    "correctAnswer": "Človeka položimo in mu nekoliko dvignemo noge. Odpnemo tudi ovratnik.",
+    "wrongAnswers": [
+      "Človeka položimo v stabilni bočni položaj. Odpnemo tudi ovratnik.",
+      "Človeka postavimo pokonci ali v sedeči položaj. Odpnemo tudi ovratnik."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kako izgleda \"grand mal\" napad?",
+    "correctAnswer": "Izgleda zelo burno in očividci se lahko zelo prestrašijo.",
+    "wrongAnswers": [
+      "Izgleda mirnejše in očividci se običajno ne prestrašijo.",
+      "Izgleda intenzivnejše in očividci se običajno ne prestrašijo."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kaj je sopomenka za epileptični napad?",
+    "correctAnswer": "Božjast.",
+    "wrongAnswers": [
+      "Nezavest.",
+      "Aritmija."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "V kakšnem stanju je bolnik pri epileptičnem napadu?",
+    "correctAnswer": "V stanju stresanja krčev in je brez zavesti.",
+    "wrongAnswers": [
+      "V stanju stresanja krčev in je pri zavesti.",
+      "Zaradi krčev bolnik ne diha, zato lahko vidno pordeči."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Kaj je možganska kap?",
+    "correctAnswer": "Možganska kap je lahko posledica krvnega strdka, ki obtiči v možganski arteriji in jo zamaši.",
+    "wrongAnswers": [
+      "Možganska kap je lahko posledica krvnega strdka, ki obtiči v pljučni arteriji in jo zamaši.",
+      "Možganska kap je lahko posledica krvnega strdka, ki obtiči v možganski ledvici in jo zamaši."
+    ],
+    "ages": ["mladinec"]
+  },
+  {
+    "question": "Ali je pri možganski kapi potrebno vedeti čas nastanka?",
+    "correctAnswer": "Da.",
+    "wrongAnswers": [
+      "Ne.",
+      "Odvisno od primera do primera."
     ],
     "ages": ["mladinec"]
   }
