@@ -1,0 +1,123 @@
+[
+  {
+    "question": "Katero oznako predstavlja spodnja slika?",
+    "source": "desetar.png",
+    "correctAnswer": "Desetar.",
+    "wrongAnswers": [
+      "Gasilec.",
+      "Operativni gasilec."
+    ],
+    "ages": [ "mladinec"]
+  },
+  {
+    "question": "Katero oznako predstavlja spodnja slika?",
+    "source": "gasilec.png",
+    "correctAnswer": "Gasilec.",
+    "wrongAnswers": [
+      "Operativni gasilec.",
+      "Pionir - mladinec desetar."
+    ],
+    "ages": [ "mladinec"]
+  },
+  {
+    "question": "Katero oznako predstavlja spodnja slika?",
+    "source": "operativni-gasilec.png",
+    "correctAnswer": "Operativni gasilec.",
+    "wrongAnswers": [
+      "Pionir - mladinec desetar.",
+      "Gasilec."
+    ],
+    "ages": [ "mladinec"]
+  },
+  {
+    "question": "Katero oznako predstavlja spodnja slika?",
+    "source": "pionir-mladinec-desetar.png",
+    "correctAnswer": "Pionir - mladinec desetar.",
+    "wrongAnswers": [
+      "Operativni gasilec.",
+      "Gasilec."
+    ],
+    "ages": [ "mladinec"]
+  },
+  {
+    "question": "Katero oznako predstavlja spodnja slika?",
+    "source": "poveljnik-gz.png",
+    "correctAnswer": "Poveljnik GZ.",
+    "wrongAnswers": [
+      "Predsednik PGD.",
+      "Poveljnik PGD."
+    ],
+    "ages": [ "mladinec"]
+  },
+  {
+    "question": "Katero oznako predstavlja spodnja slika?",
+    "source": "poveljnik-pgd.png",
+    "correctAnswer": "Poveljnik PGD.",
+    "wrongAnswers": [
+      "Predsednik PGD.",
+      "Poveljnik GZ."
+    ],
+    "ages": [ "mladinec"]
+  },
+  {
+    "question": "Katero oznako predstavlja spodnja slika?",
+    "source": "poveljnik-sektorja.png",
+    "correctAnswer": "Poveljnik sektorja.",
+    "wrongAnswers": [
+      "Predsednik GZ.",
+      "Predsednik PGD."
+    ],
+    "ages": [ "mladinec"]
+  },
+  {
+    "question": "Katero oznako predstavlja spodnja slika?",
+    "source": "predsednik-gz.png",
+    "correctAnswer": "Predsednik GZ.",
+    "wrongAnswers": [
+      "Poveljnik sektorja.",
+      "Predsednik PGD."
+    ],
+    "ages": [ "mladinec"]
+  },
+  {
+    "question": "Katero oznako predstavlja spodnja slika?",
+    "source": "predsednik-pgd.png",
+    "correctAnswer": "Predsednik PGD.",
+    "wrongAnswers": [
+      "Predsednik GZ.",
+      "Poveljnik sektorja."
+    ],
+    "ages": [ "mladinec"]
+  },
+  {
+    "question": "Katero oznako predstavlja spodnja slika?",
+    "source": "pionir.png",
+    "correctAnswer": "Pionir.",
+    "wrongAnswers": [
+      "Mladinec.",
+      "Pripravnik."
+    ],
+    "ages": [ "mladinec"]
+  },
+  {
+    "question": "Katero oznako predstavlja spodnja slika?",
+    "source": "mladinec.png",
+    "correctAnswer": "Mladinec.",
+    "wrongAnswers": [
+      "Pionir.",
+      "Pripravnik."
+    ],
+    "ages": [ "mladinec"]
+  },
+  {
+    "question": "Katero oznako predstavlja spodnja slika?",
+    "source": "pripravnik.png",
+    "correctAnswer": "Pripravnik.",
+    "wrongAnswers": [
+      "Pionir.",
+      "Mladinec."
+    ],
+    "ages": [ "mladinec"]
+  }
+]
+  

@@ -30,7 +30,7 @@ function handleFirePreventionSelection(questionNumber, userAnswer) {
 
 let TrueFalse = {
     oninit: function() {
-        state.trueFalseQuestions = generateTrueFalseQuestions(Constants.Mladinec, ["ves_neves", "zgodovina", "vescine"], 10);
+        state.trueFalseQuestions = generateTrueFalseQuestions(Constants.Mladinec, ["ves_neves", "zgodovina", "vescine", "oznake"], 10);
     },
     view: function() {
         return <div className="my-4">
