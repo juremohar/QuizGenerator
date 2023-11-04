@@ -7,7 +7,7 @@
       "Od 6 do 12 let.",
       "Od 7 do 13 let."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Koliko so lahko stari otroci, da spadajo v tekmovalno kategorijo mladincev gasilcev?",
@@ -17,7 +17,7 @@
       "Od 13 do 16 let.",
       "Od 12 do 17 let."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Kdo je gasilec pripravnik?",
@@ -27,7 +27,7 @@
       "Je operativni gasilec, ki ni član gasilskega društva.",
       "Je gasilec, ki je v stalni pripravljenosti na intervencije."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Ali lahko tujec postane član PGD?",
@@ -37,7 +37,7 @@
       "Da, vendar ne more biti operativni gasilec.",
       "Ne, saj ne zna slovensko in bi lahko povzročil nesporazum na intervenciji."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Kateri so simboli v prostovoljnem gasilstvu?",
@@ -47,7 +47,7 @@
       "Voda in ogenj.",
       "Prapor in dobra volja."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Zakaj se ob potresu ne smemo zadrževati na stopniščih?",
@@ -56,7 +56,7 @@
       "Ker obstaja velika verjetnost, da bodo tla spolzka.",
       "Ker obstaja velika verjetnost, da nas gasilci tam ne bodo našli."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Katero telefonsko številko pokličemo, ko vidimo, da gori?",
@@ -66,7 +66,7 @@
       "911.",
       "123."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Kaj povemo, ko kličemo na telefonsko številko 112?",
@@ -76,7 +76,7 @@
       "Kaj se je zgodilo, kje se je zgodilo, kako se počutimo.",
       "V kateri državi se nahajamo, kakšne so poškodbe, kakšne so okoliščine na kraju nesreče."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Navedi sestavne dele »trikotnika gorenja«?",
@@ -86,7 +86,7 @@
       "Gorljiva snov, ogljikov monoksid, toplota.",
       "Veter, kisik, toplota."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Kaj je gorljiva snov?",
@@ -95,7 +95,7 @@
       "Snov, ki se nahaja na gori.",
       "Snov, ki se ne more vneti."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "V katerih agregatnih stanjih so lahko gorljive snovi?",
@@ -105,7 +105,7 @@
       "V trdnem, tekočem ali mokrem.",
       "V stoječem, tekočem ali mokrem."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Kateri gospodinjski električni aparati so največkrat povzročitelji požarov?",
@@ -114,7 +114,7 @@
       "Električni gospodinjski pripomočki, kot so recimo električna zobna ščetka, peč, kuhalnik, ipd.",
       "Električni pripomočki, kot so recimo telefon, televizija, ipd."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Koga najprej umaknemo iz gorečega stanovanja?",
@@ -124,7 +124,7 @@
       "Računalnik in telefon.",
       "Pohištvo."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Kako razvrščamo požare glede na obseg?",
@@ -134,7 +134,7 @@
       "Velike in katastrofalne.",
       "Vaške in mestne."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Kako razdelimo požare glede na kraj gorenja in taktiko gašenja?",
@@ -144,7 +144,7 @@
       "Kombinirane in tuje.",
       "Notranje in vodne."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Kako delimo požare glede na vrsto gorljivega materiala, ki je zajet v požar?",
@@ -153,7 +153,7 @@
       "Požari razreda a, požari razreda b, požari razreda c.",
       "Požari razreda 1, požari razreda 2, požari razreda 3, požari razreda 4."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Požari razreda a so požari:",
@@ -163,7 +163,7 @@
       "Požari lahkih kovin (aluminij, magnezij … ipd.).",
       "Gorljivih (vnetljivih) plinov (zemeljski plin ali metan, propan, butan, vodik, acetilen, amonijak … ipd.)."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Požari razreda b so požari:",
@@ -173,7 +173,7 @@
       "Požari lahkih kovin (aluminij, magnezij … ipd.).",
       "Gorljivih (vnetljivih) plinov (zemeljski plin ali metan, propan, butan, vodik, acetilen, amonijak … ipd.)."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "požari razreda c so požari:",
@@ -183,7 +183,7 @@
       "Gorljivih trdnih snovi. (les, seno, obleka … ipd.).",
       "Gorljivih (vnetljivih) plinov (zemeljski plin ali metan, propan, butan, vodik, acetilen, amonijak … ipd.)."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Požari razreda d so požari:",
@@ -193,7 +193,7 @@
       "Gorljivih trdnih snovi. (les, seno, obleka … ipd.).",
       "Gorljivih (vnetljivih) plinov (zemeljski plin ali metan, propan, butan, vodik, acetilen, amonijak … ipd.)."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Katero gasilno sredstvo je najcenejše in najbolj razširjeno?",
@@ -203,7 +203,7 @@
       "Gasilski aparat.",
       "Prah."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Kako delimo gasilne cevi glede na premer?",
@@ -212,7 +212,7 @@
       "1, 2, 3, 4.",
       "a, b, c."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Kako delimo gasilne cevi glede na vrsto?",
@@ -221,7 +221,7 @@
       "Mehke in trdne.",
       "Sesalne in tlačne."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Za kaj uporabljamo gasilne spojke?",
@@ -230,7 +230,7 @@
       "Spajanje vrvi.",
       "Za spajanje blaga."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Kaj je gasilski prapor?",
@@ -239,7 +239,7 @@
       "Zaščitena rastlina, ki predstavlja simbol gasilcev.",
       "Nagrada za najbolj požrtvovalnega gasilca."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Koliko pionirjev tekmuje pri vaji z vedrovko?",
@@ -248,7 +248,7 @@
       "Deset.",
       "Tri."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Kako imenujemo tekmovalce, ki imajo rumene oznake?",
@@ -257,7 +257,7 @@
       "Napadalci.",
       "Vodarji."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Kako imenujemo tekmovalce, ki imajo rdeče oznake?",
@@ -266,7 +266,7 @@
       "Vodarji.",
       "Cevarji."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Kako imenujemo tekmovalce, ki imajo modre oznake?",
@@ -275,7 +275,7 @@
       "Napadalci.",
       "Cevarji."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Koliko vode je v enem vedru, ki ga tekmovalca neseta pri vaji z vedrovko?",
@@ -284,7 +284,7 @@
       "15 litrov.",
       "3 litrov."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Katero povelje mora izdati tekmovalec, ki meri s curkom v tarčo pri vaji z vedrovko?",
@@ -293,7 +293,7 @@
       "»start!«",
       "»zdaj!«"
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Kako morajo biti oblečeni tekmovalci pri kvizu?",
@@ -302,7 +302,7 @@
       "Ni pomembno.",
       "Kavbojke in kratka majica."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Kakšen ročnik predajajo pionirji pri štafeti?",
@@ -311,7 +311,7 @@
       "Navadni b-ročnik",
       "Navadni c-ročnik."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Koliko gasilskih regij je v Sloveniji?",
@@ -320,7 +320,7 @@
       "170.",
       "13."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Kateri organ voli poveljnika in predsednika PGD?",
@@ -329,7 +329,7 @@
       "Vaščani.",
       "Operativni gasilci."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Kako je organizirano gasilstvo v Sloveniji?",
@@ -338,7 +338,7 @@
       "Po različnih vaseh/mestih.",
       "V poklicnih gasilskih organizacijah."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Koliko prostovoljnih gasilskih društev je v Sloveniji?",
@@ -347,7 +347,7 @@
       "Okrog 2400.",
       "Okrog 130."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Kje opravimo registracijo gasilskega društva?",
@@ -356,7 +356,7 @@
       "V gasilskem društvu.",
       "Na ministrstvu za obrambo."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Kje na gasilski uniformi nosimo oznake činov?",
@@ -365,7 +365,7 @@
       "Na čeladi.",
       "Na prsih."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Na katerem rokavu delovne obleke nosimo znak pripadnosti gasilski organizaciji?",
@@ -374,7 +374,7 @@
       "Na desnem.",
       "Znak pripadnosti gasilski organizaciji nosimo na kapi."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Kako gasilci pozdravljajo?",
@@ -383,7 +383,7 @@
       "Pozdravimo se z besedami kot so živjo, se vidimo, ...",
       "S stiskom roke."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "S katero nogo se začne premikanje pri vaji razvrščanja?",
@@ -392,7 +392,7 @@
       "Z desno nogo.",
       "Z obema nogama."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Katere vrste radijskih postaj poznamo?",
@@ -401,7 +401,7 @@
       "Telefonske",
       "Telefonske, mobilne in stabilne."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Kako se imenuje informacijski sistem za vodenje evidenc prostovoljnih gasilcev?",
@@ -410,7 +410,7 @@
       "Meteor.",
       "Triglav."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Kaj je evakuacija?",
@@ -419,7 +419,7 @@
       "Predaja nove gasilske opreme gasilskemu društvu.",
       "Ime postopka, kateremu sledimo, ko poskušamo oživeti osebo."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Kaj pomeni, če je številu nevarnosti na opozorilni tabli za označevanje vozil dodana črka x?",
@@ -428,7 +428,7 @@
       "Snov nevarno reagira z prahom.",
       "Snov ni primerna za uživanje."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Koliko časa je potrebna požarna straža?",
@@ -437,7 +437,7 @@
       "2 uri.",
       "2 dneva."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Ko se pojavi katastrofalni požar v naravi, lahko gasimo tudi s/z?",
@@ -446,7 +446,7 @@
       "Ogljikovim dioksidom.",
       "Požar poskušamo zadušiti z oblekami."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Kdo je v društvu odgovoren za delo z gasilsko mladino?",
@@ -455,7 +455,7 @@
       "Predsednik.",
       "Poveljnik."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Kaj je gasilnik ali gasilni aparat?",
@@ -464,7 +464,7 @@
       "Je naprava za gašenje velikih/katastrofalnih požarov.",
       "Je naprava iz katerih gasilci črpajo vodo"
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Kdo je prostovoljni gasilec?",
@@ -473,7 +473,7 @@
       "Je vsak vaščan, kjer imajo gasilski dom.",
       "Je vsak član poklicnega gasilskega društva."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Kdo je operativni gasilec?",
@@ -482,7 +482,7 @@
       "Je vsak član prostovoljnega gasilskega društva.",
       "Je vsak član poklicnega gasilskega društva."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Kaj podpiše prostovoljni gasilec ob vstopu v gasilsko enoto?",
@@ -491,7 +491,7 @@
       "Pogodbo.",
       "Aneks."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Kako članom preneha članstvo v PGD?",
@@ -500,7 +500,7 @@
       "Z izstopom.",
       "Z izstopom ali smrtjo."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Kaj sestavlja gasilski znak?",
@@ -509,7 +509,7 @@
       "Gasilski prapor.",
       "Gasilska čelada, za čelado prekrižani levo cev in desno ročnik."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Katera organizacija je najvišja oblika organiziranosti prostovoljnega gasilstva?",
@@ -518,7 +518,7 @@
       "Ministrstvu za obrambo.",
       "Gasilska zveza Ljubljana."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Kateri je temelji akt PGD in ureja njegovo delovanje?",
@@ -527,7 +527,7 @@
       "Status Republike Slovenije.",
       "Zakon o delovanju PGD."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Kaj je statut društva?",
@@ -536,7 +536,7 @@
       "Dokument v katerem so zapisani vsi člani gasilskega društva.",
       "Izjava, ki jo podpiše posameznik, ko se pridruži gasilskemu društvu."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Kdo je odgovorna oseba za požarno varnost v lokalni skupnosti?",
@@ -545,7 +545,7 @@
       "Predsednik PGD.",
       "Vsak posameznik."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Zakaj je dobro večje število gasilskih društev, še posebej izven mest?",
@@ -554,7 +554,7 @@
       "Ker so PGD zbirna mesta za mlade.",
       "Ker s tem razbremenimo večja gasilska društva."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Kaj ureja Zakon o gasilstvu?",
@@ -563,7 +563,7 @@
       "Organizacijo in status gasilstva.",
       "Nalogo, finance in status gasilstva."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Kdo vodi intervencijo?",
@@ -572,7 +572,7 @@
       "Poveljnik PGD.",
       "Vodja enote."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Od česa je odvisna gorljivost?",
@@ -581,7 +581,7 @@
       "Od hitrosti spajanja snovi s vodo.",
       "Od hitrosti spajanja snovi s ogljikom."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Kako razvrščamo snovi glede na stopnjo gorljivosti?",
@@ -590,7 +590,7 @@
       "Negorljive, gorljive in lahko gorljive snovi.",
       "Negorljive in gorljive."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Od česa je odvisna nevarnost strupenih plinov v dimu?",
@@ -599,7 +599,7 @@
       "Kdaj je snov pričela goreti.",
       "Od barve snovi."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Kako hranimo lahko vnetljive tekočine v gospodinjstvu?",
@@ -608,7 +608,7 @@
       "Nimamo predpisanih priporočil, kako hraniti take snovi.",
       "Hranimo jih v plastičnih posodah."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Kakšna naj bo embalaža lahko vnetljivih tekočin, ki jih hranimo v gospodinjstvu?",
@@ -617,7 +617,7 @@
       "Embalaža mora biti modre barve.",
       "Embalaža mora biti iz plastike, saj vnetljive tekočine ne reagirajo z njo."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Kako gorijo snovi v trdnem agregatnem stanju?",
@@ -625,7 +625,7 @@
     "wrongAnswers": [
       "Snovi gorijo brez plamena."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Opiši pravilni vrstni red prižiganja plinskega gorilnika.",
@@ -634,7 +634,7 @@
       "Odpremo ventil na gorilniku, prižgemo plin pri ustju gorilnika in odpremo ventil na jeklenki.",
       "Prižgemo plin pri ustju gorilnika, odpremo ventil na jeklenki odpremo ventil na gorilniku."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Kako ravnamo ob začetku požara v objektu?",
@@ -643,7 +643,7 @@
       "Skrijemo se pod mizo, ter pokličemo center za obveščanje. Pod mizo ostanemo dokler gasilci ne pridejo na pomoč.",
       "Najprej začnemo reševati naše dragocenosti, nato pokličemo center za obveščanje."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Kako preprečimo dimniški požar?",
@@ -652,7 +652,7 @@
       "S kurjenjem mokrih in vlažnih drv.",
       "Dimnik mora biti zgrajen iz plastike."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Kako morajo biti urejena podstrešja, da ne pride do požara?",
@@ -661,7 +661,7 @@
       "Podstrešje mora imeti veliko oken, da gasilci čim lažje pridejo do požara.",
       "Podstrešni prostor mora imeti napeljan vodni vir."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Zakaj se požari v kleti razlikujejo od drugih požarov?",
@@ -670,7 +670,7 @@
       "Zaradi težje dostopnosti.",
       "V kleti se pogosto nahajajo gorljive snovi."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Kako morajo biti urejeni hodniki in stopnišča v večjih stavbah?",
@@ -679,7 +679,7 @@
       "Hodniki morajo biti veliki in prostorni. Ne smejo biti iz lesa, ter morajo vsebovati čim več ne gorljivih elementov.",
       "Ni pomembno, kako so urejeni hodniki, dokler so veliki in prostorni."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Katere vrste požarov v naravi glede na kraj razvijanja požara poznamo?",
@@ -688,7 +688,7 @@
       "Podtalne požare in  talne požare.",
       "Podtalne požare, talne požare, notranje požare, požari drevesnih krošenj, kombinirane požare."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Katera je osnovno pravilo taktike pri gašenju požarov?",
@@ -697,7 +697,7 @@
       "Vsak požar moramo gasiti tako, da se lotimo njegovega žarišča, ter nato njegove okolice.",
       "Vsak požar moramo gasiti pričeti gasiti z vodo, nato pa šele z drugimi sredstvi."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Na kaj je potrebno še posebno paziti pri iskanju pogrešanih oseb v gorečem prostoru?",
@@ -706,7 +706,7 @@
       "Pri iskanju je treba biti pozoren, da spijemo dovolj vode.",
       "Pri iskanju se poizkušamo izogibati velikih prostorov."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Naštej nekaj primerov samopomoči ob začetku požara!",
@@ -715,7 +715,7 @@
       "Čimprej razbijemo okno in skušamo skozi njega uiti požaru.",
       "Ob primeru ognja, se skrijemo pod mizo in počakamo na navodila gasilcev."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Navedi primer, ko pogasimo požar z ohlajanjem!",
@@ -724,7 +724,7 @@
       "Gašenje katerekoli plinaste snovi z vodo.",
       "Gašenje katerekoli tekoče snovi z vodo."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Navedi primer, kako pogasimo požar z dušenjem!",
@@ -733,7 +733,7 @@
       "Z kosom lesa udarjamo po razširjenem požaru.",
       "Z usti pihamo v plamen, dokler se požar ne pogasi."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Navedi primer gašenja požara z odstranjevanjem gorljive snovi!",
@@ -742,7 +742,7 @@
       "Goreč predmet polijemo z vodo ali peno.",
       "Kadarkoli gorljivo snov pričnemo gasiti z gasilskim aparatom."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Katere so metode gašenja z gasilnimi sredstvi?",
@@ -751,7 +751,7 @@
       "Odstranitev kisika in ohlajanje.",
       "Notranje in vodne."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Kakšen gasilni učinek ima voda?",
@@ -760,7 +760,7 @@
       "Voda ima predvsem dušilni učinek, v obliki tekočine pa tudi hladilni.",
       "Voda ima samo hladilni učinek."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Kakšno nalogo opravi pri gašenju pena?",
@@ -769,7 +769,7 @@
       "Njen glavni namen je da ohladi površino.",
       "Njen glavni namen je da prepreči kemijske reakcije."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Kako deluje ogljikov dioksid kot gasilno sredstvo?",
@@ -777,7 +777,7 @@
     "wrongAnswers": [
       "Deluje hladilno."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "S katerim gasilnim sredstvom uspešno gasimo požare na električnih napravah?",
@@ -786,7 +786,7 @@
       "S vodo",
       "S peno"
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "S katerim gasilnim sredstvom uspešno gasimo požare razreda »A«?",
@@ -795,7 +795,7 @@
       "S ogljikovim dioksidom in vodo.",
       "Z vodo in prahom."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "S katerim gasilnim sredstvom uspešno gasimo požare razreda »B«?",
@@ -804,7 +804,7 @@
       "S ogljikovim dioksidom in vodo.",
       "Z vodo in prahom."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "S katerim gasilnim  sredstvom uspešno gasimo požare razreda »C«?",
@@ -813,7 +813,7 @@
       "S peno in vodo.",
       "Z vodo in ogljikovim dioksidom."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Kdo lahko servisira gasilnike?",
@@ -822,7 +822,7 @@
       "Prostovoljni gasilci.",
       "Poklicni gasilci."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Kako delimo gasilne spojke glede na njihov namen in za kaj jih uporabljamo?",
@@ -831,7 +831,7 @@
       "Poznamo sesalne in tlačne. Uporabljamo jih za medsebojno spajanje sesalnih in tlačnih cevi ter raznih naprav.",
       "Poznamo toge, slepe in prehodne spojke. Uporabljamo jih za medsebojno spajanje sesalnih in tlačnih cevi ter raznih naprav."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Kaj je ročnik?",
@@ -840,7 +840,7 @@
       "Je del opreme na tovornjaku s katerim si gasilec pomaga vstopiti v tovornjak.",
       "Je naprava, s pomočjo katere spajamo cevi."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Kako delimo ročnike glede na način oblikovanja curka vode?",
@@ -849,7 +849,7 @@
       "Navadni in univerzalni.",
       "Hitri, počasni in kombinirani."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Katere so osnovne oblike vodnih curkov?",
@@ -858,7 +858,7 @@
       "Curek v obliki črke O in C.",
       "Polni curek in razpršeni curek."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Kaj je hidrant?",
@@ -867,7 +867,7 @@
       "Je naprava, s pomočjo katere oblikujemo hitrost in obliko gasilnega curka vode, ki jo usmerimo na požar.",
       "Je naprava za dovajanje vode v vodovno omrežje."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Katere tehnične izvedbe hidrantov poznamo?",
@@ -876,7 +876,7 @@
       "Podvodni in nadzemni.",
       "Podzemni, nadzemni, zidni in stropni."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Kako je zaznamovana lega hidranta?",
@@ -885,7 +885,7 @@
       "S rdečo barvo.",
       "S tablo."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Kako delimo gasilnike glede na njihove različne lastnosti?",
@@ -894,7 +894,7 @@
       "Glede na težo, bravo, način delovanja in vrsto polnjenja gasilnega sredstva.",
       "Glede na težo in vrsto polnjenja gasilnega sredstva."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Kako delimo gasilnike glede na gasilno sredstvo, s katerim so polnjeni?",
@@ -903,7 +903,7 @@
       "Gasilnike polnjene s peno, gasilnike polnjene z gasilnim prahom, gasilnike polnjene z ogljikovim dioksidom.",
       "Gasilnike polnjene z natrijem, gasilnike polnjene s peno, gasilnike polnjene z gasilnim prahom, gasilnike polnjene z ogljikovim dioksidom."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Kaj ti pove oznaka S-9 na gasilniku?",
@@ -912,7 +912,7 @@
       "To je gasilnik na prah, ki vsebuje 90 kg prahu.",
       "To je gasilnik na prah, ki vsebuje 0.9 kg prahu."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Za kaj uporabljamo gasilske vodne črpalke?",
@@ -921,7 +921,7 @@
       "Uporabljamo jih za gasilske vaje.",
       "Uporabljamo jih za raznih prireditvah."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Katere vrste vodnih črpalk poznamo?",
@@ -930,7 +930,7 @@
       "Črpalke za morsko vodo in sladko vodo.",
       "Črpalke za velike in nizke globine."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Katere cevi poznamo glede na premer?",
@@ -939,7 +939,7 @@
       "D – 20 mm, C – 52 mm, B – 75 mm,  A – 110 mm",
       "D – 25 mm, C – 52 mm, B – 60 mm,  A – 110 mm"
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Za kaj uporabljamo sesalne cevi?",
@@ -948,7 +948,7 @@
       "Sesalne cevi so namenjene pretoku vode, ki je pod tlakom, speljane so od vodne črpalke do ročnika.",
       "Sesalne cevi se uporabijo za dovajanje pene v vodo."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Za kaj se uporabljajo tlačne cevi?",
@@ -957,7 +957,7 @@
       "Uporabljamo jih za sesanje oziroma črpanje vode iz vodnih zajetij, rek in jezer s pomočjo vodnih črpalk.",
       "Tlačne cevi se uporabljajo, kadar potrebujemo pretok vode, pod zelo visokim tlakom."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Za kaj se uporablja sesalni koš?",
@@ -966,7 +966,7 @@
       "Sesalni koš se uporablja, ko iz cisterne dovajamo vodo.",
       "Sesalni koš se uporablja pri mladinskih vajah."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Katere so posebne naprave za gašenje?",
@@ -975,7 +975,7 @@
       "Gasilska metla in lopata.",
       "Vedrovka in gasilska metla."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Katere vrste ročnih gasilskih lestev poznamo in čemu služijo?",
@@ -984,7 +984,7 @@
       "Prislanjalne, kljukaste, zložljive in stikalne, raztegljive, pleskarske lestve. Ročne gasilske lestve služijo za lažji dostop v višje objekte ter gašenje in reševanje ljudi, ko to razmere dopuščajo.",
       "Prislanjalne, kljukaste, zložljive in stikalne, raztegljive, kopenske lestve. Ročne gasilske lestve služijo za lažji dostop v višje objekte ter gašenje in reševanje ljudi, ko to razmere dopuščajo."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Čemu služijo avtocisterne?",
@@ -993,7 +993,7 @@
       "Avtocisterne služijo za trajno hranjene pitne vode v primeru naravnih katastrof.",
       "Avtocisterne v gasilstvu nimajo funkcije in uporabnosti."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Čemu služijo avtolestve?",
@@ -1002,7 +1002,7 @@
       "Avtolestve služijo za dostop gasilcev v nižja nadstropja in za reševanje ljudi iz nižjih nadstropij.",
       "Avtolestve v gasilstvu nimajo funkcije in uporabnosti."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Katera vozila opredeljujemo kot gasilska vozila?",
@@ -1011,7 +1011,7 @@
       "Vsako vozilo, ki prevaža vodo.",
       "Vsako vozilo, ki je rdeče barve in se uporablja za gašenje ali reševanje."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Kaj pomeni oznaka vozila GVC-1?",
@@ -1020,7 +1020,7 @@
       "Gasilsko vozilo s cisterno med 200 in 300 litri vode, z gasilsko-tehnično opremo ter najmanj eno hitro napadalno napravo, posadka vozila je zmanjšan oddelek 1+5 ali oddelek 1+8 ter vmesne možnosti.",
       "Gasilsko vozilo s cisterno med 2000 in 3000 litri vode."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Kaj pomeni oznaka vozila GVM?",
@@ -1029,7 +1029,7 @@
       "Gasilsko vozilo za prevoz vode.",
       "Gasilsko vozilo za poveljnika."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Kakšna mora biti gasilska zaščitna obleka?",
@@ -1038,7 +1038,7 @@
       "Modre barve, mora se ti prilegati. Na njej mora biti našitek z činom.",
       "Stara mora biti manj kot 5 let."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Kako delimo osebna zaščitna sredstva in opremo glede na namen in način zaščite?",
@@ -1047,7 +1047,7 @@
       "Na osebno zaščitno in skupinsko zaščitno opremo.",
       "Na sredstva za zaščito glave in obraza, sredstva za zaščito dihalnih organov in zaščitno opremo za opremo, ki jo uporabljamo."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Kaj sestavlja osebno zaščitno opremo gasilca?",
@@ -1056,7 +1056,7 @@
       "Gasilska zaščitna obleka, podkapa, podobleka, gasilska zaščitna čelada, gasilski zaščitni škornji, gasilske zaščitne rokavice, svetilka",
       "Gasilska zaščitna obleka, podkapa, podobleka, gasilska zaščitna čelada, gasilske zaščitne rokavice"
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Kaj sestavlja skupno zaščitno opremo?",
@@ -1065,7 +1065,7 @@
       "Zaščitna čelada, zaščitna kapa ali ruta, obrazni ščitniki, zaščitna očala, zaščita za sluh.",
       "Zaščitne rokavice, zaščitni čevlji, drugi pripomočki za zaščito komolcev, kolen, ramen in dlani."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Naštej sredstva za zaščito glave in obraza!",
@@ -1074,7 +1074,7 @@
       "Zaščitne rokavice, zaščitni čevlji, drugi pripomočki za zaščito komolcev, kolen, ramen in dlani.",
       "Zaščitna obleka pred visoko temperaturo, pred kemičnimi snovmi, pred radioaktivnimi snovmi; zaščitna obleka za reševanje iz vode in na vodi, proti vrezne hlače, zaščitni predpasnik in zaščitne rokavice pred kemičnimi snovmi, gasilski zaščitni pas, hlačni ščitnik za zaščito nog in reševalna vrv."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Naštej sredstva za zaščito rok in nog!",
@@ -1083,7 +1083,7 @@
       "Zaščitna obleka pred visoko temperaturo, pred kemičnimi snovmi, pred radioaktivnimi snovmi; zaščitna obleka za reševanje iz vode in na vodi, proti vrezne hlače, zaščitni predpasnik in zaščitne rokavice pred kemičnimi snovmi, gasilski zaščitni pas, hlačni ščitnik za zaščito nog in reševalna vrv.",
       "Zaščitna čelada, zaščitna kapa ali ruta, obrazni ščitniki, zaščitna očala, zaščita za sluh."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Sredstva za zaščito dihal delimo v dve skupini in sicer?",
@@ -1092,7 +1092,7 @@
       "Delimo jih na težko in lahko skupino.",
       "Tista, ki zaščitijo pred kemičnimi snovmi in tista, ki zaščitijo pred radioaktivnimi snovmi."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Zakaj je pomembno, da gasilec pozna nevarnosti nevarnih snovi?",
@@ -1101,7 +1101,7 @@
       "Zato, da zna te nesreče preprečiti.",
       "Zato, da zna poučiti o teh nevarnosti druge."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Naštej, kaj vse mora imeti na sebi gasilec za vstop v prostor, v katerem gori.",
@@ -1110,7 +1110,7 @@
       "Zaščitno čelado, podkapo, zaščitno obleko, zaščitne rokavice, zaščitne škornje, cev z vodo, radijsko postajo, svetilko.",
       "Zaščitno čelado, podkapo, zaščitno obleko, zaščitne rokavice, zaščitne škornje, cev z vodo, ročnik, radijsko postajo, svetilko."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "S čim opozarjajo gasilci, da se nahajajo na delu ceste?",
@@ -1119,7 +1119,7 @@
       "Gasilec se postavi nekaj metrov pred delom na cesti in z rokami opozarja na delo gasilcev.",
       "S triopanom, prometnimi stožci, hidranti in usmerjevalnimi tablami. "
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "S katerim namenom se organizirajo gasilska tekmovanja?",
@@ -1128,7 +1128,7 @@
       "Za povezovanje gasilskih društev.",
       "Za preverjanje psihofizične in strokovne usposobljenosti operativnih gasilcev."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Kako razvrščamo požare glede na kraj gorenja?",
@@ -1137,7 +1137,7 @@
       "Notranji požari in zunanji požari.",
       "Talni požari, podtalni požari in zračni požari."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
   },
   {
     "question": "Kaj je AED?",
@@ -1146,6 +1146,992 @@
       "Avtomatski eksterni defibrilator (AED) je prenosna elektronska naprava, ki je sposobna zaznati krvni pritisk pri človeku.",
       "Avtomatski eksterni defibrilator (AED) je prenosna elektronska naprava, ki nam pomaga analizirati izhodišče požara."
     ],
-    "ages": ["mladinec"]
+    "ages": [ "mladinec", "pripravnik"]
+  },
+  {
+    "question": "Kako je gasilstvo definirano skladno z Zakonom o gasilstvu?",
+    "correctAnswer": "Gasilstvo je obvezna lokalna javna javna služba (javna gasilska služba), katere trajno in nemoteno opravljanje zagotavljajo občine in država.",
+    "wrongAnswers": [
+      "Gasilstvo je prostovoljna dejavnost brez državne podpore.",
+      "Gasilstvo se izvaja le v zasebnem interesu.",
+      "Gasilstvo je plačljiva storitev za posameznike in podjetja."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Katere naloge ima poveljnik v gasilskem društvu?",
+    "correctAnswer": "Poveljnik PGD skrbi za zakonito in strokovno delo gasilske enote.",
+    "wrongAnswers": [
+      "Poveljnik PGD skrbi za urejanje društvenih financ.",
+      "Poveljnik PGD organizira družabne prireditve za gasilce.",
+      "Poveljnik PGD je odgovoren za vzdrževanje gasilske opreme."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kdo so člani operativne enote v PGD?",
+    "correctAnswer": "To so člani gasilskega društva, ki izpolnjujejo z zakonom določene pogoje, so strokovno usposobljeni in imajo opravljen izpit za gasilca, zdravstveno in psihofizično sposobni, niso bili pravnomočno obsojeni, so stari od 18-65 let ter so vstopili v operativno enoto PGD.",
+    "wrongAnswers": [
+      "V operativno enoto PGD lahko vstopijo vsi člani društva ne glede na pogoje.",
+      "Operativni člani PGD morajo biti stari od 16-30 let.",
+      "Operativna enota PGD ne zahteva izpita za gasilca."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "V katere tekmovalne kategorije so razvrščene tekmovalne enote?",
+    "correctAnswer": "Pionirji, pionirke, mladinci, mladinke, člani A, članice A, člani B, članice B, starejši gasilci, starejše gasilke, poklicni gasilci A in poklicni gasilci B.",
+    "wrongAnswers": [
+      "Tekmovalne enote niso razvrščene v nobene kategorije.",
+      "Samo člani A in članice A tekmujejo.",
+      "Samo starejši gasilci in starejše gasilke sodelujejo v tekmovanjih."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kaj je požarna ogroženost?",
+    "correctAnswer": "Požarna ogroženost je potencialna nevarnost za izgubo življenja ali poškodbo oziroma materialno škodo ob požaru.",
+    "wrongAnswers": [
+      "Požarna ogroženost je pogosta pojava, ki ne predstavlja nevarnosti.",
+      "Požarna ogroženost se nanaša le na materialno škodo ob požaru.",
+      "Požarna ogroženost ni povezana z izgubo življenja ali poškodbami."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kaj je požarna varnost?",
+    "correctAnswer": "Požarna varnost je varnost ljudi, živali in premoženja ob požaru.",
+    "wrongAnswers": [
+      "Požarna varnost se nanaša le na premoženje.",
+      "Požarna varnost je odgovornost samo gasilcev.",
+      "Požarna varnost nima povezave z varnostjo ljudi in živali."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kaj se ureja s požarnim redom?",
+    "correctAnswer": "S požarnim redom se ureja organizacija varstva pred požarom, ukrepi varstva pred požarom, navodila za ukrepanje ob požaru, usposabljanje zaposlenih.",
+    "wrongAnswers": [
+      "Požarni red ureja samo ukrepe ob požaru.",
+      "S požarnim redom ureja se samo usposabljanje zaposlenih.",
+      "Požarni red se nanaša le na organizacijo varstva pred naravnimi nesrečami."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kaj je oksidacija?",
+    "correctAnswer": "Oksidacija je proces spajanja snovi s kisikom, kjer se sprošča večja ali manjša količina toplote.",
+    "wrongAnswers": [
+      "Oksidacija je proces ločevanja snovi s kisikom.",
+      "Pri oksidaciji ne sprošča toplote.",
+      "Oksidacija je proces spajanja snovi z ogljikovim dioksidom."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Katere vrste oksidacije poznaš?",
+    "correctAnswer": "Poznamo biološko oksidacijo, oksidacijo brez plamena in oksidacijo s plamenom oz. gorenje.",
+    "wrongAnswers": [
+      "Vrste oksidacije so enake za vse snovi.",
+      "Oksidacija brez plamena je isto kot oksidacija s plamenom.",
+      "Gorenje ni oblika oksidacije."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kaj je eksplozija?",
+    "correctAnswer": "Zelo hitra oksidacija ali razpad, posledica česar je povišanje temperature ali tlaka oz. obeh hkrati.",
+    "wrongAnswers": [
+      "Eksplozija je počasna oksidacija.",
+      "Eksplozija se ne nanaša na kisik ali temperaturo.",
+      "Eksplozija je proces spajanja snovi z vodo."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kaj je eksplozivna zmes?",
+    "correctAnswer": "Zmes vnetljivih plinov, par ali prahu z zrakom, v kateri se gorenje naglo širi in s tem izzove eksplozijo.",
+    "wrongAnswers": [
+      "Eksplozivna zmes vsebuje samo zrak.",
+      "Gorenje v eksplozivni zmesi se širi počasi.",
+      "Eksplozivna zmes ne povzroča eksplozije."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Katere vrste samovžigov poznamo?",
+    "correctAnswer": "Poznamo fizikalni samovžig, kemijski samovžig in biološki samovžig.",
+    "wrongAnswers": [
+      "Samovžig se ne pojavi pri nobeni snovi.",
+      "Vse vrste samovžigov so enake.",
+      "Samovžig je vedno posledica visoke temperature."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kako ogljikov monoksid vpliva na človekovo zdravje?",
+    "correctAnswer": "Ogljikov monoksid izpodrine kisik iz krvi, ker se lažje veže na rdeča krvna telesa, zato človeško telo ostane brez kisika, ki je nujno potreben za življenje.",
+    "wrongAnswers": [
+      "Ogljikov monoksid ne vpliva na zdravje ljudi.",
+      "Ogljikov monoksid poveča kisik v krvi.",
+      "Ogljikov monoksid ima enake učinke kot kisik na telo."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Zakaj je prevelika količina ogljikovega dioksida za človeka nevarna?",
+    "correctAnswer": "Ker pri 4 % vsebnosti v zraku povzroča glavobol, šumenje v ušesih in omotico, pri 8 do 10 % nezavest in pri 30 % smrt.",
+    "wrongAnswers": [
+      "Prevelika količina ogljikovega dioksida ni nevarna za človeka.",
+      "Ogljikov dioksid izboljša zdravje.",
+      "Ogljikov dioksid je brez vonja in okusa, zato ne more škodovati."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kaj storimo, če so se v prostoru nabrali hlapi in plini raznih vnetljivih tekočin?",
+    "correctAnswer": "Prostor prezračimo, ne uporabljamo odprtega ognja, ne vklopimo električne napetost.",
+    "wrongAnswers": [
+      "Hlapi in plini v prostoru niso nevarni.",
+      "Prižgemo svečo za razpršitev plinov.",
+      "Najprej vklopimo električno napetost, da preverimo, ali obstaja nevarnost."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kaj je gorenje?",
+    "correctAnswer": "Gorenje je kemijska reakcija, pri kateri se gorljiva snov spaja s kisikom, pri čemer nastajajo svetloba, toplota in negorljivi ostanki.",
+    "wrongAnswers": [
+      "Gorenje ni kemijska reakcija.",
+      "Gorenje se ne nanaša na kisik.",
+      "Pri gorenju nastajajo samo negorljivi ostanki."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kateri pogoji morajo biti izpolnjeni za proces gorenja?",
+    "correctAnswer": "Za proces gorenja morajo biti izpolnjeni trije pogoji – gorljiva snov, kisik in toplota.",
+    "wrongAnswers": [
+      "Za proces gorenja so potrebni samo gorljiva snov in kisik.",
+      "Gorenje ne zahteva toplote.",
+      "Za gorenje je potreben samo en pogoj."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kakšna je razlika med popolnim in nepopolnim gorenjem?",
+    "correctAnswer": "Popolno gorenje je tisto gorenje, pri katerem so prisotne zadostne količine kisika; pri popolnem gorenju bi z analizo dima ugotovili, da je v njem prisoten samo CO2 (ogljikov dioksid) in vodna para, pri nepopolnem gorenju ni prisotnega dovolj kisika, zato so v dimu poleg CO (ogljikovega monoksida) tudi drugi produkti – ostanki gorenja ali sežganine, ki imajo drugačno kemijsko sestavo, drugačna pa je tudi barva plamena in dima.",
+    "wrongAnswers": [
+      "Med popolnim in nepopolnim gorenjem ni razlike.",
+      "Popolno gorenje je tisto, pri katerem ni prisoten kisik.",
+      "Nepopolno gorenje ne povzroči nastanka drugih produktov."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Zaradi česa nastane požar na električnih napravah?",
+    "correctAnswer": "Zaradi segrevanja vodnikov kot posledice preobremenitve, slabe in dotrajane izolacije vodnikov, kratkega stika, statične elektrike.",
+    "wrongAnswers": [
+      "Požar na električnih napravah ni možen.",
+      "Električne naprave ne povzročajo požarov.",
+      "Edini vzrok požara je ogenj."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kaj razumemo pod izrazom udar električnega toka?",
+    "correctAnswer": "Udar električnega toka je vpliv prehoda električnega toka skozi človeško telo, posledice česar so poškodbe ali celo smrt.",
+    "wrongAnswers": [
+      "Udar električnega toka je neškodljiv za človeka.",
+      "Udar električnega toka povzroča samo rahlo nelagodje.",
+      "Udar električnega toka ne vpliva na človeško telo."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kateri so kemični vzroki za nastanek požarov?",
+    "correctAnswer": "Samovžig, eksotermna reakcija, druge oblike kemične energije.",
+    "wrongAnswers": [
+      "Kemični vzroki za požare ne obstajajo.",
+      "Požari se vedno začnejo zaradi zunanjih vplivov, ne kemičnih reakcij.",
+      "Kemični vzroki za požare so nepredvidljivi."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kakšen pojav gorenja se pojavlja pri požaru razreda A? Kaj gori in s čim jih gasimo?",
+    "correctAnswer": "Pojavlja se žar ali žar in plamen. Gorijo trdne snovi (les, papir, plastika, premog, volna...). Gasimo z vodo, prahom in peno.",
+    "wrongAnswers": [
+      "Pri požaru razreda A ne gorijo trdne snovi.",
+      "Pri požaru razreda A se pojavlja samo plamen.",
+      "Požar razreda A se gasi izključno z ogljikovim dioksidom."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kakšen pojav gorenja se pojavlja pri požaru razreda B? Kaj gori in s čim jih gasimo?",
+    "correctAnswer": "Gorijo s plamenom. To so vnetljive tekočine (bencin, laki, smole, alkohol, olja...). Gasimo s peno, prahom, ogljikovim dioksidom.",
+    "wrongAnswers": [
+      "Pri požaru razreda B ne gorijo vnetljive tekočine.",
+      "Požar razreda B se gasi samo z vodo.",
+      "Požar razreda B se vedno gasi z zrakom."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Katere vrste napadov pri gašenju požarov na objektu poznamo?",
+    "correctAnswer": "Poznamo notranji napad, zunanji napad, sestavljen napad, čelni napad, napad z obkrožanjem.",
+    "wrongAnswers": [
+      "Pri gašenju požarov na objektu ni različnih vrst napadov.",
+      "Notranji napad je edina metoda gašenja požarov.",
+      "Sestavljen napad in čelni napad nista pomembna pri gašenju požarov."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kaj zajema intervencijska pripravljenost?",
+    "correctAnswer": "Zajema nenehno urjenje gasilcev in reševalcev, njihovo psihofizično pripravljenost, vzdrževanje opreme v uporabnem stanju ter spremljanje varnostnih razmer.",
+    "wrongAnswers": [
+      "Intervencijska pripravljenost nima vloge pri gasilcih in reševalcih.",
+      "Urjenje gasilcev in reševalcev ni pomembno.",
+      "Vzdrževanje opreme ni potrebno za gasilce in reševalce."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Naštej faze intervencije?",
+    "correctAnswer": "Priprava za izvedbo intervencije, aktivnosti v zvezi z odhodom na intervencijo, izvajanje intervencije, zaključek intervencije.",
+    "wrongAnswers": [
+      "Intervencija nima opredeljenih faz.",
+      "Aktivnosti v zvezi z odhodom na intervencijo niso pomembne.",
+      "Zaključek intervencije ni del postopka."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kaj je taktika gašenja požarov?",
+    "correctAnswer": "Taktika gašenja požarov je organizacijski sistem vodenja in poveljevanja gasilskih enot pri izvajanju ukrepov gašenja in reševanja.",
+    "wrongAnswers": [
+      "Taktika gašenja požarov nima organizacijskega sistema.",
+      "Taktika gašenja požarov se ne nanaša na gasilce.",
+      "Gasilci ne potrebujejo organizacije pri gašenju požarov."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Na kaj moramo biti gasilci pozorni pred začetkom gašenja?",
+    "correctAnswer": "Prepričati se moramo, kje je žarišče ali kraj požara in ali so ogroženi ljudje, kaj gori in koliko gorljivih snovi je že požar zajel, ali bomo zmogli reševati in zaustaviti požar s prisotno tehniko in sredstvi, ali lahko vremenske razmere otežijo gašenje.",
+    "wrongAnswers": [
+      "Gasilci ne potrebujejo priprave pred začetkom gašenja.",
+      "Pri gašenju požara ni potrebno skrbeti za varnost ljudi.",
+      "Vremenske razmere ne vplivajo na gašenje požarov."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kako vstopamo v zadimljen prostor?",
+    "correctAnswer": "V zadimljen prostor vstopamo v dvojicah, opremljeni z IDA in cevjo z vodo, vrata odpiramo počasi in čepe, pred odpiranjem s hrbtno stranjo dlani preverimo temperaturo vrat in skušamo oceniti stanje požara v prostoru.",
+    "wrongAnswers": [
+      "V zadimljen prostor vstopamo sami, brez opreme.",
+      "Vrata odpiramo hitro in brez preverjanja temperature.",
+      "Oprema ni potrebna pri vstopu v zadimljen prostor."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kateri so nameni prezračevanja zadimljenih prostorov?",
+    "correctAnswer": "Da iz prostora izhajajo dim in plini, da zmanjšamo notranje temperature, da se izboljša vidljivost.",
+    "wrongAnswers": [
+      "Prezračevanje ne vpliva na izhajanje dima in plinov.",
+      "Prezračevanje povečuje notranje temperature.",
+      "Prezračevanje zmanjšuje vidljivost."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kako gasimo dimniški požar?",
+    "correctAnswer": "Gašenje saj v dimnikih izvajamo s suhimi sredstvi za gašenje, to je gasilnim suhim prahom ali ogljikovim dioksidom. Gasilno sredstvo usmerimo navzgor skozi dimniška vratca, ki so pod tistimi, kjer je požar nastal.",
+    "wrongAnswers": [
+      "Dimniški požar se gasi z vodo.",
+      "Za gašenje dimniškega požara uporabljamo plamenomete.",
+      "Dimniški požar se samodejno ugasne."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Zakaj dimniškega požara ne smemo gasiti z vodo?",
+    "correctAnswer": "Ker se voda ob razbeljenih dimniških stenah upari in poveča svojo prostornino, zaradi česar bi dimnik lahko popokal ali celo eksplodiral.",
+    "wrongAnswers": [
+      "Voda je najboljše gasilno sredstvo za dimniške požare.",
+      "Dimniškega požara ne smemo gasiti zaradi varnostnih razlogov.",
+      "Dimniški požar se ne sme gasiti iz katerega koli razloga."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Naštej glavne lastnosti dobrega gasilnega sredstva?",
+    "correctAnswer": "Enostavna uporaba, velik gasilni učinek pri majhni uporabljeni količini, varno mora biti za gasilce in okolje, pri gašenju ne sme povzročati škode, delovati mora na čim več gorljivih snovi, biti mora čim cenejše.",
+    "wrongAnswers": [
+      "Dobro gasilno sredstvo mora biti zapleteno za uporabo.",
+      "Varnost gasilcev in okolja ni pomembna lastnost gasilnega sredstva.",
+      "Dobro gasilno sredstvo ne sme biti cenejše."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Napiši čim več lastnosti vode kot gasilnega sredstva?",
+    "correctAnswer": "Voda je najpogostejše gasilno sredstvo, na razpolago v večjih količinah, je najcenejše, lahko jo pretakamo po ceveh in jo v posodah prevažamo na večje razdalje, ima hladilni in tudi dušilni učinek, ne ogroža človekovega zdravja in okolja.",
+    "wrongAnswers": [
+      "Voda ni primerno gasilno sredstvo.",
+      "Voda je draga in težko prenosljiva.",
+      "Voda ni na voljo v večjih količinah."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "S čim gasimo razliti bencin, ki se je vnel?",
+    "correctAnswer": "Z gasilnimi sredstvi, ki učinkujejo dušilno: pena, prah, pepel, pesek, mivka, ipd.",
+    "wrongAnswers": [
+      "Razlit bencin se ne sme gasiti.",
+      "Za gašenje razlitega bencina uporabljamo vodo.",
+      "Ko se bencin vname, ga ni mogoče ugasniti."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Katere so prednosti gašenja z zidnim hidrantom v primerjavi z gašenjem z gasilnikom na vodo?",
+    "correctAnswer": "Gašenje poteka nepretrgoma z večjo količino vode.",
+    "wrongAnswers": [
+      "Gašenje z zidnim hidrantom je manj učinkovito.",
+      "Gasilnik na vodo je boljša izbira za gašenje.",
+      "Zidni hidranti ne omogočajo gašenja."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kaj je gasilska vodna črpalka?",
+    "correctAnswer": "Gasilske vodne črpalke so naprave za črpanje vode iz vodnih virov.",
+    "wrongAnswers": [
+      "Gasilska vodna črpalka je namenjena zalivanju vrtov.",
+      "Gasilske vodne črpalke ne obstajajo.",
+      "Gasilske vodne črpalke so namenjene za ribiško industrijo."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kako delimo vodne črpalke glede na delovni tlak?",
+    "correctAnswer": "Delimo jih na nizkotlačne z delovnim tlakom do 3 barov, srednjetlačne z delovnim tlakom 3 do 16 barov in visokotlačne z delovnim tlakom 20 in več barov.",
+    "wrongAnswers": [
+      "Vodne črpalke nimajo delovnega tlaka.",
+      "Vodne črpalke delimo samo glede na velikost.",
+      "Delitev vodnih črpalk po delovnem tlaku ni pomembna."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Naštej nekaj skupin, v katere razvrščamo gasilska vozila glede na njihove osnovne naloge?",
+    "correctAnswer": "Vozila razvrščamo na: poveljniška vozila, gasilska vozila, gasilska vozila s cisterno, gasilska vozila s prahom, vozila za gašenje in reševanje z višin, tehnična in orodna vozila, gasilska vozila za gozdne požare, gasilska logistična vozila, gasilski čolni in gasilski priklopniki.",
+    "wrongAnswers": [
+      "Vse gasilska vozila so enake in nimajo različnih nalog.",
+      "Gasilska vozila se ne delijo na skupine.",
+      "Razvrščanje gasilskih vozil glede na naloge ni pomembno."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kako delimo gasilska vozila glede na skupno težo?",
+    "correctAnswer": "Delimo jih na lahka vozila s težo od 2 do 7,5 tone, srednje težka vozila s težo od 7,5 tone do 14 ton in težka vozila s težo nad 14 ton.",
+    "wrongAnswers": [
+      "Gasilska vozila se ne delijo glede na težo.",
+      "Vsa gasilska vozila so enake teže.",
+      "Delitev po teži ni pomembna pri gasilskih vozilih."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kako označujemo vozila, ki vozijo nevarne snovi?",
+    "correctAnswer": "Z oranžnimi opozorilnimi ploščami s črnim robom, z opozorilnimi listki.",
+    "wrongAnswers": [
+      "Vozila z nevarnimi snovmi se ne označujejo.",
+      "Označevanje vozil s črnimi opozorilnimi ploščami je dovolj.",
+      "Vozila z nevarnimi snovmi se označuje z zelenimi ploščami."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kakšna mora biti gasilska zaščitna oprema?",
+    "correctAnswer": "Standardizirana in tipizirana.",
+    "wrongAnswers": [
+      "Gasilska zaščitna oprema mora biti unikatna za vsakega gasilca.",
+      "Standardizacija in tipizacija gasilske opreme nista pomembni.",
+      "Gasilska zaščitna oprema ni potrebna."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Katere nevarnosti pretijo gasilcu pri gašenju in reševanju?",
+    "correctAnswer": "Toplotno sevanje, radioaktivno sevanje, nevarnosti poškodb in zastrupitve z nevarnimi snovmi, padajoči predmeti, padci z višin, vlaga in mraz, ropot in vibracije, nevarnost udara električnega toka, udarci in vbodi z ostrim predmetom, nevarnosti okužb.",
+    "wrongAnswers": [
+      "Gasilci niso izpostavljeni nobenim nevarnostim pri delu.",
+      "Edina nevarnost pri delu gasilcev je toplotno sevanje.",
+      "Gasilci so izpostavljeni samo eni nevarnosti."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Koliko gasilskih zvez je v Sloveniji?",
+    "correctAnswer": "Okrog 120.",
+    "wrongAnswers": [
+      "V Sloveniji ni gasilskih zvez.",
+      "V Sloveniji je samo ena gasilska zveza.",
+      "Število gasilskih zvez v Sloveniji je nepomembno."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Inšpektorat, ki nadzira področje varstva pred požarom se imenuje?",
+    "correctAnswer": "Inšpektorat RS za varstvo pred naravnimi in drugimi nesrečami.",
+    "wrongAnswers": [
+      "Inšpektorat za varstvo pred požarom ne obstaja.",
+      "Inšpektorat RS ni pristojen za nadzor varstva pred požarom.",
+      "Inšpektorat RS za varstvo pred naravnimi in drugimi nesrečami ne izvaja nadzora."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kako delimo gasilske enote glede na število članov v enoti?",
+    "correctAnswer": "Gasilska skupina, zmanjšani oddelek, oddelek, gasilski vod, gasilska četa.",
+    "wrongAnswers": [
+      "Vse gasilske enote imajo enako število članov.",
+      "Delitev gasilskih enot glede na število članov ni pomembna.",
+      "Gasilskih enot ne delimo glede na število članov."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Po čem se gasilci v uniformah naslavljajo in pozdravljajo?",
+    "correctAnswer": "Po funkciji in činu.",
+    "wrongAnswers": [
+      "Gasilci se ne naslavljajo in ne pozdravljajo.",
+      "Gasilci se naslavljajo samo po imenih.",
+      "Gasilci se naslavljajo po barvi uniforme."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Ali smo gasilci vključeni v sistem zaščite in reševanja?",
+    "correctAnswer": "Da.",
+    "wrongAnswers": [
+      "Gasilci niso vključeni v noben sistem zaščite in reševanja.",
+      "Vključenost gasilcev v sistem zaščite in reševanja je nepomembna.",
+      "Gasilci so izključeni iz sistema zaščite in reševanja."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kako ukrepamo, ko imamo več poškodovancev?",
+    "correctAnswer": "Najprej nudimo prvo pomoč tistim, katerih življenje je najbolj ogroženo.",
+    "wrongAnswers": [
+      "Najprej nudimo prvo pomoč tistim, ki so najbližje.",
+      "Vse poškodovance obravnavamo istočasno, ne glede na resnost poškodb.",
+      "Prvo pomoč ni potrebno nuditi poškodovancem."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kateri so aktivni ukrepi varstva pred požarom?",
+    "correctAnswer": "Vsi tehnični in organizacijski ukrepi, ki so namenjeni za gašenje požara.",
+    "wrongAnswers": [
+      "Aktivni ukrepi varstva pred požarom ne obstajajo.",
+      "Aktivni ukrepi varstva pred požarom so samo tehnični ukrepi.",
+      "Aktivni ukrepi varstva pred požarom so samo organizacijski ukrepi."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kako se imenuje program, s katerim določa država cilje, usmeritve in strategijo varstva pred požarom?",
+    "correctAnswer": "Nacionalni program.",
+    "wrongAnswers": [
+      "Program za varstvo pred požarom se ne imenuje.",
+      "Program za varstvo pred požarom se imenuje lokalni program.",
+      "Nacionalni program ni pomemben za varstvo pred požarom."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Katero stražo opravljajo gasilci na prireditvah, na katerih obstaja nevarnost, da izbruhne požar ali pride do eksplozije?",
+    "correctAnswer": "Požarno stražo.",
+    "wrongAnswers": [
+      "Gasilci ne opravljajo nobene straže na takih prireditvah.",
+      "Gasilci opravljajo samo varnostno stražo na takih prireditvah.",
+      "Požarno stražo opravljajo samo profesionalni gasilci."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kaj je gasilska straža?",
+    "correctAnswer": "Izvajajo jo gasilci po končanem gašenju, dokler je še prisotna požarna nevarnost.",
+    "wrongAnswers": [
+      "Gasilska straža je stalna prisotnost gasilcev na gasilskem domu.",
+      "Gasilska straža je prireditev za javnost.",
+      "Gasilska straža je samo dekoracija v gasilskem domu."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kakšna je osnovna ureditev gasilske enote?",
+    "correctAnswer": "Dvovrstna ureditev.",
+    "wrongAnswers": [
+      "Osnovna ureditev gasilske enote je trivrstna.",
+      "Gasilski enoti ni potrebno imeti ureditve.",
+      "Ureditev gasilske enote ni pomembna."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "V katero ureditev se razvrstijo gasilci po povelju »zbor«?",
+    "correctAnswer": "V dvovrstno ureditev.",
+    "wrongAnswers": [
+      "Gasilci se ne razvrstijo v nobeno ureditev po povelju »zbor«.",
+      "Gasilci se razvrstijo v trivrstno ureditev po povelju »zbor«.",
+      "Ureditev gasilcev po povelju »zbor« ni pomembna."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kako se kažejo poškodbe pri prehodu električnega toka skozi telo?",
+    "correctAnswer": "Kot opekline, ožganine, prenehanje delovanja določenih organov.",
+    "wrongAnswers": [
+      "Poškodbe se ne kažejo pri prehodu električnega toka skozi telo.",
+      "Prehod električnega toka skozi telo povzroči samo rdečico kože.",
+      "Prehod električnega toka skozi telo povzroči samo rahle bolečine."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kateri snovi se mešata v mešalcu?",
+    "correctAnswer": "Voda in penilo.",
+    "wrongAnswers": [
+      "V mešalcu se mešata voda in pesek.",
+      "V mešalcu se mešata voda in zrak.",
+      "Mešalec ni potreben pri gašenju."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kaj pomeni karakteristika črpalke 8/8?",
+    "correctAnswer": "Zmogljivost črpalke je 800 l/min pri 8 barih.",
+    "wrongAnswers": [
+      "Karakteristika črpalke 8/8 ni pomembna.",
+      "Zmogljivost črpalke 8/8 je 800 l/min pri 18 barih.",
+      "Zmogljivost črpalke 8/8 je 80 l/min pri 8 barih."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kaj pomeni oznaka vozila GVC-2?",
+    "correctAnswer": "Gasilsko vozilo s cisterno s 4000 do 6000 litrov vode, shranjeno večjo količino penila, nameščeno gasilsko-tehnično opremo, vgrajeno hitro napadalno napravo ter vodnim monitorjem, posadka vozila je skupina 1+2.",
+    "wrongAnswers": [
+      "Oznaka vozila GVC-2 ne pomeni nič.",
+      "Oznaka vozila GVC-2 pomeni, da je to gasilsko vozilo za ceste 2. reda.",
+      "Oznaka vozila GVC-2 pomeni, da je to gasilsko vozilo za civilno zaščito."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kaj pomeni oznaka vozila GVGP-1?",
+    "correctAnswer": "Manjše gasilsko vozilo za gašenje gozdnih požarov.",
+    "wrongAnswers": [
+      "Oznaka vozila GVGP-1 ne pomeni nič.",
+      "Oznaka vozila GVGP-1 pomeni, da je to gasilsko vozilo za prometne nesreče.",
+      "Oznaka vozila GVGP-1 pomeni, da je to gasilsko vozilo za gasenje požarov v stavbah."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Katere so faze požara v objektu?",
+    "correctAnswer": "Faza začetnega, rastočega, razvitega, pojemajočega požara.",
+    "wrongAnswers": [
+      "Požar v objektu ima samo eno fazo.",
+      "Faze požara v objektu se ne razlikujejo.",
+      "Faze požara v objektu so: jutranja, dnevna, večerna."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kaj je prevajanje ali kondukcija?",
+    "correctAnswer": "Prenos toplote skozi materiale.",
+    "wrongAnswers": [
+      "Prevajanje ali kondukcija je prenos električne energije.",
+      "Prevajanje ali kondukcija je prenos zvoka.",
+      "Prevajanje ali kondukcija ni povezano s prenosom toplote."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Za gašenje katerih požarov uporabljamo požarno metlo?",
+    "correctAnswer": "Za gašenje travniških in talnih gozdnih požarov.",
+    "wrongAnswers": [
+      "Požarno metlo uporabljamo samo za gašenje stavbnih požarov.",
+      "Požarno metlo uporabljamo za gašenje požarov v zaprtih prostorih.",
+      "Požarno metlo uporabljamo za gašenje požarov v vodi."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kaj je požarni zid?",
+    "correctAnswer": "Stenska stavbna konstrukcija, ki deli objekt v dva ali več požarnih sektorjev.",
+    "wrongAnswers": [
+      "Požarni zid je posebna vrsta zidu, ki preprečuje vstop ognja v stavbo.",
+      "Požarni zid je mesto, kjer se izvaja gašenje požara v objektu.",
+      "Požarni zid je vrsta ognjenega orožja."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kako pogasimo gorečo osebo?",
+    "correctAnswer": "S pokrivanjem zadušimo ogenj.",
+    "wrongAnswers": [
+      "Gorečo osebo pogasimo z vodo.",
+      "Gorečo osebo pogasimo z zračno pištolo.",
+      "Gorečo osebo pogasimo z gasilskim cepinom."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Koliko sesalnih cevi potrebujemo pri izvedbi vaje z motorno brizgalno?",
+    "correctAnswer": "4",
+    "wrongAnswers": [
+      "Pri izvedbi vaje z motorno brizgalno ne potrebujemo sesalnih cevi.",
+      "Pri izvedbi vaje z motorno brizgalno potrebujemo samo eno sesalno cev.",
+      "Pri izvedbi vaje z motorno brizgalno potrebujemo 8 sesalnih cevi."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "V kakšnih primerih je uporabna metoda obkrožitve pri gašenju požarov v naravi?",
+    "correctAnswer": "Metoda je uporabna predvsem pri manjših, počasi napredujočih požarih.",
+    "wrongAnswers": [
+      "Metoda obkrožitve se uporablja samo pri požarih v stavbah.",
+      "Metoda obkrožitve se uporablja samo pri velikih požarih.",
+      "Metoda obkrožitve se uporablja samo pri nočnih požarih."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kako bi opisali nahrbtno brento?",
+    "correctAnswer": "Je naprava za gašenje z vodo in se uporablja za gašenje požarov razreda A, predvsem gozdnih požarov. Posebej je primerna za gašenje manjših žarišč ter talnih in podtalnih požarov v naravnem okolju.",
+    "wrongAnswers": [
+      "Nahrbtna brenta je naprava za gašenje z zrakom.",
+      "Nahrbtna brenta se uporablja samo za gašenje požarov v stavbah.",
+      "Nahrbtna brenta je prenosna gasilska postaja."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Katere pojme uporabljamo za označevanje požarišč v naravnem okolju?",
+    "correctAnswer": "Levi in desni bok, rep požara, smer širitve požara, čelo požara, smer vetra.",
+    "wrongAnswers": [
+      "Za označevanje požarišč v naravnem okolju se ne uporabljajo posebni pojmi.",
+      "Za označevanje požarišč v naravnem okolju se uporabljajo samo številke.",
+      "Za označevanje požarišč v naravnem okolju se uporabljajo samo barvne zastavice."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "V katerem programu vodja intervencije poroča o intervenciji?",
+    "correctAnswer": "SPIN",
+    "wrongAnswers": [
+      "PGD",
+      "GBA",
+      "GVC-16"
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kdo sestavlja poveljstvo v PGD I. kategorije?",
+    "correctAnswer": "Poveljnik, namestnik poveljnika, vodje oddelkov in orodjar.",
+    "wrongAnswers": [
+      "Samoplačnik, pomočnik poveljnika, gasilci vajenci.",
+      "Glavni strojnik, vodja intervencije, član upravnega odbora.",
+      "Vrhovni poveljnik, predsednik gasilske zveze, gasilski inštruktor."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kdo sestavlja poveljstvo v PGD višjih kategorij?",
+    "correctAnswer": "Poveljnik, namestnik poveljnika, eden ali dva podpoveljnika, pomočniki poveljnika in glavni strojnik.",
+    "wrongAnswers": [
+      "Gasilska dežurna ekipa, gasilski inštruktorji, veterani društva.",
+      "Vodja intervencije, vodja tekmovanj, predsednik gasilske zveze.",
+      "Prostovoljni gasilci iz drugih društev, članice gasilskega teatra, gasilski častniki."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kaj je Prostovoljno gasilsko društvo?",
+    "correctAnswer": "Prostovoljno gasilsko društvo je humanitarna organizacija, v kateri fizične osebe prostovoljno delujejo in opravljajo naloge na področju gasilstva, varstva pred požarom in drugimi nesrečami ter opravljajo druge dejavnosti, ki so pomembne za razvoj in delovanje gasilstva.",
+    "wrongAnswers": [
+      "Prostovoljno društvo za ohranjanje kulturne dediščine.",
+      "Prostovoljno društvo za športne prireditve in rekreacijo.",
+      "Prostovoljno društvo za promocijo umetnosti in kulture."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kaj urejajo Pravila gasilske službe prostovoljnih gasilcev?",
+    "correctAnswer": "Pravila gasilske službe prostovoljnih gasilcev (PGSPG) podrobneje urejajo posamezna vprašanja delovanja prostovoljnih gasilcev, ki se nanašajo na članstvo v prostovoljni gasilski enoti, operativno vodenje prostovoljnih gasilskih organizacij, pravice in dolžnosti operativnih gasilcev, usposabljanje prostovoljnih gasilcev, uporabo gasilskih oznak, činov in položajnih funkcij pri predstavljanju gasilske organizacije ter opravljanju gasilskih nalog, gasilsko zaščitno in reševalno opremo ter gasilska tekmovanja prostovoljnih gasilcev.",
+    "wrongAnswers": [
+      "Pravila za izvajanje javnih prireditev.",
+      "Pravila za cestni promet in varnost v prometu.",
+      "Pravila za varstvo okolja in naravnih virov."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kaj je cilj požarne preventive?",
+    "correctAnswer": "Cilj požarne preventive je varovanje ljudi, živali, premoženja in okolja.",
+    "wrongAnswers": [
+      "Cilj požarne preventive je povzročanje požarov za zabavo.",
+      "Cilj požarne preventive je izobraževanje gasilcev.",
+      "Cilj požarne preventive je zbiranje gasilske opreme."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kateri so organi GZS?",
+    "correctAnswer": "Organi GZS so: Kongres, Plenum, Upravni odbor, Poveljstvo, Nadzori odbor, Arbitraža.",
+    "wrongAnswers": [
+      "Organi GZS so: Orkester, Gledališka skupina, Športni klub.",
+      "Organi GZS so: Izvršni direktor, Upravni svet, Revizijska komisija.",
+      "Organi GZS so: Gasilska brigada, Reševalna enota, Logistična skupina."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kaj je to aktivna požarna zaščita?",
+    "correctAnswer": "Aktivna požarna zaščita (APZ) je zaščita, ki v določeni meri deluje samodejno, torej gre za naprave, ki v primeru požara delujejo samodejno in to aktivno (javljanje požara, gašenje požara, odvod dima in toplote).",
+    "wrongAnswers": [
+      "Aktivna požarna zaščita (APZ) je zaščita, ki jo izvajajo gasilci ročno.",
+      "Aktivna požarna zaščita (APZ) je zaščita pred poplavami.",
+      "Aktivna požarna zaščita (APZ) je zaščita pred potresi."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kaj je požarni načrt?",
+    "correctAnswer": "Požarni načrt je grafični prikaz ureditve in delov zgradbe z označenimi nevarnostmi ter napravami in sredstvi za preventivno in aktivno požarno zaščito. Namenjen je gasilcem in reševalcem. Izdelati ga morajo lastniki oz. uporabniki požarno bolj ogroženih objektov.",
+    "wrongAnswers": [
+      "Požarni načrt je načrt za osebno varnost v primeru naravnih nesreč.",
+      "Požarni načrt je načrt za varstvo pred kibernetskimi napadi.",
+      "Požarni načrt je načrt za organizacijo gasilskih tekmovanj."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Katere vrste gasilskih tekmovanj poznamo?",
+    "correctAnswer": "Tekmovanja so: društvena, meddruštvena, občinska, tekmovanja GZ, regijska, državna, mednarodna, pokalno tekmovanje GZS in tekmovanja v počastitev dogodkov ali spomina na osebe, ki imajo izjemne zasluge za razvoj in napredek gasilstva.",
+    "wrongAnswers": [
+      "Tekmovanja so: plavalna, atletska, kegljaška in kolesarska.",
+      "Tekmovanja so: politična, gledališka, glasbena in plesna.",
+      "Tekmovanja so: kuharska, umetniška, fotografska in videoigri."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Za kaj so namenjeni zunanji hidranti?",
+    "correctAnswer": "Zunanji hidranti so v osnovi namenjeni dobavi vode v gasilska vozila ali motorne brizgalne. Neposredno gašenje za gasilce ne pride v poštev, je pa možno ob ustreznem tlaku in potrebni opremi, ki je redkokje nameščena (in vzdrževana) v posebnih omaricah, možno gasiti, ohlajevati negorečo stavbo ali druge predmete. Delimo jih v nadtalne ter podzemne. Vezani so na vodooskrbni sistem.",
+    "wrongAnswers": [
+      "Zunanji hidranti so namenjeni pridelavi hrane na prostem.",
+      "Zunanji hidranti so namenjeni osvetljevanju zunanjih površin.",
+      "Zunanji hidranti so namenjeni prevozu potnikov po mestu."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kaj je povelje?",
+    "correctAnswer": "Povelje je kratka, nedvoumno, pravočasno in ustno izražena zahteva za izvršitev določene gasilske naloge ali opravila, ki ga je treba opraviti kot sestavni del operativne gasilske naloge.",
+    "wrongAnswers": [
+      "Povelje je dolgo pisno sporočilo.",
+      "Povelje se izdaja v pisni obliki.",
+      "Povelje je preveč zapleteno za operativne naloge."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kaj mora povelje vsebovati?",
+    "correctAnswer": "Povelje mora obsegati:\n- navedbo, komu je namenjeno (formaciji, posamezniku);\n- navedbo naloge, potrebne gasilske reševalne opreme in gasilnih sredstev;\n- določitev roka ali časa za izvedbo povelja;\n- varnostna opozorila;\n- po potrebi tudi določitev načina izvedbe naloge, načina uporabe sredstev ali gasilske reševalne opreme, logistične oskrbe ter zamenjave moštva, počitka moštva ter drugih vprašanj.",
+    "wrongAnswers": [
+      "Povelje je le kratka besedilna zahteva.",
+      "V povelju ni potrebno vključiti roka izvedbe naloge.",
+      "Varnostna opozorila niso potrebna v povelju."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kaj so najpogostejši vzroki za nastanek požara?",
+    "correctAnswer": "Najpogostejši vzroki za nastanek požara: človeška nepazljivost, malomarnost ali namerni požigi, vroča dela na neustreznih mestih brez požarne straže, naravni pojavi, električna energija, in gradbene pomanjkljivosti.",
+    "wrongAnswers": [
+      "Vzrok za nastanek požara je le človeška nepazljivost.",
+      "Najpogostejši vzrok za nastanek požara je strela.",
+      "Električna energija je edini vzrok za nastanek požara.",
+      "Vroča dela na neustreznih mestih brez požarne straže niso vzrok za požar.",
+      "Požari se ne dogajajo zaradi naravnih pojavov."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kakšne so pravice Pomočnika poveljnika za naprave za zaščito dihal v PGD?",
+    "correctAnswer": "Pravice Pomočnika poveljnika za naprave za zaščito dihal v PGD vključujejo: skrb za vzdrževanje, kontrolo in hranjenje zaščitnih dihalnih naprav in aparatov.",
+    "wrongAnswers": [
+      "Pomočnik poveljnika nima nobenih pravic.",
+      "Pravice Pomočnika poveljnika za naprave za zaščito dihal vključujejo vodenje evidenc o požarih.",
+      "Pomočnik poveljnika ima pravico do odločanja o gasilskih intervencijah.",
+      "Pomočnik poveljnika nima pravic, saj je odgovoren le za usposabljanje."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kakšne so dolžnosti Pomočnika poveljnika za naprave za zaščito dihal v PGD?",
+    "correctAnswer": "Dolžnosti Pomočnika poveljnika za naprave za zaščito dihal v PGD vključujejo: opravljanje dopolnilnega usposabljanja in vaj z gasilci – nosilci izolirnih dihalnih aparatov, vodenje evidenc gasilcev, usposobljenih za delo z izolirnimi dihalnimi aparati ter evidenco zaščitnih dihalnih aparatov in naprav, nadziranje rokov pregledov zaščitnih dihalnih aparatov in skrb za njihovo redno servisiranje.",
+    "wrongAnswers": [
+      "Pomočnik poveljnika nima nobenih dolžnosti.",
+      "Dolžnosti Pomočnika poveljnika vključujejo kuhanje za gasilce.",
+      "Pomočnik poveljnika je odgovoren samo za vodenje vaj gasilcev.",
+      "Dolžnosti Pomočnika poveljnika se nanašajo le na dokumentacijo."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kakšna je formacija gasilske skupine?",
+    "correctAnswer": "Gasilsko skupino sestavlja 2 – 4 gasilci in izvede lahko samostojen napad ali drugo nalogo v sklopu gašenja.",
+    "wrongAnswers": [
+        "Gasilsko skupino sestavlja 5 – 7 gasilcev.",
+        "Gasilsko skupino sestavlja le 1 gasilec.",
+        "Gasilsko skupino lahko izvede le reševalno nalogo.",
+        "Gasilsko skupino ne sme izvesti nobene naloge v primeru požara."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Koliko članov je v zmanjšanem odseku?",
+    "correctAnswer": "V zmanjšanem odseku je 5 – 7 gasilcev.",
+    "wrongAnswers": [
+        "V zmanjšanem odseku je 2 – 4 gasilci.",
+        "V zmanjšanem odseku je 1 gasilec.",
+        "V zmanjšanem odseku je 8 gasilcev.",
+        "Zmanjšani odsek nima članov."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kaj lahko stori oddelek v primeru srednje velikega požara?",
+    "correctAnswer": "Oddelek, ki ga sestavlja 9 – 10 gasilcev, lahko izvede tridelni napad s tremi napadalnimi skupinami in gasi srednje velik požar.",
+    "wrongAnswers": [
+        "Oddelek ne more izvesti nobenega napada na požar.",
+        "Oddelek lahko izvede samo samostojen napad.",
+        "Srednje velike požare vedno gasijo ena napadalna skupina.",
+        "Oddelek z 11 gasilci ne more izvajati tridelnega napada."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kaj je glavna naloga voda v gasilski enoti?",
+    "correctAnswer": "Vod, sestavljen iz 2 – 4 oddelkov, poleg gasilskih oddelkov izvaja tudi reševalne naloge in gasi velike požare.",
+    "wrongAnswers": [
+        "Vod v gasilski enoti nima nobenih nalog.",
+        "Vod lahko izvaja samo reševalne naloge.",
+        "Vod nima zveze z gasenjem požarov.",
+        "Vod izvaja samo manjše naloge v gasilski enoti."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kako je organizirana gasilska četa?",
+    "correctAnswer": "Gasilska četa sestoji iz 2 – 4 vodov, ki gasijo in rešujejo ob katastrofalnih požarih.",
+    "wrongAnswers": [
+        "Gasilska četa nima organizacije.",
+        "Gasilska četa sestoji iz enega samega voda.",
+        "Gasilska četa ne rešuje ob katastrofalnih požarih.",
+        "Gasilska četa je namenjena samo preventivnim nalogam."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kaj je glavna naloga gasilske brigade?",
+    "correctAnswer": "Gasilska brigada, ki vključuje 2 – 4 čete, gasi in rešuje ob katastrofalnih požarih in drugih elementarnih nesrečah.",
+    "wrongAnswers": [
+        "Gasilska brigada nima glavne naloge.",
+        "Gasilska brigada se ukvarja le z gasenjem požarov.",
+        "Gasilska brigada se ukvarja izključno z reševanjem.",
+        "Gasilska brigada ima samo eno četo."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kako se običajno sestavi gasilska skupina?",
+    "correctAnswer": "Gasilsko skupino sestavlja 2 – 4 gasilci in izvede lahko samostojen napad ali drugo nalogo v sklopu gašenja.",
+    "wrongAnswers": [
+        "Gasilsko skupino sestoji iz enega samega gasilca.",
+        "Gasilsko skupino sestoji iz 5 – 7 gasilcev.",
+        "Gasilsko skupino ne izvaja nalog v sklopu gašenja.",
+        "Gasilsko skupino ne sme izvesti samostojnega napada."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kako je sestavljen zmanjšani oddelek?",
+    "correctAnswer": "Zmanjšani oddelek vključuje 5 – 7 gasilcev in izvede dve napadalni skupini iz GVC, GV ali hidranta.",
+    "wrongAnswers": [
+        "Zmanjšani oddelek vključuje manj kot 5 gasilcev.",
+        "Zmanjšani oddelek vključuje samo 1 gasilca.",
+        "Zmanjšani oddelek ne izvaja nobenih napadalnih skupin.",
+        "Zmanjšani oddelek ne uporablja GVC, GV ali hidranta."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kako se običajno obvladuje srednje velik požar?",
+    "correctAnswer": "Srednje velik požar obvladuje oddelek, ki ga sestavlja 9 – 10 gasilcev, s tridelni napadom – s tremi napadalnimi skupinami.",
+    "wrongAnswers": [
+        "Srednje velik požar ne potrebuje nadzora.",
+        "Srednje velik požar obvladuje en sam gasilec.",
+        "Srednje velik požar obvladuje samo pomočnik poveljnika.",
+        "Srednje velik požar obvladuje zmanjšani oddelek."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kako je organizirana gasilska vod?",
+    "correctAnswer": "Gasilska vod je sestavljen iz 2 – 4 oddelkov in poleg gasilskih oddelkov ima tudi oddelek za reševanje ter gasi velike požare.",
+    "wrongAnswers": [
+        "Gasilska vod nima nobenih oddelkov.",
+        "Gasilska vod sestavlja samo 1 oddelka.",
+        "Gasilska vod nima reševalnega oddelka.",
+        "Gasilska vod ne gasi velikih požarov."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kaj lahko stori gasilska četa?",
+    "correctAnswer": "Gasilska četa sestavlja 2 – 4 vodi in gasi ter rešuje ob katastrofalnih požarih.",
+    "wrongAnswers": [
+        "Gasilska četa ne more izvesti nobenega ukrepa.",
+        "Gasilska četa sestavlja samo 1 vod.",
+        "Gasilska četa se ukvarja izključno z preventivnimi nalogami.",
+        "Gasilska četa ne rešuje ob katastrofalnih požarih."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kakšna je glavna naloga gasilske brigade?",
+    "correctAnswer": "Gasilska brigada, ki vključuje 2 – 4 čete, gasi in rešuje ob katastrofalnih požarih in drugih elementarnih nesrečah.",
+    "wrongAnswers": [
+        "Gasilska brigada nima glavne naloge.",
+        "Gasilska brigada se ukvarja le z gasenjem požarov.",
+        "Gasilska brigada se ukvarja izključno z reševanjem.",
+        "Gasilska brigada ima samo eno četo."
+    ],
+    "ages": ["pripravnik"]
   }
 ]
