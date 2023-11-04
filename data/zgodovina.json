@@ -6,7 +6,7 @@
       "Ljubljana.",
       "Celje."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Kako so se ob ustanovitvi imenovala najstarejša gasilska društva v Sloveniji?",
@@ -15,7 +15,7 @@
       "Straže.",
       "Prostovoljno gasilsko društvo."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Katerega leta je bila ustanovljena prva prostovoljna požarna bramba na slovenskem? ",
@@ -24,7 +24,7 @@
       "1902.",
       "1723."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Kdo je bil ustanovitelj najstarejšega gasilskega društva v Sloveniji?",
@@ -33,7 +33,7 @@
       "Matevž Hace.",
       "Dr. Boris Pahor."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Kdo je bil prvi predsednik gasilske zveze Slovenije? ",
@@ -42,7 +42,7 @@
       "Dr. Josip Savinšek.",
       "Franci Petek"
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Kje je bila v Slovenije ustanovljena prva gasilska šola?",
@@ -51,7 +51,7 @@
       "V Ljubljani.",
       "V Metliki."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Kje je slovenski gasilski muzej?",
@@ -60,7 +60,7 @@
       "V Žireh.",
       "Na Vrhniki."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Kdo je zavetnik gasilcev?",
@@ -69,7 +69,7 @@
       "Sveti Martin.",
       "Sveti Jurij."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Kdo je sedanji poveljnik gasilske zveze Slovenije?",
@@ -78,7 +78,7 @@
       "Janko Cerkvenik.",
       "Matevž Hace."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Kdo je sedanji predsednik gasilske zveze Slovenije? ",
@@ -87,7 +87,7 @@
       "Franci Petek.",
       "Matevž Hace."
     ],
-    "ages": ["pionir", "mladinec"]
+    "ages": ["pionir", "mladinec", "pripravnik"]
   },
   {
     "question": "Po kom se imenuje najvišje gasilsko priznanje v Sloveniji?",
@@ -96,7 +96,7 @@
       "Po Franci Petek.",
       "Po svetniku sveti Florjan."
     ],
-    "ages": ["mladinec"]
+    "ages": ["mladinec", "pripravnik"]
   },
   {
     "question": "Kaj je navadno spodbudilo nastanek gasilskih društev? ",
@@ -105,7 +105,7 @@
       "Želja po druženju.",
       "Poplave, viharji, toča."
     ],
-    "ages": ["mladinec"]
+    "ages": ["mladinec", "pripravnik"]
   },
   {
     "question": "V kateri državi je dr. Josip Savinšek spoznal delovanje prostovoljnih požarnih bramb?",
@@ -114,7 +114,7 @@
       "V Franciji.",
       "V Italiji"
     ],
-    "ages": ["mladinec"]
+    "ages": ["mladinec", "pripravnik"]
   },
   {
     "question": "Po kom se imenuje slovenski gasilski muzej v Metliki?",
@@ -123,7 +123,7 @@
       "Po Franci Petku",
       "Po Matevžu Hacetu."
     ],
-    "ages": ["mladinec"]
+    "ages": ["mladinec", "pripravnik"]
   },
   {
     "question": "Kdo je prvi slovenskim gasilcem poveljeval v slovenskem jeziku?",
@@ -132,7 +132,7 @@
       "Matevž Hace",
       "Janko Kosernik."
     ],
-    "ages": ["mladinec"]
+    "ages": ["mladinec", "pripravnik"]
   },
   {
     "question": "Kako so se preimenovala gasilska društva po zakon o organizaciji gasilstva, je izšel 15. Julija 1933?",
@@ -141,7 +141,7 @@
       "Požarne straže.",
       "Prostovoljna gasilka društva."
     ],
-    "ages": ["mladinec"]
+    "ages": ["mladinec", "pripravnik"]
   },
   {
     "question": "Katerega leta je bila ustanovljena gasilske zveze ljudske republike Slovenije?",
@@ -150,7 +150,7 @@
       "1992.",
       "1918."
     ],
-    "ages": ["mladinec"]
+    "ages": ["mladinec", "pripravnik"]
   },
   {
     "question": "Kdo je bil na 1. Kongresu gasilske zveze ljudske republike Slovenije izvoljen za poveljnika?",
@@ -159,7 +159,7 @@
       "Franci Petek.",
       "Janez Kastelic."
     ],
-    "ages": ["mladinec"]
+    "ages": ["mladinec", "pripravnik"]
   },
   {
     "question": "Kako je delovalo gasilstvo v času 2. Svetovne vojne?",
@@ -168,7 +168,7 @@
       "Društva so postala vse večja.",
       "Gasilci so dobili veliko denarja, da so si lahko posodobili opremo."
     ],
-    "ages": ["mladinec"]
+    "ages": ["mladinec", "pripravnik"]
   },
   {
     "question": "Prva gasilska šola je leta 1950 začela delovati v Žireh. Za kateri čin je izobraževala gasilce?",
@@ -177,6 +177,106 @@
       "Za operativne gasilce.",
       "Za desetarje."
     ],
-    "ages": ["mladinec"]
+    "ages": ["mladinec", "pripravnik"]
+  },
+  {
+    "question": "Kako je Ignacij Merhar naslovil knjižico, ki jo je izdal za razširitev slovenskega poveljevanja pri gasilcih?",
+    "correctAnswer": "Vadnik.",
+    "wrongAnswers": [
+      "Ignacij Merhar ni izdal nobene knjižice.",
+      "Učbenik.",
+      "Poveljnikova pot."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kako se imenuje gasilska strokovna revija, katere urednik je bil kmalu po I. svetovni vojni Fran Barle?",
+    "correctAnswer": "Gasilec.",
+    "wrongAnswers": [
+      "Strokovni Gasilec.",
+      "Gasilski Pregled.",
+      "Fran Barle."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kdo je bil prvi urednik Gasilca?",
+    "correctAnswer": "Fran Trošt.",
+    "wrongAnswers": [
+      "Primož Trošt.",
+      "Gasilca ni imel urednika.",
+      "Strokovni Gasilec."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kaj je zaščitni znak Gasilskega Muzeja v Metliki?",
+    "correctAnswer": "Nočni stražar.",
+    "wrongAnswers": [
+      "Gasilski šlem.",
+      "Zvezda.",
+      "Muzejska stavba."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kdo je bil dolgoletni poveljnik Gasilske zveze Slovenije in tudi avtor učbenika Gasilska taktika?",
+    "correctAnswer": "Milan Vrhovec.",
+    "wrongAnswers": [
+      "Fran Barle.",
+      "Ivan Gasparič.",
+      "Luka Novak."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Zakaj si je prizadeval predsednik Gasilske zveze Slovenije Branko Božič?",
+    "correctAnswer": "Za ohranjanje zgodovine gasilstva.",
+    "wrongAnswers": [
+      "Za organizacijo gasilskih tekmovanj.",
+      "Za izgradnjo gasilskih domov.",
+      "Za usposabljanje gasilcev."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Čemu je poveljnik slovenskih gasilcev Milan Vrhovec namenjal še posebno pozornost?",
+    "correctAnswer": "Vzgoji sodnikov za gasilska tekmovanja.",
+    "wrongAnswers": [
+      "Izdelavi gasilskih vozil.",
+      "Raziskavi gasilskih taktik.",
+      "Učenju prve pomoči."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Kdo je bil prvi vodja leta 1919 ustanovljene Jugoslovanske gasilske zveze v Ljubljani?",
+    "correctAnswer": "Fran Barle.",
+    "wrongAnswers": [
+      "Milan Vrhovec.",
+      "Anton Novak.",
+      "Gasilska zveza ni obstajala leta 1919."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Ob praznovanju katere obletnice prostovoljnega gasilskega društva v Metliki so odprli gasilski muzej?",
+    "correctAnswer": "Ob praznovanju stoletnice.",
+    "wrongAnswers": [
+      "Ob praznovanju desetletnice.",
+      "Ob praznovanju petdesetletnice.",
+      "Ob praznovanju dvajsetletnice."
+    ],
+    "ages": ["pripravnik"]
+  },
+  {
+    "question": "Na katerem kongresu Gasilske zveze Slovenije sta bila izvoljena sedanji predsednik in poveljnik Gasilske zveze Slovenije?",
+    "correctAnswer": "Na 18.",
+    "wrongAnswers": [
+      "Na 10.",
+      "Na 5.",
+      "Na 22."
+    ],
+    "ages": ["pripravnik"]
   }
 ]
