@@ -8,7 +8,8 @@ var PionirCard = {
             <div className="card-body border" style="flex: 0">
                 <h5 className="card-title">Pionir</h5>
                 <p>Kviz za pionirčke.</p>
-                <a class="btn btn-primary" onclick={ () => { m.route.set("/pionirji") }}>Kviz</a>
+                <a class="btn btn-primary" onclick={ () => { m.route.set("/pionirji/kviz") }}>Kviz</a>
+                <a class="btn btn-secondary m-2" onclick={ () => { m.route.set("/pionirji/literatura") }}>Literatura</a>
             </div>
         </div>
     }
@@ -24,7 +25,8 @@ var MladinecCard = {
             <div className="card-body border" style="flex: 0;">
                 <h5 className="card-title">Mladinec</h5>
                 <p>Kviz za mladince.</p>
-                <a class="btn btn-primary" onclick={ () => { m.route.set("/mladinci") }}>Kviz</a>
+                <a class="btn btn-primary" onclick={ () => { m.route.set("/mladinci/kviz") }}>Kviz</a>
+                <a class="btn btn-secondary m-2" onclick={ () => { m.route.set("/mladinci/literatura") }}>Literatura</a>
             </div>
         </div>
     }
@@ -40,7 +42,8 @@ var PripravnikCard = {
             <div className="card-body border" style="flex: 0;">
                 <h5 className="card-title">Pripravnik</h5>
                 <p>Kviz za pripravnike.</p>
-                <a class="btn btn-primary" onclick={ () => { alert("Kviz še ni na voljo. ") }}>Kviz</a>
+                <a class="btn btn-primary" onclick={ () => { m.route.set("/pripravniki/kviz") }}>Kviz</a>
+                <a class="btn btn-secondary m-2" onclick={ () => { m.route.set("/pripravniki/literatura") }}>Literatura</a>
             </div>
         </div>
     }
