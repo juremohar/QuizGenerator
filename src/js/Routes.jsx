@@ -6,7 +6,6 @@ import { PripravnikiView } from './views/Pripravniki';
 import { MainLayout } from './layouts/MainLayout';
 import { HomeView } from './views/Home';
 import { LiteratureView } from './views/Literature';
-import Constants from './constants';
 
 function initRouter(el) {
     // m.route.prefix = '';
@@ -25,24 +24,10 @@ function initRouter(el) {
                 </MainLayout>
             }
         },
-        '/pionirji/literatura': {
-            render: function() {
-                return <MainLayout>
-                    <LiteratureView category={Constants.Pionir} />
-                </MainLayout>
-            }
-        },
         '/mladinci/kviz': {
             render: function() {
                 return <MainLayout>
                     <MladinciView />
-                </MainLayout>
-            }
-        },
-        '/mladinci/literatura': {
-            render: function() {
-                return <MainLayout>
-                    <LiteratureView category={Constants.Mladinec} />
                 </MainLayout>
             }
         },
@@ -53,10 +38,10 @@ function initRouter(el) {
                 </MainLayout>
             }
         },
-        '/pripravniki/literatura': {
+        '/literatura': {
             render: function() {
                 return <MainLayout>
-                    <LiteratureView category={Constants.Pripravnik} />
+                    <LiteratureView />
                 </MainLayout>
             }
         }
