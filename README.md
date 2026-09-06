@@ -27,6 +27,32 @@ npm run typecheck
 `drizzle.config.ts` and `db/seed.ts` load it explicitly - the `db:*` scripts work with no
 extra setup.
 
+### Dev and production are separate Neon branches
+
+Neon project `aged-river-74703807` has two branches. A branch is a copy-on-write clone,
+not a second database kept in sync by hand: `dev` started as a copy of `main` and stores
+only what has changed since.
+
+| Branch | Endpoint          | Used by                                        |
+| ------ | ----------------- | ---------------------------------------------- |
+| `main` | `ep-cool-leaf-…`  | Vercel **Production** only. The brigade's data. |
+| `dev`  | `ep-mute-unit-…`  | Local `.env.local`, Vercel Preview + Development |
+
+Nothing you run locally - `npm run dev`, `db:migrate`, `db:seed`, `npm test` - can reach
+production. `db:seed` prints the endpoint it is about to write to before writing.
+
+`tests/db-integration.test.ts` creates and deletes rows, so it reads `TEST_DATABASE_URL`
+and never `DATABASE_URL`; leave it unset and the suite skips instead of writing to
+whatever `DATABASE_URL` happens to be. It creates its own `[TEST]`-prefixed equipment
+rather than depending on seed data, so renaming equipment in the UI cannot break it.
+
+To refresh `dev` with current production data, delete and recreate the branch:
+
+```bash
+npx neon branches delete dev --project-id aged-river-74703807
+npx neon branches create --project-id aged-river-74703807 --name dev --parent main
+```
+
 ## Why the inventory works the way it does
 
 The problem it solves is **double-promising**: the brigade has 2 fridges, and more than

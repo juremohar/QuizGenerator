@@ -5,7 +5,19 @@ import { and, eq, inArray, like } from 'drizzle-orm';
 config({ path: '.env.local', quiet: true });
 config({ quiet: true });
 
-const HAS_DB = Boolean(process.env.DATABASE_URL);
+/**
+ * This suite WRITES to a real database, so it deliberately runs against
+ * TEST_DATABASE_URL and never against DATABASE_URL. Pointing it at DATABASE_URL meant a
+ * bare `npm test` created and deleted rows in the brigade's live data, and a cleanup
+ * that failed halfway left them there.
+ *
+ * db/client.ts reads DATABASE_URL, so the test branch URL is assigned over it here,
+ * before the dynamic import in beforeAll pulls that module in. Unset => the suite skips.
+ */
+const TEST_DB = process.env.TEST_DATABASE_URL;
+if (TEST_DB) process.env.DATABASE_URL = TEST_DB;
+
+const HAS_DB = Boolean(TEST_DB);
 
 /** Every row this suite creates carries this marker so cleanup is exact. */
 const MARKER = '[TEST]';
@@ -23,8 +35,45 @@ describe.skipIf(!HAS_DB)('inventory writes against a real database', () => {
   let schema: typeof import('@/db/schema');
   const actor = { email: 'test@example.com', name: 'Test Actor' };
 
+  /**
+   * The suite owns its equipment instead of borrowing the brigade's.
+   *
+   * It used to look up the seed rows by name and assert on their stock levels, so
+   * renaming "Hladilnik" to "Union hladilnik" in the UI - an entirely normal thing to
+   * do - broke the build. The quantities below are not decoration: the scenarios need a
+   * 2-stock item to test the second-then-third booking, a 1-stock item for the
+   * last-unit race, and a 30-stock item for the peak-vs-sum case.
+   */
+  const FIXTURES = [
+    { name: `${MARKER} Hladilnik`, totalQuantity: 2, sortOrder: 9010 },
+    { name: `${MARKER} Mize`, totalQuantity: 30, sortOrder: 9020 },
+    { name: `${MARKER} Žar`, totalQuantity: 1, sortOrder: 9030 },
+    { name: `${MARKER} Posoda`, totalQuantity: 4, sortOrder: 9040 },
+  ];
+
+  const HLADILNIK = FIXTURES[0].name;
+  const MIZE = FIXTURES[1].name;
+  const ZAR = FIXTURES[2].name;
+  const POSODA = FIXTURES[3].name;
+
   /** Item ids looked up by name so the test does not hardcode serial values. */
   const ids: Record<string, number> = {};
+
+  /** Loans first: loan_items carries a foreign key to items. */
+  async function cleanup() {
+    const created = await db
+      .select({ id: schema.loans.id })
+      .from(schema.loans)
+      .where(like(schema.loans.purpose, `${MARKER}%`));
+
+    if (created.length > 0) {
+      const loanIds = created.map((r) => r.id);
+      await db.delete(schema.loanItems).where(inArray(schema.loanItems.loanId, loanIds));
+      await db.delete(schema.loans).where(inArray(schema.loans.id, loanIds));
+    }
+
+    await db.delete(schema.items).where(like(schema.items.name, `${MARKER}%`));
+  }
 
   beforeAll(async () => {
     mod = (await import('@/lib/inventory/mutations')) as unknown as Mod;
@@ -32,34 +81,31 @@ describe.skipIf(!HAS_DB)('inventory writes against a real database', () => {
     const { getDb } = await import('@/db/client');
     db = getDb();
 
-    const rows = await db.select({ id: schema.items.id, name: schema.items.name }).from(schema.items);
-    for (const r of rows) ids[r.name] = r.id;
+    // A previous run that died mid-way would otherwise leave rows behind.
+    await cleanup();
 
-    expect(ids['Hladilnik'], 'seed must have run').toBeDefined();
-    expect(ids['Mize']).toBeDefined();
+    const created = await db
+      .insert(schema.items)
+      .values(FIXTURES)
+      .returning({ id: schema.items.id, name: schema.items.name });
+    for (const r of created) ids[r.name] = r.id;
+
+    expect(Object.keys(ids), 'fixtures must be created').toHaveLength(FIXTURES.length);
   });
 
-  async function cleanup() {
-    const created = await db
-      .select({ id: schema.loans.id })
-      .from(schema.loans)
-      .where(like(schema.loans.purpose, `${MARKER}%`));
-
-    if (created.length === 0) return;
-    const loanIds = created.map((r) => r.id);
-    await db.delete(schema.loanItems).where(inArray(schema.loanItems.loanId, loanIds));
-    await db.delete(schema.loans).where(inArray(schema.loans.id, loanIds));
-  }
-
-  beforeAll(cleanup);
   afterAll(async () => {
     await cleanup();
     // Leave the brigade's database exactly as we found it.
-    const leftovers = await db
+    const leftoverLoans = await db
       .select({ id: schema.loans.id })
       .from(schema.loans)
       .where(like(schema.loans.purpose, `${MARKER}%`));
-    expect(leftovers, 'test rows must be cleaned up').toEqual([]);
+    const leftoverItems = await db
+      .select({ id: schema.items.id })
+      .from(schema.items)
+      .where(like(schema.items.name, `${MARKER}%`));
+    expect(leftoverLoans, 'test loans must be cleaned up').toEqual([]);
+    expect(leftoverItems, 'test items must be cleaned up').toEqual([]);
   });
 
   function loan(over: Partial<Parameters<Mod['createLoan']>[0]> = {}) {
@@ -69,7 +115,7 @@ describe.skipIf(!HAS_DB)('inventory writes against a real database', () => {
       purpose: `${MARKER} avtomatski test`,
       fromDate: '2099-09-19',
       toDate: '2099-09-21',
-      items: [{ itemId: ids['Hladilnik'], quantity: 1 }],
+      items: [{ itemId: ids[HLADILNIK], quantity: 1 }],
       ...over,
     } as Parameters<Mod['createLoan']>[0];
   }
@@ -82,12 +128,12 @@ describe.skipIf(!HAS_DB)('inventory writes against a real database', () => {
   // The original bug: both fridges promised to different people for the same dates.
   it('refuses an overlapping request that exceeds stock', async () => {
     const res = await mod.createLoan(
-      loan({ fromDate: '2099-09-20', toDate: '2099-09-22', items: [{ itemId: ids['Hladilnik'], quantity: 2 }] }),
+      loan({ fromDate: '2099-09-20', toDate: '2099-09-22', items: [{ itemId: ids[HLADILNIK], quantity: 2 }] }),
       actor,
     );
     expect(res.ok).toBe(false);
     if (!res.ok) {
-      expect(res.problems?.[0]).toMatchObject({ kind: 'conflict', itemName: 'Hladilnik' });
+      expect(res.problems?.[0]).toMatchObject({ kind: 'conflict', itemName: HLADILNIK });
       // It must say WHICH day binds - that is the payoff of computing a peak.
       expect((res.problems![0] as { peakDate: string }).peakDate).toBe('2099-09-20');
     }
@@ -95,7 +141,7 @@ describe.skipIf(!HAS_DB)('inventory writes against a real database', () => {
 
   it('allows the second fridge for the overlapping period', async () => {
     const res = await mod.createLoan(
-      loan({ fromDate: '2099-09-20', toDate: '2099-09-22', items: [{ itemId: ids['Hladilnik'], quantity: 1 }] }),
+      loan({ fromDate: '2099-09-20', toDate: '2099-09-22', items: [{ itemId: ids[HLADILNIK], quantity: 1 }] }),
       actor,
     );
     expect(res.ok, JSON.stringify(res)).toBe(true);
@@ -103,7 +149,7 @@ describe.skipIf(!HAS_DB)('inventory writes against a real database', () => {
 
   it('refuses a third fridge once both are committed', async () => {
     const res = await mod.createLoan(
-      loan({ fromDate: '2099-09-20', toDate: '2099-09-20', items: [{ itemId: ids['Hladilnik'], quantity: 1 }] }),
+      loan({ fromDate: '2099-09-20', toDate: '2099-09-20', items: [{ itemId: ids[HLADILNIK], quantity: 1 }] }),
       actor,
     );
     expect(res.ok).toBe(false);
@@ -112,11 +158,11 @@ describe.skipIf(!HAS_DB)('inventory writes against a real database', () => {
   // The case a naive SUM implementation wrongly refuses, end to end.
   it('allows a request that spans two non-overlapping bookings', async () => {
     const a = await mod.createLoan(
-      loan({ fromDate: '2099-10-01', toDate: '2099-10-03', items: [{ itemId: ids['Mize'], quantity: 20 }] }),
+      loan({ fromDate: '2099-10-01', toDate: '2099-10-03', items: [{ itemId: ids[MIZE], quantity: 20 }] }),
       actor,
     );
     const b = await mod.createLoan(
-      loan({ fromDate: '2099-10-05', toDate: '2099-10-07', items: [{ itemId: ids['Mize'], quantity: 20 }] }),
+      loan({ fromDate: '2099-10-05', toDate: '2099-10-07', items: [{ itemId: ids[MIZE], quantity: 20 }] }),
       actor,
     );
     expect(a.ok && b.ok).toBe(true);
@@ -124,13 +170,13 @@ describe.skipIf(!HAS_DB)('inventory writes against a real database', () => {
     // 20 out Oct 1-3 and 20 out Oct 5-7 of 30 total. Peak is 20, so 10 are free every
     // day across Oct 1-7. Summing would say 40 > 30 and refuse.
     const spanning = await mod.createLoan(
-      loan({ fromDate: '2099-10-01', toDate: '2099-10-07', items: [{ itemId: ids['Mize'], quantity: 10 }] }),
+      loan({ fromDate: '2099-10-01', toDate: '2099-10-07', items: [{ itemId: ids[MIZE], quantity: 10 }] }),
       actor,
     );
     expect(spanning.ok, JSON.stringify(spanning)).toBe(true);
 
     const tooMany = await mod.createLoan(
-      loan({ fromDate: '2099-10-01', toDate: '2099-10-07', items: [{ itemId: ids['Mize'], quantity: 11 }] }),
+      loan({ fromDate: '2099-10-01', toDate: '2099-10-07', items: [{ itemId: ids[MIZE], quantity: 11 }] }),
       actor,
     );
     expect(tooMany.ok).toBe(false);
@@ -138,7 +184,7 @@ describe.skipIf(!HAS_DB)('inventory writes against a real database', () => {
 
   it('lets a loan widen its own dates without conflicting with itself', async () => {
     const created = await mod.createLoan(
-      loan({ fromDate: '2099-11-01', toDate: '2099-11-02', items: [{ itemId: ids['Žar'], quantity: 1 }] }),
+      loan({ fromDate: '2099-11-01', toDate: '2099-11-02', items: [{ itemId: ids[ZAR], quantity: 1 }] }),
       actor,
     );
     expect(created.ok).toBe(true);
@@ -146,7 +192,7 @@ describe.skipIf(!HAS_DB)('inventory writes against a real database', () => {
 
     const widened = await mod.updateLoan(
       created.id,
-      loan({ fromDate: '2099-11-01', toDate: '2099-11-10', items: [{ itemId: ids['Žar'], quantity: 1 }] }),
+      loan({ fromDate: '2099-11-01', toDate: '2099-11-10', items: [{ itemId: ids[ZAR], quantity: 1 }] }),
       actor,
     );
     expect(widened.ok, JSON.stringify(widened)).toBe(true);
@@ -156,7 +202,7 @@ describe.skipIf(!HAS_DB)('inventory writes against a real database', () => {
   // the outer `db` instead of `tx` inside the transaction.
   it('lets exactly one of two simultaneous requests take the last unit', async () => {
     const dates = { fromDate: '2099-12-01', toDate: '2099-12-02' };
-    const single = { itemId: ids['Žar'], quantity: 1 }; // Žar has a total of 1
+    const single = { itemId: ids[ZAR], quantity: 1 }; // Žar has a total of 1
 
     const [first, second] = await Promise.all([
       mod.createLoan(loan({ ...dates, items: [single] }), actor),
@@ -169,7 +215,7 @@ describe.skipIf(!HAS_DB)('inventory writes against a real database', () => {
 
   it('performs a lifecycle transition exactly once under a double submit', async () => {
     const created = await mod.createLoan(
-      loan({ fromDate: '2099-12-20', toDate: '2099-12-21', items: [{ itemId: ids['Posoda za vodo'], quantity: 1 }] }),
+      loan({ fromDate: '2099-12-20', toDate: '2099-12-21', items: [{ itemId: ids[POSODA], quantity: 1 }] }),
       actor,
     );
     expect(created.ok).toBe(true);
@@ -194,7 +240,7 @@ describe.skipIf(!HAS_DB)('inventory writes against a real database', () => {
 
   it('frees the equipment again once returned', async () => {
     const created = await mod.createLoan(
-      loan({ fromDate: '2099-12-20', toDate: '2099-12-21', items: [{ itemId: ids['Posoda za vodo'], quantity: 4 }] }),
+      loan({ fromDate: '2099-12-20', toDate: '2099-12-21', items: [{ itemId: ids[POSODA], quantity: 4 }] }),
       actor,
     );
     expect(created.ok, JSON.stringify(created)).toBe(true);

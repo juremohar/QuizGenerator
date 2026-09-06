@@ -23,9 +23,23 @@ const OPREMA = [
   { name: 'Klopi', totalQuantity: 60, sortOrder: 50 },
 ];
 
+/** Host only, never the password - this gets printed. */
+function endpointOf(url: string): string {
+  try {
+    const u = new URL(url);
+    return `${u.hostname}${u.pathname}`;
+  } catch {
+    return '(neberljiv DATABASE_URL)';
+  }
+}
+
 async function main() {
   const url = process.env.DATABASE_URL;
   if (!url) throw new Error('DATABASE_URL ni nastavljen.');
+
+  // Since dev and production are separate Neon branches, "which one am I about to
+  // write to" is a question worth answering out loud before writing.
+  console.log(`Polnim bazo: ${endpointOf(url)}`);
 
   const db = drizzle(neon(url));
 
