@@ -16,7 +16,7 @@ export default async function InventarLayout({ children }: { children: React.Rea
   return (
     <>
       <NavInventar actor={actor} />
-      <main className="mx-auto w-full max-w-6xl px-4 pt-6 pb-20">{children}</main>
+      <main className="mx-auto w-full max-w-6xl px-4 pt-6 pb-28 md:pb-20">{children}</main>
     </>
   );
 }

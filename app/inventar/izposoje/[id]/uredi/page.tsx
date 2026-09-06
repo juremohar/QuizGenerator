@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
+import { todayLjubljana } from '@/lib/dates';
 import { getDb } from '@/db/client';
 import { fetchItems, fetchLoan } from '@/lib/inventory/queries';
 import { btn } from '@/lib/ui';
@@ -49,6 +50,7 @@ export default async function UrediIzposojoPage({ params }: Props) {
         action={urediIzposojo}
         oprema={oprema}
         loanId={loan.id}
+        danes={todayLjubljana()}
         submitLabel="Shrani spremembe"
         cancelHref={`/inventar/izposoje/${loan.id}`}
         initial={{

@@ -4,6 +4,10 @@ import { redirect } from 'next/navigation';
 import { revalidatePath } from 'next/cache';
 
 import { requireActor } from '@/lib/auth-guard';
+import { getDb } from '@/db/client';
+import { isIsoDate } from '@/lib/dates';
+import { computeAvailability } from '@/lib/inventory/availability';
+import { fetchItems, fetchOverlappingUsage } from '@/lib/inventory/queries';
 import {
   archiveItem,
   cancelLoan,
@@ -183,4 +187,45 @@ export async function arhivirajOpremo(formData: FormData): Promise<void> {
 export async function odjava(): Promise<void> {
   const { signOut } = await import('@/auth');
   await signOut({ redirectTo: '/' });
+}
+
+export interface RazpolozljivostKosov {
+  itemId: number;
+  available: number;
+  total: number;
+}
+
+/**
+ * How many of each item are free for a period, so the loan form can cap its quantity
+ * inputs at what can actually be promised instead of at total stock.
+ *
+ * This is a CONVENIENCE, not the guarantee. The binding check still happens inside the
+ * write transaction in createLoan/updateLoan, under the advisory lock - two people can
+ * hold this answer at the same moment and only one of them can win.
+ *
+ * `excludeLoanId` is what makes editing work: loan #7's own rows must not count against
+ * loan #7, or you could never widen an existing booking.
+ *
+ * requireActor() first, like every action here: a Server Action is an addressable POST
+ * endpoint, so this would otherwise leak the brigade's booking levels to anyone.
+ */
+export async function razpolozljivostZaObdobje(
+  od: string,
+  doDate: string,
+  loanId?: number,
+): Promise<RazpolozljivostKosov[]> {
+  await requireActor();
+
+  if (!isIsoDate(od) || !isIsoDate(doDate) || od > doDate) return [];
+
+  const db = getDb();
+  // Every item, not just active ones: editing an old loan can reference archived kit.
+  const oprema = await fetchItems(db);
+  const usage = await fetchOverlappingUsage(db, od, doDate, { excludeLoanId: loanId });
+
+  return computeAvailability(oprema, usage, od, doDate).map((r) => ({
+    itemId: r.itemId,
+    available: r.available,
+    total: r.total,
+  }));
 }

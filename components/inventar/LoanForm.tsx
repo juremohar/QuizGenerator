@@ -1,13 +1,22 @@
 'use client';
 
-import { useActionState, useId, useRef, useState } from 'react';
+import { useActionState, useEffect, useId, useRef, useState } from 'react';
 import Link from 'next/link';
 
-import { daysInclusive } from '@/lib/dates';
-import { DAN, stevilo } from '@/lib/sl';
+import { razpolozljivostZaObdobje, type RazpolozljivostKosov } from '@/app/inventar/actions';
 import { EMPTY_FORM_STATE, type FormState } from '@/lib/inventory/form-state';
 import { btn, card, cardBody, cardHeader, cx, errorText, field, fieldInvalid, help, label } from '@/lib/ui';
+import { DateRangeField } from './DateRangeField';
 import { SubmitButton } from './SubmitButton';
+
+/** Marks a field the server will reject if left empty. */
+function Req() {
+  return (
+    <span className="ml-0.5 text-red-600" title="obvezno polje">
+      *<span className="sr-only"> (obvezno)</span>
+    </span>
+  );
+}
 
 export interface OpremaOption {
   id: number;
@@ -39,6 +48,8 @@ interface Props {
   };
   submitLabel?: string;
   cancelHref: string;
+  /** Today on the Ljubljana clock, from the server. */
+  danes: string;
 }
 
 const MIZE = /^mize$/i;
@@ -51,6 +62,7 @@ export function LoanForm({
   initial,
   submitLabel = 'Shrani rezervacijo',
   cancelHref,
+  danes,
 }: Props) {
   const uid = useId();
   const [state, formAction] = useActionState(action, EMPTY_FORM_STATE);
@@ -80,7 +92,37 @@ export function LoanForm({
     tablesLine.quantity > 0 &&
     !lines.some((l) => l.itemId === klopi.id);
 
-  const trajanje = from && to && from <= to ? daysInclusive(from, to) : null;
+  /**
+   * Free stock for the chosen period, keyed by item id. `null` until the first answer
+   * arrives (and after a failure), which is the signal to fall back to total stock
+   * rather than to cap everything at zero and block a legitimate booking.
+   */
+  const [prosto, setProsto] = useState<Map<number, RazpolozljivostKosov> | null>(null);
+
+  useEffect(() => {
+    if (!from || !to || from > to) return;
+    // A late reply from a period the user has already moved on from must not overwrite
+    // a newer one, so each request checks whether it is still the current one.
+    let current = true;
+    setProsto(null);
+    razpolozljivostZaObdobje(from, to, loanId)
+      .then((rows) => {
+        if (current) setProsto(new Map(rows.map((r) => [r.itemId, r])));
+      })
+      .catch(() => {
+        if (current) setProsto(null);
+      });
+    return () => {
+      current = false;
+    };
+  }, [from, to, loanId]);
+
+  /** What this line may ask for: free stock when known, total stock when not. */
+  function maxFor(itemId: number | ''): number | undefined {
+    if (itemId === '') return undefined;
+    const item = oprema.find((o) => o.id === itemId);
+    return prosto?.get(itemId)?.available ?? item?.totalQuantity;
+  }
 
   function update(key: number, patch: Partial<LoanFormLine>) {
     setLines((prev) => prev.map((line) => (line.key === key ? { ...line, ...patch } : line)));
@@ -115,6 +157,7 @@ export function LoanForm({
           <div>
             <label className={label} htmlFor="borrowerName">
               Ime in priimek
+              <Req />
             </label>
             <input
               className={cx(field, state.fieldErrors.borrowerName && fieldInvalid)}
@@ -132,6 +175,7 @@ export function LoanForm({
           <div>
             <label className={label} htmlFor="borrowerPhone">
               Telefon
+              <Req />
             </label>
             <input
               className={cx(field, state.fieldErrors.borrowerPhone && fieldInvalid)}
@@ -154,6 +198,7 @@ export function LoanForm({
           <div className="sm:col-span-2">
             <label className={label} htmlFor="purpose">
               Dogodek / namen
+              <Req />
             </label>
             <textarea
               className={cx(field, state.fieldErrors.purpose && fieldInvalid)}
@@ -174,49 +219,27 @@ export function LoanForm({
           <span className="flex items-center gap-2">
             <i className="bi bi-calendar3 text-slate-400" aria-hidden="true" />
             Obdobje
+            <Req />
           </span>
-          {/* Running total: a two-week booking entered by mistyping the year is obvious
-              the moment the day count is on screen. */}
-          {trajanje !== null && (
-            <span className="text-sm font-normal text-slate-500">{stevilo(trajanje, DAN)}</span>
-          )}
         </div>
-        <div className={cx(cardBody, 'grid max-w-md grid-cols-2 gap-4')}>
-          <div>
-            <label className={label} htmlFor="fromDate">
-              Od
-            </label>
-            <input
-              className={cx(field, state.fieldErrors.fromDate && fieldInvalid)}
-              id="fromDate"
-              name="fromDate"
-              type="date"
-              value={from}
-              onChange={(e) => {
-                setFrom(e.target.value);
-                if (e.target.value > to) setTo(e.target.value);
-              }}
-              required
-            />
-            {state.fieldErrors.fromDate && <p className={errorText}>{state.fieldErrors.fromDate}</p>}
-          </div>
-
-          <div>
-            <label className={label} htmlFor="toDate">
-              Do
-            </label>
-            <input
-              className={cx(field, state.fieldErrors.toDate && fieldInvalid)}
-              id="toDate"
-              name="toDate"
-              type="date"
-              min={from || undefined}
-              value={to}
-              onChange={(e) => setTo(e.target.value)}
-              required
-            />
-            {state.fieldErrors.toDate && <p className={errorText}>{state.fieldErrors.toDate}</p>}
-          </div>
+        <div className={cx(cardBody, 'max-w-sm')}>
+          {/* Two fields, one shared calendar that opens on demand. The values still post
+              as fromDate/toDate, so the Server Action is unchanged. */}
+          <DateRangeField
+            from={from}
+            to={to}
+            danes={danes}
+            invalid={Boolean(state.fieldErrors.fromDate || state.fieldErrors.toDate)}
+            onChange={(a, b) => {
+              setFrom(a);
+              setTo(b);
+            }}
+          />
+          <input type="hidden" name="fromDate" value={from} />
+          <input type="hidden" name="toDate" value={to} />
+          {(state.fieldErrors.fromDate || state.fieldErrors.toDate) && (
+            <p className={errorText}>{state.fieldErrors.fromDate ?? state.fieldErrors.toDate}</p>
+          )}
         </div>
       </section>
 
@@ -225,6 +248,7 @@ export function LoanForm({
           <span className="flex items-center gap-2">
             <i className="bi bi-boxes text-slate-400" aria-hidden="true" />
             Oprema
+            <Req />
           </span>
           <button
             type="button"
@@ -245,11 +269,15 @@ export function LoanForm({
           <div className="space-y-4">
             {lines.map((line, index) => {
               const selected = oprema.find((o) => o.id === line.itemId);
+              const max = maxFor(line.itemId);
+              const tooMany =
+                typeof line.quantity === 'number' && max !== undefined && line.quantity > max;
               return (
                 <div className="flex flex-wrap items-end gap-3" key={line.key}>
                   <div className="min-w-56 flex-1">
                     <label className={label} htmlFor={`${uid}-item-${line.key}`}>
                       Oprema {index + 1}
+                      <Req />
                     </label>
                     <select
                       className={field}
@@ -260,27 +288,39 @@ export function LoanForm({
                       required
                     >
                       <option value="">– izberite opremo –</option>
-                      {oprema.map((o) => (
-                        <option key={o.id} value={o.id}>
-                          {o.name} (skupaj {o.totalQuantity})
-                        </option>
-                      ))}
+                      {oprema.map((o) => {
+                        const free = prosto?.get(o.id)?.available;
+                        return (
+                          <option key={o.id} value={o.id} disabled={free === 0}>
+                            {o.name}
+                            {free === undefined
+                              ? ` (skupaj ${o.totalQuantity})`
+                              : free === 0
+                                ? ' – ni na voljo'
+                                : ` (na voljo ${free} od ${o.totalQuantity})`}
+                          </option>
+                        );
+                      })}
                     </select>
                   </div>
 
                   <div className="w-32">
                     {/* Was an unlabelled number box; on a phone it read as a stray field. */}
                     <label className={label} htmlFor={`${uid}-qty-${line.key}`}>
-                      Kosov{selected ? ` / ${selected.totalQuantity}` : ''}
+                      Kosov
+                      <Req />
+                      {max !== undefined && (
+                        <span className="ml-1 font-normal text-slate-400">/ {max}</span>
+                      )}
                     </label>
                     <input
-                      className={field}
+                      className={cx(field, tooMany && fieldInvalid)}
                       id={`${uid}-qty-${line.key}`}
                       name="quantity"
                       type="number"
                       inputMode="numeric"
                       min={1}
-                      max={selected?.totalQuantity}
+                      max={max}
                       value={line.quantity}
                       onChange={(e) => update(line.key, { quantity: Number(e.target.value) || '' })}
                       required

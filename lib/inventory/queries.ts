@@ -7,6 +7,7 @@ import type { Tx } from '@/db/tx';
 import type { IsoDate } from '../dates';
 import { todayLjubljana } from '../dates';
 import type { UsageRow } from './availability';
+import { bucketDashboard } from './dashboard';
 import { OCCUPYING_STATUSES, type LoanStatus } from './transitions';
 
 type DbLike = ReturnType<typeof getDb> | Tx;
@@ -208,21 +209,7 @@ export async function fetchDashboard() {
 
   const withItems = await attachItems(active);
 
-  return {
-    danes,
-    izposojeno: withItems.filter(
-      (l) => l.status === 'out' && l.fromDate <= danes && danes <= l.toDate,
-    ),
-    zamuja: withItems.filter((l) => l.status === 'out' && l.toDate < danes),
-    zaPrevzem: withItems.filter((l) => l.status === 'reserved' && l.fromDate <= danes),
-    // Every future reservation, not a rolling window: the dashboard is the one place
-    // that answers "what is coming", and a booking three weeks out is exactly the one
-    // people forget. Sorted by start date - the outer query orders by `toDate`, which is
-    // what the overdue and on-loan lists want but not this one.
-    prihajajoce: withItems
-      .filter((l) => l.status === 'reserved' && l.fromDate > danes)
-      .sort((a, b) => (a.fromDate === b.fromDate ? a.id - b.id : a.fromDate < b.fromDate ? -1 : 1)),
-  };
+  return { danes, ...bucketDashboard(withItems, danes) };
 }
 
 /** Usage rows for the timeline, with borrower names for the cell tooltips. */

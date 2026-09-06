@@ -41,10 +41,9 @@ export default async function IzposojePage({ searchParams }: Props) {
 
       {/* Plain server-rendered links: no client JS needed for filtering. The strip
           scrolls sideways on a phone rather than wrapping onto two ragged lines. */}
-      <nav
-        aria-label="Filter izposoj"
-        className="-mx-4 mb-4 flex gap-2 overflow-x-auto px-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
-      >
+      {/* Wraps rather than scrolls: five short labels fit two rows on a phone, and a
+          second horizontally-scrolling strip under the nav clipped "Vse" off-screen. */}
+      <nav aria-label="Filter izposoj" className="mb-4 flex flex-wrap gap-2">
         {FILTRI.map((f) => (
           <Link
             key={f.key}

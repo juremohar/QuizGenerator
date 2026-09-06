@@ -38,6 +38,7 @@ export default async function NovaIzposojaPage({ searchParams }: Props) {
         <LoanForm
           action={ustvariIzposojo}
           oprema={oprema}
+          danes={danes}
           cancelHref="/inventar"
           initial={{
             borrowerName: '',

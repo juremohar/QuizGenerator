@@ -3,9 +3,9 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
-import { addDays, daysInclusive, startOfWeek, type IsoDate } from '@/lib/dates';
-import { DAN, stevilo } from '@/lib/sl';
-import { btn, card, cardBody, cx, field, label } from '@/lib/ui';
+import { addDays, startOfWeek, type IsoDate } from '@/lib/dates';
+import { btn, card, cardBody, cx } from '@/lib/ui';
+import { DateRangeField } from './DateRangeField';
 
 interface Props {
   od: string;
@@ -79,55 +79,48 @@ export function DateRangeForm({
         </div>
 
         <form
-          className="flex flex-wrap items-end gap-3"
+          className="flex flex-wrap items-start gap-3"
           onSubmit={(event) => {
             event.preventDefault();
             if (invalid) return;
             router.push(`${action}?od=${from}&do=${to}`);
           }}
         >
-          <div className="min-w-36 flex-1 sm:flex-none">
-            <label className={label} htmlFor="od">
-              Od
-            </label>
-            <input
-              className={field}
-              type="date"
-              id="od"
-              value={from}
-              onChange={(e) => {
-                setFrom(e.target.value);
-                // Keep the range sane rather than letting the user submit something invalid.
-                if (e.target.value > to) setTo(e.target.value);
+          {/* Same control as the loan form, so the two views behave identically. */}
+          <div className="min-w-64 flex-1">
+            <DateRangeField
+              from={from}
+              to={to}
+              danes={danes}
+              invalid={invalid}
+              onChange={(a, b) => {
+                setFrom(a);
+                setTo(b);
               }}
             />
           </div>
-          <div className="min-w-36 flex-1 sm:flex-none">
-            <label className={label} htmlFor="do">
-              Do
-            </label>
-            <input
-              className={field}
-              type="date"
-              id="do"
-              value={to}
-              min={from}
-              onChange={(e) => setTo(e.target.value)}
-            />
+          <div className="max-sm:w-full">
+            {/* An empty stand-in for the "Od"/"Do" labels. Aligning to the bottom instead
+                would line the button up with the day-count caption under the fields, not
+                with the fields themselves; this tracks the real label's height because it
+                carries the same classes. */}
+            <span aria-hidden="true" className="mb-1.5 hidden text-sm font-medium sm:block">
+              &nbsp;
+            </span>
+            <button
+              className={btn('primary', 'md', 'max-sm:w-full')}
+              type="submit"
+              disabled={invalid}
+            >
+              <i className="bi bi-search" aria-hidden="true" />
+              {submitLabel}
+            </button>
           </div>
-          <button className={btn('primary', 'md', 'max-sm:w-full')} type="submit" disabled={invalid}>
-            <i className="bi bi-search" aria-hidden="true" />
-            {submitLabel}
-          </button>
 
-          {invalid ? (
+          {invalid && (
             <p className="w-full text-sm text-red-600">
               Datum &quot;do&quot; ne more biti pred datumom &quot;od&quot;.
             </p>
-          ) : (
-            <span className="pb-3 text-sm text-slate-500">
-              {stevilo(daysInclusive(from, to), DAN)}
-            </span>
           )}
         </form>
       </div>
