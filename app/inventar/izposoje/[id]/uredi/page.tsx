@@ -1,8 +1,10 @@
+import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
 import { getDb } from '@/db/client';
 import { fetchItems, fetchLoan } from '@/lib/inventory/queries';
 import { LoanForm } from '@/components/inventar/LoanForm';
+import { PageHeader } from '@/components/inventar/PageHeader';
 import { urediIzposojo } from '@/app/inventar/actions';
 
 export const dynamic = 'force-dynamic';
@@ -19,7 +21,15 @@ export default async function UrediIzposojoPage({ params }: Props) {
 
   if (loan.status === 'returned' || loan.status === 'cancelled') {
     return (
-      <div className="alert alert-warning">Zaključene izposoje ni več mogoče urejati.</div>
+      <>
+        <div className="alert alert-warning">
+          <i className="bi bi-lock me-2" aria-hidden="true" />
+          Zaključene izposoje ni več mogoče urejati.
+        </div>
+        <Link className="btn btn-outline-secondary" href={`/inventar/izposoje/${loan.id}`}>
+          Nazaj na izposojo #{loan.id}
+        </Link>
+      </>
     );
   }
 
@@ -28,10 +38,11 @@ export default async function UrediIzposojoPage({ params }: Props) {
 
   return (
     <>
-      <h1 className="fs-3">Uredi izposojo #{loan.id}</h1>
-      <p className="text-secondary">
-        Če je bil vrnjen le del opreme, tukaj popravite število kosov, nato potrdite vrnitev.
-      </p>
+      <PageHeader
+        back={{ href: `/inventar/izposoje/${loan.id}`, label: `Izposoja #${loan.id}` }}
+        title={`Uredi izposojo #${loan.id}`}
+        lead="Če je bil vrnjen le del opreme, tukaj popravite število kosov, nato potrdite vrnitev."
+      />
 
       <LoanForm
         action={urediIzposojo}

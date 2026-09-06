@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import { getDb } from '@/db/client';
 import { fetchItems } from '@/lib/inventory/queries';
 import { ItemForm } from '@/components/inventar/ItemForm';
+import { PageHeader } from '@/components/inventar/PageHeader';
 
 export const dynamic = 'force-dynamic';
 
@@ -18,7 +19,7 @@ export default async function UrediOpremoPage({ params }: Props) {
 
   return (
     <>
-      <h1 className="fs-3">Uredi: {item.name}</h1>
+      <PageHeader back={{ href: '/inventar/oprema', label: 'Oprema' }} title={`Uredi: ${item.name}`} />
       <ItemForm
         itemId={item.id}
         initial={{

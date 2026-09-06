@@ -30,20 +30,22 @@ export function ReturnForm({ loanId, overdue }: Props) {
         </div>
       )}
 
-      <div className="mb-2">
+      <div className="mb-3">
         <label className="form-label" htmlFor="returnConditionNote">
-          Stanje ob vrnitvi (poškodbe, manjkajoči kosi …)
+          Stanje ob vrnitvi
         </label>
         <textarea
           className="form-control"
           id="returnConditionNote"
           name="returnConditionNote"
           rows={2}
+          placeholder="poškodbe, manjkajoči kosi, umazanija …"
         />
+        <div className="form-text">Pustite prazno, če je vse vrnjeno nepoškodovano.</div>
       </div>
 
       {overdue && (
-        <div className="form-check mb-2">
+        <div className="form-check mb-3">
           <input
             className="form-check-input"
             type="checkbox"
@@ -52,11 +54,15 @@ export function ReturnForm({ loanId, overdue }: Props) {
           />
           <label className="form-check-label" htmlFor="extendToToday">
             Podaljšaj obdobje do danes
+            <span className="d-block form-text mt-0">
+              Zapis ne bo več označen kot zamuda.
+            </span>
           </label>
         </div>
       )}
 
-      <SubmitButton className="btn btn-success" pendingLabel="Shranjujem …">
+      <SubmitButton className="btn btn-success w-100" pendingLabel="Shranjujem …">
+        <i className="bi bi-check-lg me-2" aria-hidden="true" />
         Potrdi vrnitev
       </SubmitButton>
     </form>

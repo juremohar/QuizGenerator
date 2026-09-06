@@ -1,7 +1,9 @@
 import { isIsoDate, todayLjubljana } from '@/lib/dates';
 import { getDb } from '@/db/client';
 import { fetchItems } from '@/lib/inventory/queries';
+import { EmptyState } from '@/components/inventar/EmptyState';
 import { LoanForm } from '@/components/inventar/LoanForm';
+import { PageHeader } from '@/components/inventar/PageHeader';
 import { ustvariIzposojo } from '@/app/inventar/actions';
 
 export const dynamic = 'force-dynamic';
@@ -19,24 +21,34 @@ export default async function NovaIzposojaPage({ searchParams }: Props) {
 
   return (
     <>
-      <h1 className="fs-3">Nova izposoja</h1>
-      <p className="text-secondary">
-        Razpoložljivost se preveri ob shranjevanju, za celotno izbrano obdobje.
-      </p>
-
-      <LoanForm
-        action={ustvariIzposojo}
-        oprema={oprema}
-        cancelHref="/inventar"
-        initial={{
-          borrowerName: '',
-          borrowerPhone: '',
-          purpose: '',
-          fromDate: od,
-          toDate: doDate,
-          lines: [{ itemId: '', quantity: 1 }],
-        }}
+      <PageHeader
+        back={{ href: '/inventar', label: 'Pregled' }}
+        title="Nova izposoja"
+        lead="Razpoložljivost se preveri ob shranjevanju, za celotno izbrano obdobje."
       />
+
+      {oprema.length === 0 ? (
+        <EmptyState
+          icon="bi-boxes"
+          action={{ href: '/inventar/oprema/nova', label: 'Dodaj opremo' }}
+        >
+          Ni aktivne opreme, ki bi jo bilo mogoče izposoditi.
+        </EmptyState>
+      ) : (
+        <LoanForm
+          action={ustvariIzposojo}
+          oprema={oprema}
+          cancelHref="/inventar"
+          initial={{
+            borrowerName: '',
+            borrowerPhone: '',
+            purpose: '',
+            fromDate: od,
+            toDate: doDate,
+            lines: [{ itemId: '', quantity: 1 }],
+          }}
+        />
+      )}
     </>
   );
 }

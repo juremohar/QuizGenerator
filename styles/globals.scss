@@ -3,8 +3,19 @@
 @import "bootstrap/scss/bootstrap";
 @import "bootstrap-icons/font/bootstrap-icons.css";
 
+// Hides the blinking caret that the quiz pages would otherwise show on non-editable
+// text. `caret-color` inherits, so hiding it on `*` also reached every input and
+// textarea in the inventory forms - a field you can type in but with no visible cursor
+// reads as broken. The second rule puts the caret back where someone actually types.
 * {
     caret-color: transparent;
+}
+
+input,
+textarea,
+select,
+[contenteditable] {
+    caret-color: auto;
 }
 
 .callout {
@@ -93,16 +104,219 @@
 }
 
 // --- Inventar ---------------------------------------------------------------------
+// The inventory app is used one-handed on a phone at the fire station door as often as
+// on a desktop, so every list here has a card layout below `md` and a table above it.
+
+.inv {
+    --inv-brand: #{$gray-900};
+    --inv-accent: #c1121f; // gasilska rdeča - identity only, never a status colour
+}
+
+// Dark identity band. Status red stays reserved for "zamuja", so the brand shows up as
+// a thin accent rule rather than a red header that would compete with it.
+//
+// The band sits inside the root layout's `.container`, so it is pushed back out by
+// exactly that container's gutter. Deliberately not the `100vw` full-bleed trick:
+// `100vw` counts the scrollbar and would add a horizontal scroll on desktop.
+.inv-header {
+    background: var(--inv-brand);
+    border-bottom: 3px solid var(--inv-accent);
+    color: #fff;
+    margin-inline: calc(var(--bs-gutter-x, 1.5rem) * -0.5);
+    padding-inline: calc(var(--bs-gutter-x, 1.5rem) * 0.5);
+}
+
+.inv-header a {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.inv-brand {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+
+    &:hover {
+        color: #fff;
+    }
+}
+
+.inv-user {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+// Tab strip: scrolls sideways on a narrow phone instead of wrapping into a ragged
+// two-line block. The scrollbar is hidden because the tabs are also reachable by swipe.
+.inv-tabs {
+    display: flex;
+    gap: 0.25rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.inv-tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    flex: 0 0 auto;
+    padding: 0.55rem 0.85rem;
+    border-radius: var(--bs-border-radius) var(--bs-border-radius) 0 0;
+    border-bottom: 3px solid transparent;
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 0.95rem;
+
+    &:hover {
+        color: #fff;
+        background: rgba(255, 255, 255, 0.08);
+    }
+
+    &.active {
+        color: #fff;
+        font-weight: 600;
+        border-bottom-color: var(--inv-accent);
+        background: rgba(255, 255, 255, 0.08);
+    }
+}
+
+// Dashboard counters. Whole tile is the link so it is an easy thumb target.
+.inv-stat {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid var(--bs-border-color);
+    border-left: 4px solid var(--bs-secondary);
+    border-radius: var(--bs-border-radius);
+    padding: 0.75rem 0.9rem;
+    background: var(--bs-body-bg);
+    height: 100%;
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+
+    &:hover {
+        box-shadow: var(--bs-box-shadow-sm);
+        transform: translateY(-1px);
+        color: inherit;
+    }
+
+    .inv-stat-value {
+        font-size: 1.75rem;
+        font-weight: 600;
+        line-height: 1.1;
+    }
+
+    .inv-stat-label {
+        font-size: 0.8rem;
+        color: var(--bs-secondary-color);
+    }
+}
+
+.inv-stat-danger {
+    border-left-color: var(--bs-danger);
+
+    .inv-stat-value {
+        color: var(--bs-danger);
+    }
+}
+
+.inv-stat-primary { border-left-color: var(--bs-primary); }
+.inv-stat-warning { border-left-color: var(--bs-warning); }
+.inv-stat-success { border-left-color: var(--bs-success); }
+
+// One record rendered as a card on phones. `dl` keeps the label/value pairing readable
+// to a screen reader instead of relying on a lost table header.
+.inv-card {
+    border: 1px solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    padding: 0.75rem 0.9rem;
+    background: var(--bs-body-bg);
+
+    & + & {
+        margin-top: 0.5rem;
+    }
+
+    dl {
+        margin: 0;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        column-gap: 0.75rem;
+        row-gap: 0.15rem;
+        font-size: 0.9rem;
+    }
+
+    dt {
+        color: var(--bs-secondary-color);
+        font-weight: 400;
+    }
+
+    dd {
+        margin: 0;
+    }
+}
+
+.inv-card-danger {
+    border-color: var(--bs-danger-border-subtle);
+    background: var(--bs-danger-bg-subtle);
+}
+
+// Bootstrap does not generate responsive width utilities, and the pattern "full-width
+// button on a phone, natural width beside a heading on a desktop" is used on every page.
+@include media-breakpoint-up(sm) {
+    .w-sm-auto {
+        width: auto !important;
+    }
+}
+
+// Empty states: a quiet icon plus the action that fills the list.
+.inv-empty {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    color: var(--bs-secondary-color);
+
+    .bi {
+        font-size: 1.75rem;
+        display: block;
+        margin-bottom: 0.35rem;
+        opacity: 0.5;
+    }
+}
+
+// Proportion of an item's stock that is spoken for, next to the raw numbers.
+.inv-meter {
+    height: 6px;
+    border-radius: 3px;
+    background: var(--bs-secondary-bg);
+    overflow: hidden;
+
+    span {
+        display: block;
+        height: 100%;
+        background: var(--bs-success);
+    }
+
+    &.inv-meter-part span { background: var(--bs-warning); }
+    &.inv-meter-full span { background: var(--bs-danger); }
+}
+
 // The timeline needs fixed, narrow day columns to fit several weeks on screen.
 .koledar {
     table-layout: fixed;
     font-size: 12px;
+    margin-bottom: 0;
 
     th, td {
         text-align: center;
         padding: 2px;
     }
 
+    // `table-layout: fixed` takes every column width from the first row, so this needs
+    // an explicit `width`; `min-width` alone is ignored and the name column collapses
+    // under the day headers.
     .koledar-oprema {
         text-align: left;
         white-space: nowrap;
@@ -110,13 +324,85 @@
         left: 0;
         background: var(--bs-body-bg);
         z-index: 1;
+        width: 9rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    thead .koledar-oprema {
+        background: var(--bs-tertiary-bg);
     }
 
     .koledar-dan {
-        width: 26px;
+        width: 28px;
+    }
+
+    // A run of days carries no month name of its own, so the band above the numbers is
+    // the only thing that says whether "01" is September or October.
+    .koledar-mesec {
+        background: var(--bs-tertiary-bg);
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        border-left: 2px solid var(--bs-border-color);
+
+        span {
+            display: block;
+            overflow: hidden;
+            white-space: nowrap;
+        }
     }
 
     .koledar-teden {
         border-left: 2px solid var(--bs-border-color);
+    }
+
+    .koledar-vikend {
+        background: var(--bs-tertiary-bg);
+    }
+
+    .koledar-danes {
+        box-shadow: inset 2px 0 0 var(--bs-primary), inset -2px 0 0 var(--bs-primary);
+        font-weight: 600;
+    }
+}
+
+.koledar-legenda {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.25rem;
+    font-size: 0.85rem;
+    color: var(--bs-secondary-color);
+
+    span.swatch {
+        display: inline-block;
+        width: 0.9rem;
+        height: 0.9rem;
+        border: 1px solid var(--bs-border-color);
+        border-radius: 2px;
+        vertical-align: -2px;
+        margin-right: 0.35rem;
+    }
+}
+
+// Comfortable touch targets on a phone; Bootstrap's defaults are tuned for a mouse.
+@include media-breakpoint-down(md) {
+    .inv .btn {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .inv .btn-sm {
+        min-height: 38px;
+    }
+
+    // 16px keeps iOS Safari from zooming the viewport when a field is focused.
+    .inv .form-control,
+    .inv .form-select {
+        font-size: 16px;
+        min-height: 44px;
     }
 }
