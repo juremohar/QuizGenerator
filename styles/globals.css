@@ -1,0 +1,129 @@
+@import 'tailwindcss';
+
+/**
+ * Design tokens. Tailwind v4 is CSS-first: there is no tailwind.config.js, `@theme`
+ * is the config. Anything declared here becomes a utility (`--color-brand` gives you
+ * `text-brand`, `border-brand`, `bg-brand`).
+ *
+ * The palette is deliberately thin. Slate carries the chrome, and red / amber /
+ * emerald / blue are reserved for loan status so that a colour always means the same
+ * thing. `--color-brand` is the fire-brigade red and is used ONLY for identity (the
+ * rule under the header) - never for a status - so it can never be confused with
+ * "zamuja".
+ */
+@theme {
+  --color-brand: #c1121f;
+}
+
+@layer base {
+  html {
+    /* Anchor links from the dashboard tiles land under the sticky header otherwise. */
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+  }
+
+  /**
+   * Hides the blinking caret the quiz pages would otherwise show on non-editable text.
+   * `caret-color` inherits, so restricting it to `*` also reached every input in the
+   * inventory forms - a field you can type in with no visible cursor reads as broken.
+   */
+  * {
+    caret-color: transparent;
+  }
+
+  input,
+  textarea,
+  select,
+  [contenteditable] {
+    caret-color: auto;
+  }
+}
+
+/**
+ * The availability timeline. This one is real CSS rather than utilities: a fixed table
+ * layout with a sticky first column is structural, and expressing it as forty repeated
+ * utility strings on every generated cell would be worse in every way.
+ */
+@layer components {
+  .koledar {
+    table-layout: fixed;
+    font-size: 12px;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+
+  .koledar th,
+  .koledar td {
+    text-align: center;
+    padding: 2px;
+    border-right: 1px solid var(--color-slate-200);
+    border-bottom: 1px solid var(--color-slate-200);
+  }
+
+  /* `table-layout: fixed` takes every column width from the first row, so this needs an
+     explicit `width`; `min-width` alone is ignored and the name column collapses. */
+  .koledar-oprema {
+    text-align: left !important;
+    white-space: nowrap;
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    width: 9rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: var(--color-white);
+    padding-inline: 0.5rem !important;
+  }
+
+  .koledar thead .koledar-oprema {
+    background: var(--color-slate-100);
+  }
+
+  .koledar-dan {
+    width: 28px;
+  }
+
+  /* A run of days carries no month name of its own, so the band above the numbers is
+     the only thing that says whether "01" is September or October. */
+  .koledar-mesec {
+    background: var(--color-slate-100);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--color-slate-500);
+  }
+
+  .koledar-mesec span {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .koledar-teden {
+    border-left: 2px solid var(--color-slate-300);
+  }
+
+  .koledar-vikend {
+    background: var(--color-slate-50);
+  }
+
+  .koledar-danes {
+    box-shadow:
+      inset 2px 0 0 var(--color-blue-500),
+      inset -2px 0 0 var(--color-blue-500);
+    font-weight: 600;
+  }
+
+  .koledar-zasedeno-delno {
+    background: var(--color-amber-100);
+  }
+
+  .koledar-zasedeno-polno {
+    background: var(--color-red-100);
+  }
+}

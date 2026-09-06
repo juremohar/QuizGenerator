@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { daysInclusive, formatRangeSl } from '@/lib/dates';
 import { DAN, stevilo } from '@/lib/sl';
 import type { LoanListRow } from '@/lib/inventory/queries';
+import { cx } from '@/lib/ui';
 import { EmptyState } from './EmptyState';
 import { LoanStatusBadge } from './LoanStatusBadge';
 import { PhoneLink } from './PhoneLink';
@@ -26,6 +27,9 @@ function overdueDays(loan: LoanListRow, danes: string): number {
   return daysInclusive(loan.toDate, danes) - 1;
 }
 
+const TH = 'px-3 py-2 text-left text-xs font-medium tracking-wide text-slate-500 uppercase';
+const TD = 'px-3 py-3 align-middle text-sm text-slate-700';
+
 /**
  * A loan has seven attributes worth showing, which is three too many for a 390px table.
  * Below `md` each loan becomes a card; above it the table is still the faster scan.
@@ -48,97 +52,126 @@ export function LoanTable({
 
   return (
     <>
-      <div className="d-md-none">
+      <div className="space-y-2 md:hidden">
         {loans.map((loan) => {
           const overdue = loan.status === 'out' && loan.toDate < danes;
           return (
-            <div className={`inv-card ${overdue ? 'inv-card-danger' : ''}`} key={loan.id}>
-              <div className="d-flex justify-content-between align-items-start gap-2 mb-2">
+            <div
+              key={loan.id}
+              className={cx(
+                'rounded-xl border p-3',
+                overdue ? 'border-red-200 bg-red-50' : 'border-slate-200 bg-white',
+              )}
+            >
+              <div className="mb-2 flex items-start justify-between gap-2">
                 <Link
-                  className="fw-semibold text-decoration-none"
                   href={`/inventar/izposoje/${loan.id}`}
+                  className="font-semibold text-slate-900 hover:underline"
                 >
                   {loan.borrowerName}
-                  <span className="text-secondary fw-normal ms-1">#{loan.id}</span>
+                  <span className="ml-1.5 font-normal text-slate-400">#{loan.id}</span>
                 </Link>
                 <LoanStatusBadge status={loan.status} overdue={overdue} />
               </div>
 
-              <dl>
-                <dt>Obdobje</dt>
-                <dd>
+              <dl className="grid grid-cols-[auto_1fr] gap-x-3 gap-y-1 text-sm">
+                <dt className="text-slate-500">Obdobje</dt>
+                <dd className="text-slate-700">
                   {formatRangeSl(loan.fromDate, loan.toDate)}
                   {overdue && (
-                    <span className="text-danger fw-semibold ms-1">
+                    <span className="ml-1 font-semibold text-red-700">
                       (zamuja {stevilo(overdueDays(loan, danes), DAN)})
                     </span>
                   )}
                 </dd>
 
-                <dt>Oprema</dt>
-                <dd>{opremaLabel(loan)}</dd>
+                <dt className="text-slate-500">Oprema</dt>
+                <dd className="text-slate-700">{opremaLabel(loan)}</dd>
 
                 {showPurpose && (
                   <>
-                    <dt>Dogodek</dt>
-                    <dd>{loan.purpose}</dd>
+                    <dt className="text-slate-500">Dogodek</dt>
+                    <dd className="text-slate-700">{loan.purpose}</dd>
                   </>
                 )}
 
-                <dt>Telefon</dt>
+                <dt className="text-slate-500">Telefon</dt>
                 <dd>
                   <PhoneLink phone={loan.borrowerPhone} />
                 </dd>
               </dl>
 
-              {action && <div className="mt-3 d-grid">{action(loan)}</div>}
+              {action && <div className="mt-3">{action(loan)}</div>}
             </div>
           );
         })}
       </div>
 
-      <div className="table-responsive d-none d-md-block">
-        <table className="table table-sm table-hover align-middle mb-0">
+      <div className="-mx-4 overflow-x-auto max-md:hidden">
+        <table className="w-full min-w-max border-collapse px-4">
           <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Izposojevalec</th>
-              {showPurpose && <th scope="col">Dogodek</th>}
-              <th scope="col">Obdobje</th>
-              <th scope="col">Oprema</th>
-              <th scope="col">Telefon</th>
-              {showStatus && <th scope="col">Status</th>}
-              {action && <th scope="col" />}
+            <tr className="border-b border-slate-200">
+              <th scope="col" className={TH}>
+                #
+              </th>
+              <th scope="col" className={TH}>
+                Izposojevalec
+              </th>
+              {showPurpose && (
+                <th scope="col" className={TH}>
+                  Dogodek
+                </th>
+              )}
+              <th scope="col" className={TH}>
+                Obdobje
+              </th>
+              <th scope="col" className={TH}>
+                Oprema
+              </th>
+              <th scope="col" className={TH}>
+                Telefon
+              </th>
+              {showStatus && (
+                <th scope="col" className={TH}>
+                  Status
+                </th>
+              )}
+              {action && <th scope="col" className={TH} />}
             </tr>
           </thead>
-          <tbody>
+          <tbody className="divide-y divide-slate-100">
             {loans.map((loan) => {
               const overdue = loan.status === 'out' && loan.toDate < danes;
               return (
-                <tr key={loan.id}>
-                  <td>
-                    <Link href={`/inventar/izposoje/${loan.id}`}>#{loan.id}</Link>
+                <tr key={loan.id} className="hover:bg-slate-50">
+                  <td className={cx(TD, 'pl-4')}>
+                    <Link
+                      href={`/inventar/izposoje/${loan.id}`}
+                      className="font-medium text-blue-700 hover:underline"
+                    >
+                      #{loan.id}
+                    </Link>
                   </td>
-                  <td>{loan.borrowerName}</td>
-                  {showPurpose && <td>{loan.purpose}</td>}
-                  <td className="text-nowrap">
+                  <td className={cx(TD, 'font-medium text-slate-900')}>{loan.borrowerName}</td>
+                  {showPurpose && <td className={TD}>{loan.purpose}</td>}
+                  <td className={cx(TD, 'whitespace-nowrap')}>
                     {formatRangeSl(loan.fromDate, loan.toDate)}
                     {overdue && (
-                      <div className="text-danger small fw-semibold">
+                      <div className="text-xs font-semibold text-red-700">
                         zamuja {stevilo(overdueDays(loan, danes), DAN)}
                       </div>
                     )}
                   </td>
-                  <td>{opremaLabel(loan)}</td>
-                  <td>
+                  <td className={TD}>{opremaLabel(loan)}</td>
+                  <td className={TD}>
                     <PhoneLink phone={loan.borrowerPhone} />
                   </td>
                   {showStatus && (
-                    <td>
+                    <td className={TD}>
                       <LoanStatusBadge status={loan.status} overdue={overdue} />
                     </td>
                   )}
-                  {action && <td className="text-end">{action(loan)}</td>}
+                  {action && <td className={cx(TD, 'pr-4 text-right')}>{action(loan)}</td>}
                 </tr>
               );
             })}

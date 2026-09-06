@@ -14,11 +14,9 @@ export default async function InventarLayout({ children }: { children: React.Rea
   const actor = await requireActor();
 
   return (
-    // `.inv` scopes the inventory design tokens and the touch-target sizing, so none of
-    // it leaks into the quiz pages that share this stylesheet.
-    <div className="inv pb-5">
+    <>
       <NavInventar actor={actor} />
-      {children}
-    </div>
+      <main className="mx-auto w-full max-w-6xl px-4 pt-6 pb-20">{children}</main>
+    </>
   );
 }

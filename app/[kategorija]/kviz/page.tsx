@@ -4,6 +4,7 @@ import Link from 'next/link';
 
 import { KVIZI, isKategorija } from '@/lib/quiz/config';
 import { buildQuizForKategorija } from '@/lib/quiz/data.server';
+import { btn } from '@/lib/ui';
 import { QuizSections } from '@/components/quiz/QuizSections';
 import { NovKvizButton } from '@/components/quiz/NovKvizButton';
 
@@ -35,18 +36,18 @@ export default async function KvizPage({ params }: Props) {
   const runId = crypto.randomUUID();
 
   return (
-    <>
-      <div className="d-flex justify-content-between align-items-center flex-wrap gap-2 my-4">
-        <h1 className="fs-3 mb-0">{cfg.naslov}</h1>
-        <div className="d-flex gap-2">
+    <main className="mx-auto w-full max-w-3xl px-4 py-8">
+      <div className="mb-8 flex flex-wrap items-center justify-between gap-3">
+        <h1 className="text-2xl font-semibold tracking-tight text-slate-900">{cfg.naslov}</h1>
+        <div className="flex gap-2">
           <NovKvizButton />
-          <Link className="btn btn-outline-secondary" href="/">
+          <Link className={btn('secondary')} href="/">
             Domov
           </Link>
         </div>
       </div>
 
       <QuizSections key={runId} sections={quiz.sections} />
-    </>
+    </main>
   );
 }

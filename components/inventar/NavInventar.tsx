@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 
 import { odjava } from '@/app/inventar/actions';
 import type { Actor } from '@/lib/auth-guard';
+import { cx } from '@/lib/ui';
 
 const POVEZAVE = [
   { href: '/inventar', label: 'Pregled', icon: 'bi-speedometer2' },
@@ -28,51 +29,68 @@ export function NavInventar({ actor }: { actor: Actor }) {
   }
 
   return (
-    <header className="inv-header mb-4">
-      <div>
-        <div className="d-flex justify-content-between align-items-center gap-2 pt-2 pb-1">
-          <Link className="inv-brand text-truncate" href="/inventar">
-            <i className="bi bi-fire me-2" aria-hidden="true" />
-            <span className="d-none d-sm-inline">Inventar PGD Veliko Mlačevo</span>
-            <span className="d-sm-none">Inventar PGD</span>
+    <header className="sticky top-0 z-30 border-b-[3px] border-brand bg-slate-900 text-white">
+      <div className="mx-auto w-full max-w-6xl px-4">
+        <div className="flex items-center justify-between gap-2 pt-2.5">
+          <Link
+            href="/inventar"
+            className="flex min-w-0 items-center gap-2 font-semibold tracking-tight text-white"
+          >
+            <i className="bi bi-fire text-brand text-lg" aria-hidden="true" />
+            <span className="truncate max-sm:hidden">Inventar PGD Veliko Mlačevo</span>
+            <span className="truncate sm:hidden">Inventar PGD</span>
           </Link>
 
-          <div className="d-flex align-items-center gap-2 flex-shrink-0">
+          <div className="flex shrink-0 items-center gap-3">
             {/* The name is context, not a control: it is the first thing to drop when
                 the header gets tight. */}
-            <span className="inv-user small d-none d-md-inline text-truncate">
+            <span className="max-w-40 truncate text-sm text-slate-400 max-md:hidden">
               {actor.name ?? actor.email}
             </span>
             <form action={odjava}>
-              <button type="submit" className="btn btn-sm btn-outline-light">
-                <i className="bi bi-box-arrow-right me-1" aria-hidden="true" />
-                <span className="d-none d-sm-inline">Odjava</span>
+              <button
+                type="submit"
+                className="inline-flex min-h-9 cursor-pointer items-center gap-1.5 rounded-lg border border-slate-700 px-3 text-sm text-slate-300 transition-colors hover:bg-slate-800 hover:text-white"
+              >
+                <i className="bi bi-box-arrow-right" aria-hidden="true" />
+                <span className="max-sm:hidden">Odjava</span>
               </button>
             </form>
           </div>
         </div>
 
-        <nav aria-label="Inventar">
-          <div className="inv-tabs">
-            {POVEZAVE.map((p) => {
-              const active = isActive(p.href);
-              return (
-                <Link
-                  key={p.href}
-                  className={`inv-tab ${active ? 'active' : ''}`}
-                  href={p.href}
-                  aria-current={active ? 'page' : undefined}
-                >
-                  <i className={`bi ${p.icon}`} aria-hidden="true" />
-                  {p.label}
-                </Link>
-              );
-            })}
-            <Link className="inv-tab ms-auto" href="/">
-              <i className="bi bi-mortarboard" aria-hidden="true" />
-              Kviz
-            </Link>
-          </div>
+        {/* Scrolls sideways on a narrow phone instead of wrapping into a ragged block.
+            The scrollbar is hidden because the strip is also swipeable. */}
+        <nav
+          aria-label="Inventar"
+          className="-mx-4 flex gap-1 overflow-x-auto px-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+        >
+          {POVEZAVE.map((p) => {
+            const active = isActive(p.href);
+            return (
+              <Link
+                key={p.href}
+                href={p.href}
+                aria-current={active ? 'page' : undefined}
+                className={cx(
+                  'inline-flex shrink-0 items-center gap-2 whitespace-nowrap rounded-t-lg border-b-[3px] px-3 py-2.5 text-sm transition-colors',
+                  active
+                    ? 'border-brand bg-white/10 font-semibold text-white'
+                    : 'border-transparent text-slate-400 hover:bg-white/5 hover:text-white',
+                )}
+              >
+                <i className={`bi ${p.icon}`} aria-hidden="true" />
+                {p.label}
+              </Link>
+            );
+          })}
+          <Link
+            href="/"
+            className="ms-auto inline-flex shrink-0 items-center gap-2 whitespace-nowrap rounded-t-lg border-b-[3px] border-transparent px-3 py-2.5 text-sm text-slate-400 transition-colors hover:bg-white/5 hover:text-white"
+          >
+            <i className="bi bi-mortarboard" aria-hidden="true" />
+            Kviz
+          </Link>
         </nav>
       </div>
     </header>

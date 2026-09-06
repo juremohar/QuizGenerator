@@ -1,4 +1,5 @@
 import { preklici } from '@/app/inventar/actions';
+import { field, label } from '@/lib/ui';
 import { SubmitButton } from './SubmitButton';
 
 /**
@@ -7,25 +8,26 @@ import { SubmitButton } from './SubmitButton';
  */
 export function CancelForm({ loanId }: { loanId: number }) {
   return (
-    <details>
-      <summary className="text-danger" style={{ cursor: 'pointer' }}>
+    <details className="group">
+      <summary className="cursor-pointer list-none text-sm font-medium text-red-700 hover:underline">
+        <i className="bi bi-chevron-right mr-1 inline-block transition-transform group-open:rotate-90" aria-hidden="true" />
         Prekliči rezervacijo
       </summary>
 
       <form action={preklici} className="mt-3">
         <input type="hidden" name="loanId" value={loanId} />
         <div className="mb-3">
-          <label className="form-label" htmlFor="cancelReason">
-            Razlog preklica <span className="text-secondary">(neobvezno)</span>
+          <label className={label} htmlFor="cancelReason">
+            Razlog preklica <span className="font-normal text-slate-400">(neobvezno)</span>
           </label>
           <input
-            className="form-control"
+            className={field}
             id="cancelReason"
             name="cancelReason"
             placeholder="npr. dogodek odpovedan"
           />
         </div>
-        <SubmitButton className="btn btn-outline-danger w-100" pendingLabel="Shranjujem …">
+        <SubmitButton variant="dangerSoft" className="w-full" pendingLabel="Shranjujem …">
           Potrdi preklic
         </SubmitButton>
       </form>

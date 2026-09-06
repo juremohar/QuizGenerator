@@ -1,7 +1,10 @@
 import type { Metadata } from 'next';
 import { Analytics } from '@vercel/analytics/next';
 
-import '@/styles/globals.scss';
+import '@/styles/globals.css';
+// Imported here rather than from globals.css so Next resolves and rebases the webfont
+// URLs itself, which is the reliable path for a package's own CSS.
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import { LegacyHashRedirect } from '@/components/LegacyHashRedirect';
 
 export const metadata: Metadata = {
@@ -13,9 +16,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     // was lang="en"
     <html lang="sl">
-      <body>
-        {/* This container was the old MainLayout, which collapses into the root layout. */}
-        <div className="container">{children}</div>
+      <body className="min-h-screen">
+        {children}
         <LegacyHashRedirect />
         <Analytics />
       </body>

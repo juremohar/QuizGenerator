@@ -4,10 +4,6 @@ const nextConfig: NextConfig = {
   // Deliberately NOT setting `cacheComponents`: it would require Suspense
   // boundaries around the per-request quiz shuffle and every inventory DB read.
   // Deliberately NOT adding a `webpack` key: `next build` fails if one exists.
-  sassOptions: {
-    quietDeps: true,
-    silenceDeprecations: ['import', 'global-builtin', 'color-functions'],
-  },
   async headers() {
     return [
       {

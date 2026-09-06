@@ -1,4 +1,5 @@
 import type { TrueFalseQuestion } from '@/lib/quiz/types';
+import { cx } from '@/lib/ui';
 import { CorrectBadge, WrongBadge } from './ResultBadge';
 
 interface Props {
@@ -22,28 +23,39 @@ export function TrueFalseQuestionCard({
   onSelect,
 }: Props) {
   return (
-    <div className="py-2">
-      <div className="mb-1 fw-bold">
+    <div className="p-4">
+      <p className="font-medium text-slate-900">
         {questionNumber + 1}. {question.question}
-      </div>
+      </p>
 
       {question.imageSrc && (
-        <img src={question.imageSrc} className="img-thumbnail mb-1" alt="" />
+        <img
+          src={question.imageSrc}
+          alt=""
+          className="mt-3 max-w-full rounded-lg border border-slate-200 p-1"
+        />
       )}
 
-      <div className="random-answer">{question.shownAnswer}</div>
+      <p className="mt-2 rounded-lg bg-slate-50 px-3 py-2 text-slate-700">
+        {question.shownAnswer}
+      </p>
 
-      <div className="mt-2 true-false-buttons">
+      {/* Half-width each on the narrowest screens so both stay comfortably tappable. */}
+      <div className="mt-3 flex gap-2">
         {([true, false] as const).map((value) => (
           <button
             key={String(value)}
             type="button"
-            className={`btn btn-outline-dark btn-sm ${value ? 'me-2 ' : ''}${
-              userAnswer === value ? 'active' : ''
-            }`}
             aria-pressed={userAnswer === value}
             disabled={showResults}
             onClick={() => onSelect(value)}
+            className={cx(
+              'min-h-10 flex-1 cursor-pointer rounded-lg border px-4 text-sm font-medium transition-colors sm:flex-none',
+              userAnswer === value
+                ? 'border-slate-900 bg-slate-900 text-white'
+                : 'border-slate-300 bg-white text-slate-700 hover:bg-slate-50',
+              showResults && 'cursor-default opacity-70',
+            )}
           >
             {value ? 'Drži' : 'Ne drži'}
           </button>

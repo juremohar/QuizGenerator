@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 
 import { getDb } from '@/db/client';
 import { fetchItems, fetchLoan } from '@/lib/inventory/queries';
+import { btn } from '@/lib/ui';
 import { LoanForm } from '@/components/inventar/LoanForm';
 import { PageHeader } from '@/components/inventar/PageHeader';
 import { urediIzposojo } from '@/app/inventar/actions';
@@ -22,11 +23,11 @@ export default async function UrediIzposojoPage({ params }: Props) {
   if (loan.status === 'returned' || loan.status === 'cancelled') {
     return (
       <>
-        <div className="alert alert-warning">
-          <i className="bi bi-lock me-2" aria-hidden="true" />
+        <div className="mb-4 flex items-center gap-2 rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
+          <i className="bi bi-lock" aria-hidden="true" />
           Zaključene izposoje ni več mogoče urejati.
         </div>
-        <Link className="btn btn-outline-secondary" href={`/inventar/izposoje/${loan.id}`}>
+        <Link className={btn('secondary')} href={`/inventar/izposoje/${loan.id}`}>
           Nazaj na izposojo #{loan.id}
         </Link>
       </>

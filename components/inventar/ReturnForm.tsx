@@ -4,6 +4,7 @@ import { useActionState } from 'react';
 
 import { oznaciVrnjeno } from '@/app/inventar/actions';
 import { EMPTY_FORM_STATE, type FormState } from '@/lib/inventory/form-state';
+import { field, help, label } from '@/lib/ui';
 import { SubmitButton } from './SubmitButton';
 
 interface Props {
@@ -13,56 +14,54 @@ interface Props {
 }
 
 export function ReturnForm({ loanId, overdue }: Props) {
-  const [state, formAction] = useActionState<FormState, FormData>(
-    oznaciVrnjeno,
-    EMPTY_FORM_STATE,
-  );
+  const [state, formAction] = useActionState<FormState, FormData>(oznaciVrnjeno, EMPTY_FORM_STATE);
 
   return (
     <form action={formAction}>
       <input type="hidden" name="loanId" value={loanId} />
 
       {state.errors.length > 0 && (
-        <div className="alert alert-danger" role="alert">
+        <div
+          className="mb-3 rounded-lg border border-red-200 bg-red-50 p-3 text-sm text-red-800"
+          role="alert"
+        >
           {state.errors.map((m) => (
             <div key={m}>{m}</div>
           ))}
         </div>
       )}
 
-      <div className="mb-3">
-        <label className="form-label" htmlFor="returnConditionNote">
+      <div className="mb-4">
+        <label className={label} htmlFor="returnConditionNote">
           Stanje ob vrnitvi
         </label>
         <textarea
-          className="form-control"
+          className={field}
           id="returnConditionNote"
           name="returnConditionNote"
           rows={2}
           placeholder="poškodbe, manjkajoči kosi, umazanija …"
         />
-        <div className="form-text">Pustite prazno, če je vse vrnjeno nepoškodovano.</div>
+        <p className={help}>Pustite prazno, če je vse vrnjeno nepoškodovano.</p>
       </div>
 
       {overdue && (
-        <div className="form-check mb-3">
+        <label className="mb-4 flex cursor-pointer gap-2.5">
           <input
-            className="form-check-input"
             type="checkbox"
             id="extendToToday"
             name="extendToToday"
+            className="mt-0.5 size-4 shrink-0 rounded border-slate-300 text-slate-900 focus:ring-slate-900/20"
           />
-          <label className="form-check-label" htmlFor="extendToToday">
-            Podaljšaj obdobje do danes
-            <span className="d-block form-text mt-0">
-              Zapis ne bo več označen kot zamuda.
-            </span>
-          </label>
-        </div>
+          <span className="text-sm">
+            <span className="font-medium text-slate-700">Podaljšaj obdobje do danes</span>
+            <span className="block text-slate-500">Zapis ne bo več označen kot zamuda.</span>
+          </span>
+        </label>
       )}
 
-      <SubmitButton className="btn btn-success w-100" pendingLabel="Shranjujem …">
-        <i className="bi bi-check-lg me-2" aria-hidden="true" />
+      <SubmitButton variant="success" className="w-full" pendingLabel="Shranjujem …">
+        <i className="bi bi-check-lg" aria-hidden="true" />
         Potrdi vrnitev
       </SubmitButton>
     </form>

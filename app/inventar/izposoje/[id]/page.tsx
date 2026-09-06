@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { daysInclusive, formatRangeSl, todayLjubljana } from '@/lib/dates';
 import { DAN, stevilo } from '@/lib/sl';
 import { fetchLoan } from '@/lib/inventory/queries';
+import { btn, card, cardBody, cardHeader } from '@/lib/ui';
 import { LoanStatusBadge } from '@/components/inventar/LoanStatusBadge';
 import { PageHeader } from '@/components/inventar/PageHeader';
 import { PhoneLink } from '@/components/inventar/PhoneLink';
@@ -24,13 +25,23 @@ function formatDateTime(value: Date | null): string {
   }).format(value);
 }
 
-function Zapis({ icon, label, who, when }: { icon: string; label: string; who: string; when: string }) {
+function Zapis({
+  icon,
+  label,
+  who,
+  when,
+}: {
+  icon: string;
+  label: string;
+  who: string;
+  when: string;
+}) {
   return (
-    <li className="d-flex gap-2 mb-2">
-      <i className={`bi ${icon} text-secondary`} aria-hidden="true" />
+    <li className="flex gap-3">
+      <i className={`bi ${icon} mt-0.5 text-slate-400`} aria-hidden="true" />
       <div>
-        <div>{label}</div>
-        <div className="text-secondary">
+        <div className="text-slate-700">{label}</div>
+        <div className="text-slate-400">
           {who} · {when}
         </div>
       </div>
@@ -55,11 +66,11 @@ export default async function IzposojaPage({ params }: Props) {
       <PageHeader
         back={{ href: '/inventar/izposoje', label: 'Vse izposoje' }}
         title={
-          <>
-            {loan.borrowerName}{' '}
-            <span className="text-secondary fw-normal">#{loan.id}</span>{' '}
+          <span className="flex flex-wrap items-center gap-2">
+            {loan.borrowerName}
+            <span className="font-normal text-slate-400">#{loan.id}</span>
             <LoanStatusBadge status={loan.status} overdue={overdue} />
-          </>
+          </span>
         }
         lead={
           <>
@@ -70,42 +81,49 @@ export default async function IzposojaPage({ params }: Props) {
       >
         {!zakljucena && (
           <Link
-            className="btn btn-outline-secondary w-100 w-sm-auto"
+            className={btn('secondary', 'md', 'max-sm:w-full')}
             href={`/inventar/izposoje/${loan.id}/uredi`}
           >
-            <i className="bi bi-pencil me-2" aria-hidden="true" />
+            <i className="bi bi-pencil" aria-hidden="true" />
             Uredi
           </Link>
         )}
       </PageHeader>
 
       {overdue && (
-        <div className="alert alert-danger d-flex flex-wrap align-items-center gap-2" role="alert">
-          <span>
-            <i className="bi bi-exclamation-triangle me-2" aria-hidden="true" />
-            Oprema zamuja <strong>{stevilo(daysInclusive(loan.toDate, danes) - 1, DAN)}</strong>.
+        <div
+          className="mb-4 flex flex-wrap items-center gap-3 rounded-xl border border-red-200 bg-red-50 p-4 text-sm text-red-800"
+          role="alert"
+        >
+          <span className="flex items-center gap-2">
+            <i className="bi bi-exclamation-triangle" aria-hidden="true" />
+            Oprema zamuja{' '}
+            <strong className="font-semibold">
+              {stevilo(daysInclusive(loan.toDate, danes) - 1, DAN)}
+            </strong>
+            .
           </span>
-          <PhoneLink phone={loan.borrowerPhone} className="alert-link ms-auto" />
+          <PhoneLink phone={loan.borrowerPhone} className="ms-auto font-medium" />
         </div>
       )}
 
-      <div className="row g-3">
+      <div className="grid gap-4 lg:grid-cols-12">
         {/* Actions come first on a phone: the reason to open a loan at the fire station
             door is to hand the equipment over or take it back, not to read the record. */}
-        <div className="col-lg-5 order-lg-2">
+        <div className="space-y-4 lg:order-2 lg:col-span-5">
           {!zakljucena && (
-            <div className="card shadow-sm mb-3">
-              <div className="card-header">
-                <strong>
-                  <i className="bi bi-lightning-charge me-2" aria-hidden="true" />
+            <section className={card}>
+              <div className={cardHeader}>
+                <span className="flex items-center gap-2">
+                  <i className="bi bi-lightning-charge text-slate-400" aria-hidden="true" />
                   Dejanja
-                </strong>
+                </span>
               </div>
-              <div className="card-body">
+              <div className={cardBody}>
                 {loan.status === 'reserved' && (
                   <>
-                    <PredanoButton loanId={loan.id} className="btn btn-primary w-100" />
-                    <hr />
+                    <PredanoButton loanId={loan.id} fullWidth />
+                    <hr className="my-4 border-slate-200" />
                     <CancelForm loanId={loan.id} />
                   </>
                 )}
@@ -113,25 +131,31 @@ export default async function IzposojaPage({ params }: Props) {
                 {loan.status === 'out' && (
                   <>
                     <ReturnForm loanId={loan.id} overdue={overdue} />
-                    <p className="text-secondary small mt-3 mb-0">
+                    <p className="mt-3 text-sm text-slate-500">
                       Če je vrnjen le del opreme, najprej{' '}
-                      <Link href={`/inventar/izposoje/${loan.id}/uredi`}>uredite izposojo</Link>.
+                      <Link
+                        href={`/inventar/izposoje/${loan.id}/uredi`}
+                        className="text-blue-700 hover:underline"
+                      >
+                        uredite izposojo
+                      </Link>
+                      .
                     </p>
                   </>
                 )}
               </div>
-            </div>
+            </section>
           )}
 
-          <div className="card shadow-sm">
-            <div className="card-header">
-              <strong>
-                <i className="bi bi-clock-history me-2" aria-hidden="true" />
+          <section className={card}>
+            <div className={cardHeader}>
+              <span className="flex items-center gap-2">
+                <i className="bi bi-clock-history text-slate-400" aria-hidden="true" />
                 Zgodovina
-              </strong>
+              </span>
             </div>
-            <div className="card-body small">
-              <ul className="list-unstyled mb-0">
+            <div className={cardBody}>
+              <ul className="space-y-3 text-sm">
                 <Zapis
                   icon="bi-plus-circle"
                   label="Rezervacija ustvarjena"
@@ -164,66 +188,65 @@ export default async function IzposojaPage({ params }: Props) {
                 )}
               </ul>
             </div>
-          </div>
+          </section>
         </div>
 
-        <div className="col-lg-7 order-lg-1">
-          <div className="card shadow-sm mb-3">
-            <div className="card-header">
-              <strong>
-                <i className="bi bi-boxes me-2" aria-hidden="true" />
+        <div className="space-y-4 lg:order-1 lg:col-span-7">
+          <section className={card}>
+            <div className={cardHeader}>
+              <span className="flex items-center gap-2">
+                <i className="bi bi-boxes text-slate-400" aria-hidden="true" />
                 Izposojena oprema
-              </strong>
+              </span>
             </div>
-            <ul className="list-group list-group-flush">
+            <ul className="divide-y divide-slate-100">
               {loan.oprema.map((o) => (
-                <li
-                  className="list-group-item d-flex justify-content-between align-items-center"
-                  key={o.itemId}
-                >
-                  {o.name}
-                  <span className="badge bg-secondary">{o.quantity}</span>
+                <li key={o.itemId} className="flex items-center justify-between px-4 py-3 text-sm">
+                  <span className="text-slate-700">{o.name}</span>
+                  <span className="rounded-md bg-slate-100 px-2 py-0.5 font-medium tabular-nums text-slate-700">
+                    {o.quantity}
+                  </span>
                 </li>
               ))}
             </ul>
-          </div>
+          </section>
 
-          <div className="card shadow-sm mb-3">
-            <div className="card-header">
-              <strong>
-                <i className="bi bi-info-circle me-2" aria-hidden="true" />
+          <section className={card}>
+            <div className={cardHeader}>
+              <span className="flex items-center gap-2">
+                <i className="bi bi-info-circle text-slate-400" aria-hidden="true" />
                 Podatki
-              </strong>
+              </span>
             </div>
-            <div className="card-body">
-              <dl className="row mb-0">
-                <dt className="col-sm-4">Izposojevalec</dt>
-                <dd className="col-sm-8">{loan.borrowerName}</dd>
+            <div className={cardBody}>
+              <dl className="grid grid-cols-[9rem_1fr] gap-x-4 gap-y-3 text-sm max-sm:grid-cols-1 max-sm:gap-y-1">
+                <dt className="text-slate-500">Izposojevalec</dt>
+                <dd className="text-slate-700 max-sm:mb-2">{loan.borrowerName}</dd>
 
-                <dt className="col-sm-4">Telefon</dt>
-                <dd className="col-sm-8">
+                <dt className="text-slate-500">Telefon</dt>
+                <dd className="max-sm:mb-2">
                   <PhoneLink phone={loan.borrowerPhone} />
                 </dd>
 
-                <dt className="col-sm-4">Dogodek / namen</dt>
-                <dd className="col-sm-8 mb-0" style={{ whiteSpace: 'pre-wrap' }}>
-                  {loan.purpose}
-                </dd>
+                <dt className="text-slate-500">Dogodek / namen</dt>
+                <dd className="whitespace-pre-wrap text-slate-700">{loan.purpose}</dd>
               </dl>
             </div>
-          </div>
+          </section>
 
           {loan.returnConditionNote && (
-            <div className="callout callout-warning mb-3">
-              <strong>Stanje ob vrnitvi</strong>
-              <div style={{ whiteSpace: 'pre-wrap' }}>{loan.returnConditionNote}</div>
+            <div className="rounded-xl border border-amber-200 bg-amber-50 p-4">
+              <p className="font-semibold text-amber-900">Stanje ob vrnitvi</p>
+              <p className="mt-1 whitespace-pre-wrap text-sm text-amber-800">
+                {loan.returnConditionNote}
+              </p>
             </div>
           )}
 
           {loan.cancelReason && (
-            <div className="callout callout-default mb-3">
-              <strong>Razlog preklica</strong>
-              <div>{loan.cancelReason}</div>
+            <div className="rounded-xl border border-slate-200 bg-slate-50 p-4">
+              <p className="font-semibold text-slate-700">Razlog preklica</p>
+              <p className="mt-1 text-sm text-slate-600">{loan.cancelReason}</p>
             </div>
           )}
         </div>

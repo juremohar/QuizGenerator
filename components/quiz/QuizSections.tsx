@@ -3,6 +3,7 @@
 import { useState } from 'react';
 
 import type { QuizSection, TrueFalseQuestion, MultipleChoiceQuestion } from '@/lib/quiz/types';
+import { btn } from '@/lib/ui';
 import { TrueFalseQuestionCard } from './TrueFalseQuestionCard';
 import { MultipleChoiceQuestionCard } from './MultipleChoiceQuestionCard';
 
@@ -32,11 +33,11 @@ function Section({ section }: { section: QuizSection }) {
   }
 
   return (
-    <div className="my-4">
-      <div className="fs-4 fw-bold">{section.naslov}</div>
-      <div className="mb-2 fw-light">{section.podnaslov}</div>
+    <section className="mb-10">
+      <h2 className="text-xl font-semibold tracking-tight text-slate-900">{section.naslov}</h2>
+      <p className="mt-1 mb-4 text-sm text-slate-500">{section.podnaslov}</p>
 
-      <div className="mb-2">
+      <div className="divide-y divide-slate-100 rounded-xl border border-slate-200 bg-white">
         {section.questions.map((question, index) =>
           question.kind === 'trueFalse' ? (
             <TrueFalseQuestionCard
@@ -63,7 +64,7 @@ function Section({ section }: { section: QuizSection }) {
 
       <button
         type="button"
-        className="btn btn-primary check-result-button"
+        className={btn('primary', 'md', 'mt-4 max-sm:w-full')}
         disabled={showResults}
         onClick={() => setShowResults(true)}
       >
@@ -72,12 +73,12 @@ function Section({ section }: { section: QuizSection }) {
 
       <div aria-live="polite">
         {showResults && (
-          <div className="mt-2 fw-bold">
+          <p className="mt-3 font-semibold text-slate-900">
             Pravilnih: {scoreSection(section, answers)} / {section.questions.length}
-          </div>
+          </p>
         )}
       </div>
-    </div>
+    </section>
   );
 }
 

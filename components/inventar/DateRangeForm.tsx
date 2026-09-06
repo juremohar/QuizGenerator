@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 
 import { addDays, daysInclusive, startOfWeek, type IsoDate } from '@/lib/dates';
 import { DAN, stevilo } from '@/lib/sl';
+import { btn, card, cardBody, cx, field, label } from '@/lib/ui';
 
 interface Props {
   od: string;
@@ -49,43 +50,48 @@ export function DateRangeForm({
   ];
 
   return (
-    <div className="card shadow-sm mb-4">
-      <div className="card-body">
-        <div className="d-flex flex-wrap gap-2 mb-3">
-          {presets.map((p) => (
-            <button
-              key={p.label}
-              type="button"
-              className={`btn btn-sm ${
-                from === p.range[0] && to === p.range[1]
-                  ? 'btn-secondary'
-                  : 'btn-outline-secondary'
-              }`}
-              onClick={() => {
-                setFrom(p.range[0]);
-                setTo(p.range[1]);
-                router.push(`${action}?od=${p.range[0]}&do=${p.range[1]}`);
-              }}
-            >
-              {p.label}
-            </button>
-          ))}
+    <div className={card}>
+      <div className={cardBody}>
+        <div className="mb-4 flex flex-wrap gap-2">
+          {presets.map((p) => {
+            const active = from === p.range[0] && to === p.range[1];
+            return (
+              <button
+                key={p.label}
+                type="button"
+                aria-pressed={active}
+                className={cx(
+                  'min-h-9 cursor-pointer rounded-full border px-3.5 text-sm font-medium transition-colors',
+                  active
+                    ? 'border-slate-900 bg-slate-900 text-white'
+                    : 'border-slate-300 bg-white text-slate-600 hover:bg-slate-50',
+                )}
+                onClick={() => {
+                  setFrom(p.range[0]);
+                  setTo(p.range[1]);
+                  router.push(`${action}?od=${p.range[0]}&do=${p.range[1]}`);
+                }}
+              >
+                {p.label}
+              </button>
+            );
+          })}
         </div>
 
         <form
-          className="row g-2 align-items-end"
+          className="flex flex-wrap items-end gap-3"
           onSubmit={(event) => {
             event.preventDefault();
             if (invalid) return;
             router.push(`${action}?od=${from}&do=${to}`);
           }}
         >
-          <div className="col-6 col-sm-auto">
-            <label className="form-label" htmlFor="od">
+          <div className="min-w-36 flex-1 sm:flex-none">
+            <label className={label} htmlFor="od">
               Od
             </label>
             <input
-              className="form-control"
+              className={field}
               type="date"
               id="od"
               value={from}
@@ -96,12 +102,12 @@ export function DateRangeForm({
               }}
             />
           </div>
-          <div className="col-6 col-sm-auto">
-            <label className="form-label" htmlFor="do">
+          <div className="min-w-36 flex-1 sm:flex-none">
+            <label className={label} htmlFor="do">
               Do
             </label>
             <input
-              className="form-control"
+              className={field}
               type="date"
               id="do"
               value={to}
@@ -109,23 +115,19 @@ export function DateRangeForm({
               onChange={(e) => setTo(e.target.value)}
             />
           </div>
-          <div className="col-12 col-sm-auto">
-            <button className="btn btn-primary w-100 w-sm-auto" type="submit" disabled={invalid}>
-              <i className="bi bi-search me-2" aria-hidden="true" />
-              {submitLabel}
-            </button>
-          </div>
-          {!invalid && (
-            <div className="col-12 col-sm-auto">
-              <span className="text-secondary small">{stevilo(daysInclusive(from, to), DAN)}</span>
-            </div>
-          )}
-          {invalid && (
-            <div className="col-12">
-              <div className="text-danger small">
-                Datum &quot;do&quot; ne more biti pred datumom &quot;od&quot;.
-              </div>
-            </div>
+          <button className={btn('primary', 'md', 'max-sm:w-full')} type="submit" disabled={invalid}>
+            <i className="bi bi-search" aria-hidden="true" />
+            {submitLabel}
+          </button>
+
+          {invalid ? (
+            <p className="w-full text-sm text-red-600">
+              Datum &quot;do&quot; ne more biti pred datumom &quot;od&quot;.
+            </p>
+          ) : (
+            <span className="pb-3 text-sm text-slate-500">
+              {stevilo(daysInclusive(from, to), DAN)}
+            </span>
           )}
         </form>
       </div>

@@ -2,6 +2,7 @@ import Link from 'next/link';
 
 import { todayLjubljana } from '@/lib/dates';
 import { fetchLoans, type LoanFilter } from '@/lib/inventory/queries';
+import { btn, card, cardBody, cx } from '@/lib/ui';
 import { LoanTable } from '@/components/inventar/LoanTable';
 import { PageHeader } from '@/components/inventar/PageHeader';
 
@@ -40,46 +41,56 @@ export default async function IzposojePage({ searchParams }: Props) {
 
       {/* Plain server-rendered links: no client JS needed for filtering. The strip
           scrolls sideways on a phone rather than wrapping onto two ragged lines. */}
-      <nav className="inv-tabs border-bottom mb-3 pb-1" aria-label="Filter izposoj">
+      <nav
+        aria-label="Filter izposoj"
+        className="-mx-4 mb-4 flex gap-2 overflow-x-auto px-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+      >
         {FILTRI.map((f) => (
           <Link
             key={f.key}
-            className={`btn btn-sm ${
-              filter === f.key ? 'btn-secondary' : 'btn-outline-secondary'
-            } flex-shrink-0`}
             href={`/inventar/izposoje?status=${f.key}`}
             aria-current={filter === f.key ? 'page' : undefined}
+            className={cx(
+              'inline-flex min-h-9 shrink-0 items-center rounded-full border px-3.5 text-sm font-medium transition-colors',
+              filter === f.key
+                ? 'border-slate-900 bg-slate-900 text-white'
+                : 'border-slate-300 bg-white text-slate-600 hover:bg-slate-50',
+            )}
           >
             {f.label}
           </Link>
         ))}
       </nav>
 
-      <LoanTable loans={vidne} danes={danes} empty={izbrani.empty} emptyIcon="bi-clipboard-x" />
+      <div className={card}>
+        <div className={cardBody}>
+          <LoanTable loans={vidne} danes={danes} empty={izbrani.empty} emptyIcon="bi-clipboard-x" />
+        </div>
+      </div>
 
       {(stran > 1 || hasNext) && (
-        <div className="d-flex justify-content-between align-items-center gap-2 mt-3">
+        <div className="mt-4 flex items-center justify-between gap-2">
           {stran > 1 ? (
             <Link
-              className="btn btn-outline-secondary"
+              className={btn('secondary')}
               href={`/inventar/izposoje?status=${filter}&stran=${stran - 1}`}
             >
-              <i className="bi bi-arrow-left me-1" aria-hidden="true" />
-              <span className="d-none d-sm-inline">Prejšnja</span>
+              <i className="bi bi-arrow-left" aria-hidden="true" />
+              <span className="max-sm:hidden">Prejšnja</span>
             </Link>
           ) : (
             <span />
           )}
 
-          <span className="text-secondary small">Stran {stran}</span>
+          <span className="text-sm text-slate-500">Stran {stran}</span>
 
           {hasNext ? (
             <Link
-              className="btn btn-outline-secondary"
+              className={btn('secondary')}
               href={`/inventar/izposoje?status=${filter}&stran=${stran + 1}`}
             >
-              <span className="d-none d-sm-inline">Naslednja</span>
-              <i className="bi bi-arrow-right ms-1" aria-hidden="true" />
+              <span className="max-sm:hidden">Naslednja</span>
+              <i className="bi bi-arrow-right" aria-hidden="true" />
             </Link>
           ) : (
             <span />

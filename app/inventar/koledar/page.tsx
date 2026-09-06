@@ -3,12 +3,17 @@ import Link from 'next/link';
 import { addDays, formatRangeSl, isIsoDate, startOfWeek, todayLjubljana } from '@/lib/dates';
 import { getDb } from '@/db/client';
 import { fetchItems, fetchTimelineUsage } from '@/lib/inventory/queries';
+import { cx } from '@/lib/ui';
 import { PageHeader } from '@/components/inventar/PageHeader';
 import { TimelineGrid, TimelineLegend } from '@/components/inventar/TimelineGrid';
 
 export const dynamic = 'force-dynamic';
 
 type Props = { searchParams: Promise<{ od?: string; tedni?: string }> };
+
+const SEG =
+  'inline-flex min-h-9 items-center border border-slate-300 px-3 text-sm font-medium ' +
+  'transition-colors first:rounded-l-lg last:rounded-r-lg not-last:border-r-0';
 
 export default async function KoledarPage({ searchParams }: Props) {
   const params = await searchParams;
@@ -28,36 +33,44 @@ export default async function KoledarPage({ searchParams }: Props) {
     <>
       <PageHeader title="Koledar" lead="Zasedenost vse opreme po dnevih." />
 
-      <div className="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-3">
-        <div className="btn-group" role="group" aria-label="Premik obdobja">
+      <div className="mb-4 flex flex-wrap items-center justify-between gap-4">
+        <div className="flex" role="group" aria-label="Premik obdobja">
           <Link
-            className="btn btn-outline-secondary btn-sm"
+            className={cx(SEG, 'bg-white text-slate-600 hover:bg-slate-50')}
             href={`/inventar/koledar?od=${prev}&tedni=${tedni}`}
           >
             <i className="bi bi-chevron-left" aria-hidden="true" />
-            <span className="visually-hidden">Prejšnje obdobje</span>
+            <span className="sr-only">Prejšnje obdobje</span>
           </Link>
-          <Link className="btn btn-outline-secondary btn-sm" href={`/inventar/koledar?tedni=${tedni}`}>
+          <Link
+            className={cx(SEG, 'bg-white text-slate-600 hover:bg-slate-50')}
+            href={`/inventar/koledar?tedni=${tedni}`}
+          >
             Danes
           </Link>
           <Link
-            className="btn btn-outline-secondary btn-sm"
+            className={cx(SEG, 'bg-white text-slate-600 hover:bg-slate-50')}
             href={`/inventar/koledar?od=${next}&tedni=${tedni}`}
           >
             <i className="bi bi-chevron-right" aria-hidden="true" />
-            <span className="visually-hidden">Naslednje obdobje</span>
+            <span className="sr-only">Naslednje obdobje</span>
           </Link>
         </div>
 
-        <div className="d-flex gap-2 align-items-center">
-          <span className="text-secondary small">Prikaži tednov:</span>
-          <div className="btn-group" role="group" aria-label="Število prikazanih tednov">
+        <div className="flex items-center gap-2">
+          <span className="text-sm text-slate-500">Prikaži tednov:</span>
+          <div className="flex" role="group" aria-label="Število prikazanih tednov">
             {[4, 6, 8, 12].map((n) => (
               <Link
                 key={n}
-                className={`btn btn-sm ${n === tedni ? 'btn-secondary' : 'btn-outline-secondary'}`}
                 href={`/inventar/koledar?od=${from}&tedni=${n}`}
                 aria-current={n === tedni ? 'true' : undefined}
+                className={cx(
+                  SEG,
+                  n === tedni
+                    ? 'border-slate-900 bg-slate-900 text-white'
+                    : 'bg-white text-slate-600 hover:bg-slate-50',
+                )}
               >
                 {n}
               </Link>
@@ -66,9 +79,9 @@ export default async function KoledarPage({ searchParams }: Props) {
         </div>
       </div>
 
-      <p className="text-secondary small mb-2">
+      <p className="mb-2 text-sm text-slate-500">
         {formatRangeSl(from, to)}
-        <span className="d-md-none">
+        <span className="md:hidden">
           {' '}
           · <i className="bi bi-arrow-left-right" aria-hidden="true" /> tabelo povlecite vstran
         </span>
@@ -76,7 +89,7 @@ export default async function KoledarPage({ searchParams }: Props) {
 
       <TimelineGrid oprema={oprema} rows={rows} from={from} to={to} danes={danes} />
 
-      <div className="mt-3">
+      <div className="mt-4">
         <TimelineLegend />
       </div>
     </>

@@ -1,5 +1,7 @@
 import Link from 'next/link';
 
+import { btn } from '@/lib/ui';
+
 interface Props {
   title: React.ReactNode;
   /** One short sentence under the title, when the page needs explaining. */
@@ -13,23 +15,26 @@ interface Props {
 
 export function PageHeader({ title, lead, back, action, children }: Props) {
   return (
-    <div className="mb-4">
+    <div className="mb-6">
       {back && (
-        <Link className="link-secondary small d-inline-block mb-2" href={back.href}>
-          <i className="bi bi-arrow-left me-1" aria-hidden="true" />
+        <Link
+          href={back.href}
+          className="mb-2 inline-flex items-center gap-1.5 text-sm text-slate-500 hover:text-slate-900"
+        >
+          <i className="bi bi-arrow-left" aria-hidden="true" />
           {back.label}
         </Link>
       )}
 
-      <div className="d-flex justify-content-between align-items-start flex-wrap gap-3">
-        <div className="flex-grow-1">
-          <h1 className="fs-3 mb-0">{title}</h1>
-          {lead && <p className="text-secondary mb-0 mt-1">{lead}</p>}
+      <div className="flex flex-wrap items-start justify-between gap-4">
+        <div className="min-w-0 flex-1">
+          <h1 className="text-2xl font-semibold tracking-tight text-slate-900">{title}</h1>
+          {lead && <p className="mt-1 text-sm text-slate-500">{lead}</p>}
         </div>
 
         {action && (
-          <Link className="btn btn-primary w-100 w-sm-auto flex-sm-shrink-0" href={action.href}>
-            {action.icon && <i className={`bi ${action.icon} me-2`} aria-hidden="true" />}
+          <Link className={btn('primary', 'md', 'max-sm:w-full')} href={action.href}>
+            {action.icon && <i className={`bi ${action.icon}`} aria-hidden="true" />}
             {action.label}
           </Link>
         )}

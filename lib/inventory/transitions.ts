@@ -8,12 +8,13 @@ export const STATUS_LABEL: Record<LoanStatus, string> = {
   cancelled: 'Preklicano',
 };
 
-export const STATUS_BADGE: Record<LoanStatus, string> = {
-  reserved: 'bg-secondary',
-  out: 'bg-primary',
-  returned: 'bg-success',
-  cancelled: 'bg-dark',
-};
+/** Badge tone per status. Kept next to the labels so the two never drift apart. */
+export const STATUS_TONE = {
+  reserved: 'slate',
+  out: 'blue',
+  returned: 'emerald',
+  cancelled: 'dark',
+} as const satisfies Record<LoanStatus, string>;
 
 /**
  * Allowed lifecycle: reserved -> out -> returned, and reserved -> cancelled.

@@ -3,6 +3,7 @@
 import { useState } from 'react';
 
 import { arhivirajOpremo } from '@/app/inventar/actions';
+import { btn } from '@/lib/ui';
 import { SubmitButton } from './SubmitButton';
 
 /**
@@ -18,7 +19,7 @@ export function ArchiveButton({ itemId, itemName }: { itemId: number; itemName: 
     return (
       <button
         type="button"
-        className="btn btn-sm btn-outline-danger"
+        className={btn('dangerSoft', 'sm')}
         onClick={() => setConfirming(true)}
         aria-label={`Arhiviraj ${itemName}`}
       >
@@ -28,16 +29,12 @@ export function ArchiveButton({ itemId, itemName }: { itemId: number; itemName: 
   }
 
   return (
-    <form action={arhivirajOpremo} className="d-flex gap-2">
+    <form action={arhivirajOpremo} className="flex gap-2">
       <input type="hidden" name="itemId" value={itemId} />
-      <SubmitButton className="btn btn-sm btn-danger" pendingLabel="Arhiviram …">
+      <SubmitButton variant="danger" size="sm" pendingLabel="Arhiviram …">
         Res arhiviraj
       </SubmitButton>
-      <button
-        type="button"
-        className="btn btn-sm btn-outline-secondary"
-        onClick={() => setConfirming(false)}
-      >
+      <button type="button" className={btn('secondary', 'sm')} onClick={() => setConfirming(false)}>
         Ne
       </button>
     </form>

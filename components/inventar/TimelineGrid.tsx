@@ -98,16 +98,16 @@ export function TimelineGrid({ oprema, rows, from, to, danes }: Props) {
   }
 
   return (
-    <div className="table-responsive">
-      {/* Bootstrap's `.table` is `width: 100%`, and under `table-layout: fixed` that
-          makes 42 day columns share whatever space there is - on a phone they collapse
-          to a few pixels and the labels overlap. Asking for the full width the columns
-          need is what lets `.table-responsive` scroll instead. */}
+    <div className="overflow-x-auto rounded-xl border border-slate-200 bg-white">
+      {/* Under `table-layout: fixed` a full-width table makes 42 day columns share
+          whatever space there is - on a phone they collapse to a few pixels and the
+          labels overlap. Asking for the width the columns actually need is what lets the
+          wrapper scroll instead. */}
       <table
-        className="table table-bordered koledar"
+        className="koledar w-full"
         style={{ minWidth: `calc(9rem + ${days.length} * 28px)` }}
       >
-        <caption className="visually-hidden">
+        <caption className="sr-only">
           Zasedenost opreme po dnevih od {formatSl(from)} do {formatSl(to)}
         </caption>
         <thead>
@@ -120,7 +120,7 @@ export function TimelineGrid({ oprema, rows, from, to, danes }: Props) {
             ))}
           </tr>
           <tr>
-            <th className="koledar-oprema">Oprema</th>
+            <th className="koledar-oprema text-xs font-semibold text-slate-700">Oprema</th>
             {days.map((day) => (
               <th key={day} className={dayClass(day)} title={formatSl(day)}>
                 {Number(day.slice(8))}
@@ -128,9 +128,9 @@ export function TimelineGrid({ oprema, rows, from, to, danes }: Props) {
             ))}
           </tr>
           <tr>
-            <th className="koledar-oprema text-secondary fw-normal" />
+            <th className="koledar-oprema" />
             {days.map((day) => (
-              <th key={day} className={`${dayClass(day)} text-secondary fw-normal`}>
+              <th key={day} className={`${dayClass(day)} font-normal text-slate-400`}>
                 {DNEVI[dayOfWeek(day)]}
               </th>
             ))}
@@ -141,8 +141,8 @@ export function TimelineGrid({ oprema, rows, from, to, danes }: Props) {
             const itemRows = byItem.get(item.id) ?? [];
             return (
               <tr key={item.id}>
-                <th scope="row" className="koledar-oprema fw-normal">
-                  {item.name} <span className="text-secondary">({item.totalQuantity})</span>
+                <th scope="row" className="koledar-oprema text-left font-normal text-slate-700">
+                  {item.name} <span className="text-slate-400">({item.totalQuantity})</span>
                 </th>
                 {days.map((day) => {
                   const active = itemRows.filter((r) => r.fromDate <= day && day <= r.toDate);
@@ -152,8 +152,8 @@ export function TimelineGrid({ oprema, rows, from, to, danes }: Props) {
                     used === 0
                       ? ''
                       : used >= item.totalQuantity
-                        ? 'bg-danger-subtle'
-                        : 'bg-warning-subtle';
+                        ? 'koledar-zasedeno-polno'
+                        : 'koledar-zasedeno-delno';
 
                   const title =
                     used === 0
@@ -178,26 +178,23 @@ export function TimelineGrid({ oprema, rows, from, to, danes }: Props) {
 }
 
 export function TimelineLegend() {
+  const items = [
+    { label: 'prosto', className: 'bg-white' },
+    { label: 'delno zasedeno', className: 'bg-amber-100' },
+    { label: 'vse zasedeno', className: 'bg-red-100' },
+    { label: 'vikend', className: 'bg-slate-50' },
+  ];
+
   return (
-    <div className="koledar-legenda">
-      <span>
-        <span className="swatch" style={{ background: 'var(--bs-body-bg)' }} />
-        prosto
-      </span>
-      <span>
-        <span className="swatch" style={{ background: 'var(--bs-warning-bg-subtle)' }} />
-        delno zasedeno
-      </span>
-      <span>
-        <span className="swatch" style={{ background: 'var(--bs-danger-bg-subtle)' }} />
-        vse zasedeno
-      </span>
-      <span>
-        <span className="swatch" style={{ background: 'var(--bs-tertiary-bg)' }} />
-        vikend
-      </span>
-      <span>
-        <i className="bi bi-info-circle me-1" aria-hidden="true" />
+    <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-slate-500">
+      {items.map((i) => (
+        <span key={i.label} className="inline-flex items-center gap-1.5">
+          <span className={`size-3.5 rounded-sm border border-slate-300 ${i.className}`} />
+          {i.label}
+        </span>
+      ))}
+      <span className="inline-flex items-center gap-1.5">
+        <i className="bi bi-info-circle" aria-hidden="true" />
         Številka v celici je število zasedenih kosov.
       </span>
     </div>

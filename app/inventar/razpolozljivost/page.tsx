@@ -4,6 +4,7 @@ import { formatRangeSl, isIsoDate, todayLjubljana } from '@/lib/dates';
 import { computeAvailability } from '@/lib/inventory/availability';
 import { fetchItems, fetchOverlappingUsage } from '@/lib/inventory/queries';
 import { getDb } from '@/db/client';
+import { btn, card, cardBody } from '@/lib/ui';
 import { AvailabilityTable } from '@/components/inventar/AvailabilityTable';
 import { DateRangeForm } from '@/components/inventar/DateRangeForm';
 import { PageHeader } from '@/components/inventar/PageHeader';
@@ -29,24 +30,31 @@ export default async function RazpolozljivostPage({ searchParams }: Props) {
         title="Razpoložljivost"
         lead={
           <>
-            Koliko kosov je prostih <strong>vse dni izbranega obdobja</strong> – toliko jih
-            lahko obljubite.
+            Koliko kosov je prostih{' '}
+            <strong className="font-semibold text-slate-700">vse dni izbranega obdobja</strong> –
+            toliko jih lahko obljubite.
           </>
         }
       />
 
-      <DateRangeForm od={od} do={doDate} danes={danes} action="/inventar/razpolozljivost" />
+      <div className="mb-6">
+        <DateRangeForm od={od} do={doDate} danes={danes} action="/inventar/razpolozljivost" />
+      </div>
 
-      <h2 className="fs-6 text-secondary mb-2">{formatRangeSl(od, doDate)}</h2>
+      <h2 className="mb-2 text-sm font-medium text-slate-500">{formatRangeSl(od, doDate)}</h2>
 
-      <AvailabilityTable rows={availability} />
+      <div className={card}>
+        <div className={cardBody}>
+          <AvailabilityTable rows={availability} />
+        </div>
+      </div>
 
       {availability.length > 0 && (
         <Link
-          className="btn btn-primary w-100 w-sm-auto mt-3"
+          className={btn('primary', 'md', 'mt-4 max-sm:w-full')}
           href={`/inventar/izposoje/nova?od=${od}&do=${doDate}`}
         >
-          <i className="bi bi-plus-lg me-2" aria-hidden="true" />
+          <i className="bi bi-plus-lg" aria-hidden="true" />
           Ustvari izposojo za to obdobje
         </Link>
       )}

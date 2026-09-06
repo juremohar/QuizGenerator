@@ -5,6 +5,7 @@ import Link from 'next/link';
 
 import { shraniOpremo } from '@/app/inventar/actions';
 import { EMPTY_FORM_STATE, type FormState } from '@/lib/inventory/form-state';
+import { btn, card, cardBody, cx, errorText, field, fieldInvalid, help, label } from '@/lib/ui';
 import { SubmitButton } from './SubmitButton';
 
 interface Props {
@@ -26,16 +27,16 @@ export function ItemForm({ itemId, initial }: Props) {
   const blockedByCommitments = state.errors.some((m) => m.startsWith('Znižanje'));
 
   return (
-    <form action={formAction}>
+    <form action={formAction} className="space-y-4">
       {itemId !== undefined && <input type="hidden" name="itemId" value={itemId} />}
 
       {state.errors.length > 0 && (
-        <div className="alert alert-danger" role="alert">
-          <strong>
-            <i className="bi bi-exclamation-triangle me-2" aria-hidden="true" />
+        <div className="rounded-xl border border-red-200 bg-red-50 p-4" role="alert">
+          <p className="flex items-center gap-2 font-semibold text-red-800">
+            <i className="bi bi-exclamation-triangle" aria-hidden="true" />
             Opreme ni bilo mogoče shraniti:
-          </strong>
-          <ul className="mb-0 mt-2">
+          </p>
+          <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-red-700">
             {state.errors.map((m) => (
               <li key={m}>{m}</li>
             ))}
@@ -43,116 +44,123 @@ export function ItemForm({ itemId, initial }: Props) {
         </div>
       )}
 
-      <div className="card shadow-sm mb-3">
-        <div className="card-body">
-          <div className="row g-3">
-            <div className="col-md-6">
-              <label className="form-label" htmlFor="name">
-                Ime opreme
-              </label>
-              <input
-                className={`form-control ${state.fieldErrors.name ? 'is-invalid' : ''}`}
-                id="name"
-                name="name"
-                placeholder="npr. Mize"
-                defaultValue={initial?.name}
-                required
-              />
-              <div className="invalid-feedback">{state.fieldErrors.name}</div>
-            </div>
+      <section className={card}>
+        <div className={cx(cardBody, 'grid gap-4 sm:grid-cols-2')}>
+          <div className="sm:col-span-2">
+            <label className={label} htmlFor="name">
+              Ime opreme
+            </label>
+            <input
+              className={cx(field, state.fieldErrors.name && fieldInvalid)}
+              id="name"
+              name="name"
+              placeholder="npr. Mize"
+              defaultValue={initial?.name}
+              required
+            />
+            {state.fieldErrors.name && <p className={errorText}>{state.fieldErrors.name}</p>}
+          </div>
 
-            <div className="col-6 col-md-3">
-              <label className="form-label" htmlFor="totalQuantity">
-                Skupaj kosov
-              </label>
-              <input
-                className={`form-control ${state.fieldErrors.totalQuantity ? 'is-invalid' : ''}`}
-                id="totalQuantity"
-                name="totalQuantity"
-                type="number"
-                inputMode="numeric"
-                min={1}
-                defaultValue={initial?.totalQuantity ?? 1}
-                required
-              />
-              <div className="invalid-feedback">{state.fieldErrors.totalQuantity}</div>
-              <div className="form-text">Koliko kosov ima društvo skupaj.</div>
-            </div>
-
-            <div className="col-6 col-md-3">
-              <label className="form-label" htmlFor="sortOrder">
-                Vrstni red
-              </label>
-              <input
-                className="form-control"
-                id="sortOrder"
-                name="sortOrder"
-                type="number"
-                inputMode="numeric"
-                min={0}
-                defaultValue={initial?.sortOrder ?? 0}
-              />
-              <div className="form-text">Manjša številka je višje na seznamih.</div>
-            </div>
-
-            <div className="col-12">
-              <label className="form-label" htmlFor="notes">
-                Opombe
-              </label>
-              <textarea
-                className="form-control"
-                id="notes"
-                name="notes"
-                rows={2}
-                placeholder="npr. hrani se v garaži, potrebna previdnost pri prevozu"
-                defaultValue={initial?.notes}
-              />
-            </div>
-
-            <div className="col-12">
-              <div className="form-check form-switch">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  role="switch"
-                  id="active"
-                  name="active"
-                  defaultChecked={initial?.active ?? true}
-                />
-                <label className="form-check-label" htmlFor="active">
-                  Aktivna – prikaži pri novih izposojah
-                </label>
-              </div>
-              <div className="form-text">
-                Arhivirana oprema ostane v zgodovini izposoj, le izbrati je ni več mogoče.
-              </div>
-            </div>
-
-            {blockedByCommitments && (
-              <div className="col-12">
-                <div className="alert alert-warning mb-0">
-                  <div className="form-check">
-                    <input className="form-check-input" type="checkbox" id="force" name="force" />
-                    <label className="form-check-label fw-semibold" htmlFor="force">
-                      Vseeno shrani in dovoli presežek nad zalogo
-                    </label>
-                  </div>
-                  <div className="form-text mb-0">
-                    Obstoječe rezervacije bodo skupaj zahtevale več kosov, kot jih je na
-                    zalogi. Uporabite samo, če veste, kaj delate.
-                  </div>
-                </div>
-              </div>
+          <div>
+            <label className={label} htmlFor="totalQuantity">
+              Skupaj kosov
+            </label>
+            <input
+              className={cx(field, state.fieldErrors.totalQuantity && fieldInvalid)}
+              id="totalQuantity"
+              name="totalQuantity"
+              type="number"
+              inputMode="numeric"
+              min={1}
+              defaultValue={initial?.totalQuantity ?? 1}
+              required
+            />
+            {state.fieldErrors.totalQuantity ? (
+              <p className={errorText}>{state.fieldErrors.totalQuantity}</p>
+            ) : (
+              <p className={help}>Koliko kosov ima društvo skupaj.</p>
             )}
           </div>
-        </div>
-      </div>
 
-      <div className="d-flex flex-column flex-sm-row gap-2">
-        <SubmitButton className="btn btn-primary w-100 w-sm-auto" pendingLabel="Shranjujem …">
+          <div>
+            <label className={label} htmlFor="sortOrder">
+              Vrstni red
+            </label>
+            <input
+              className={field}
+              id="sortOrder"
+              name="sortOrder"
+              type="number"
+              inputMode="numeric"
+              min={0}
+              defaultValue={initial?.sortOrder ?? 0}
+            />
+            <p className={help}>Manjša številka je višje na seznamih.</p>
+          </div>
+
+          <div className="sm:col-span-2">
+            <label className={label} htmlFor="notes">
+              Opombe
+            </label>
+            <textarea
+              className={field}
+              id="notes"
+              name="notes"
+              rows={2}
+              placeholder="npr. hrani se v garaži, potrebna previdnost pri prevozu"
+              defaultValue={initial?.notes}
+            />
+          </div>
+
+          <div className="sm:col-span-2">
+            <label className="flex cursor-pointer gap-2.5">
+              <input
+                type="checkbox"
+                id="active"
+                name="active"
+                defaultChecked={initial?.active ?? true}
+                className="mt-0.5 size-4 shrink-0 rounded border-slate-300 text-slate-900 focus:ring-slate-900/20"
+              />
+              <span className="text-sm">
+                <span className="font-medium text-slate-700">
+                  Aktivna – prikaži pri novih izposojah
+                </span>
+                <span className="block text-slate-500">
+                  Arhivirana oprema ostane v zgodovini izposoj, le izbrati je ni več mogoče.
+                </span>
+              </span>
+            </label>
+          </div>
+
+          {blockedByCommitments && (
+            <div className="rounded-lg border border-amber-200 bg-amber-50 p-3 sm:col-span-2">
+              <label className="flex cursor-pointer gap-2.5">
+                <input
+                  type="checkbox"
+                  id="force"
+                  name="force"
+                  className="mt-0.5 size-4 shrink-0 rounded border-amber-300 text-amber-700 focus:ring-amber-500/20"
+                />
+                <span className="text-sm">
+                  <span className="font-semibold text-amber-900">
+                    Vseeno shrani in dovoli presežek nad zalogo
+                  </span>
+                  <span className="block text-amber-800">
+                    Obstoječe rezervacije bodo skupaj zahtevale več kosov, kot jih je na
+                    zalogi. Uporabite samo, če veste, kaj delate.
+                  </span>
+                </span>
+              </label>
+            </div>
+          )}
+        </div>
+      </section>
+
+      <div className="flex flex-col gap-2 sm:flex-row">
+        <SubmitButton className="max-sm:w-full" pendingLabel="Shranjujem …">
           Shrani
         </SubmitButton>
-        <Link className="btn btn-outline-secondary w-100 w-sm-auto" href="/inventar/oprema">
+        <Link className={btn('secondary', 'md', 'max-sm:w-full')} href="/inventar/oprema">
           Prekliči
         </Link>
       </div>

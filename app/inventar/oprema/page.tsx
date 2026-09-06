@@ -3,17 +3,21 @@ import Link from 'next/link';
 import { getDb } from '@/db/client';
 import { fetchItems } from '@/lib/inventory/queries';
 import { KOS, stevilo } from '@/lib/sl';
+import { badge, btn, card, cardBody, cx } from '@/lib/ui';
 import { ArchiveButton } from '@/components/inventar/ArchiveButton';
 import { EmptyState } from '@/components/inventar/EmptyState';
 import { PageHeader } from '@/components/inventar/PageHeader';
 
 export const dynamic = 'force-dynamic';
 
+const TH = 'px-3 py-2 text-left text-xs font-medium tracking-wide text-slate-500 uppercase';
+const TD = 'px-3 py-3 align-middle text-sm text-slate-700';
+
 function StatusBadge({ active }: { active: boolean }) {
   return active ? (
-    <span className="badge bg-success">Aktivna</span>
+    <span className={badge('emerald')}>Aktivna</span>
   ) : (
-    <span className="badge bg-secondary">Arhivirana</span>
+    <span className={badge('slate')}>Arhivirana</span>
   );
 }
 
@@ -34,31 +38,33 @@ export default async function OpremaPage() {
       />
 
       {oprema.length === 0 ? (
-        <EmptyState icon="bi-boxes" action={{ href: '/inventar/oprema/nova', label: 'Dodaj opremo' }}>
-          Ni vnesene opreme. Dodajte prvo vrsto opreme, da lahko začnete z izposojami.
-        </EmptyState>
+        <div className={card}>
+          <EmptyState
+            icon="bi-boxes"
+            action={{ href: '/inventar/oprema/nova', label: 'Dodaj opremo' }}
+          >
+            Ni vnesene opreme. Dodajte prvo vrsto opreme, da lahko začnete z izposojami.
+          </EmptyState>
+        </div>
       ) : (
         <>
-          <div className="d-md-none">
+          <div className="space-y-2 md:hidden">
             {oprema.map((item) => (
-              <div className="inv-card" key={item.id}>
-                <div className="d-flex justify-content-between align-items-start gap-2">
+              <div key={item.id} className="rounded-xl border border-slate-200 bg-white p-3">
+                <div className="flex items-start justify-between gap-2">
                   <div>
-                    <div className="fw-semibold">{item.name}</div>
-                    <div className="text-secondary small">
+                    <div className="font-medium text-slate-900">{item.name}</div>
+                    <div className="text-sm text-slate-500">
                       {stevilo(item.totalQuantity, KOS)} skupaj
                     </div>
                   </div>
                   <StatusBadge active={item.active} />
                 </div>
 
-                {item.notes && <p className="text-secondary small mt-2 mb-0">{item.notes}</p>}
+                {item.notes && <p className="mt-2 text-sm text-slate-500">{item.notes}</p>}
 
-                <div className="d-flex gap-2 mt-3">
-                  <Link
-                    className="btn btn-sm btn-outline-secondary"
-                    href={`/inventar/oprema/${item.id}`}
-                  >
+                <div className="mt-3 flex gap-2">
+                  <Link className={btn('secondary', 'sm')} href={`/inventar/oprema/${item.id}`}>
                     Uredi
                   </Link>
                   {/* No delete: loan history references equipment, and the foreign key
@@ -69,43 +75,51 @@ export default async function OpremaPage() {
             ))}
           </div>
 
-          <div className="table-responsive d-none d-md-block">
-            <table className="table table-hover align-middle">
-              <thead>
-                <tr>
-                  <th scope="col">Oprema</th>
-                  <th scope="col" className="text-end">
-                    Skupaj kosov
-                  </th>
-                  <th scope="col">Status</th>
-                  <th scope="col">Opombe</th>
-                  <th scope="col" />
-                </tr>
-              </thead>
-              <tbody>
-                {oprema.map((item) => (
-                  <tr key={item.id}>
-                    <td>{item.name}</td>
-                    <td className="text-end">{item.totalQuantity}</td>
-                    <td>
-                      <StatusBadge active={item.active} />
-                    </td>
-                    <td className="text-secondary small">{item.notes ?? ''}</td>
-                    <td>
-                      <div className="d-flex gap-2 justify-content-end">
-                        <Link
-                          className="btn btn-sm btn-outline-secondary"
-                          href={`/inventar/oprema/${item.id}`}
-                        >
-                          Uredi
-                        </Link>
-                        {item.active && <ArchiveButton itemId={item.id} itemName={item.name} />}
-                      </div>
-                    </td>
+          <div className={cx(card, 'max-md:hidden')}>
+            <div className={cx(cardBody, 'overflow-x-auto')}>
+              <table className="w-full border-collapse">
+                <thead>
+                  <tr className="border-b border-slate-200">
+                    <th scope="col" className={TH}>
+                      Oprema
+                    </th>
+                    <th scope="col" className={cx(TH, 'text-right')}>
+                      Skupaj kosov
+                    </th>
+                    <th scope="col" className={TH}>
+                      Status
+                    </th>
+                    <th scope="col" className={TH}>
+                      Opombe
+                    </th>
+                    <th scope="col" className={TH} />
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                </thead>
+                <tbody className="divide-y divide-slate-100">
+                  {oprema.map((item) => (
+                    <tr key={item.id} className="hover:bg-slate-50">
+                      <td className={cx(TD, 'font-medium text-slate-900')}>{item.name}</td>
+                      <td className={cx(TD, 'text-right tabular-nums')}>{item.totalQuantity}</td>
+                      <td className={TD}>
+                        <StatusBadge active={item.active} />
+                      </td>
+                      <td className={cx(TD, 'text-slate-500')}>{item.notes ?? ''}</td>
+                      <td className={TD}>
+                        <div className="flex justify-end gap-2">
+                          <Link
+                            className={btn('secondary', 'sm')}
+                            href={`/inventar/oprema/${item.id}`}
+                          >
+                            Uredi
+                          </Link>
+                          {item.active && <ArchiveButton itemId={item.id} itemName={item.name} />}
+                        </div>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
         </>
       )}

@@ -1,32 +1,50 @@
 import Link from 'next/link';
 
 import { fetchDashboard } from '@/lib/inventory/queries';
+import { card, cardBody, cardHeader, cx } from '@/lib/ui';
 import { LoanTable } from '@/components/inventar/LoanTable';
 import { PageHeader } from '@/components/inventar/PageHeader';
 import { PredanoButton } from '@/components/inventar/PredanoButton';
 
 export const dynamic = 'force-dynamic';
 
-interface StatProps {
+type Tone = 'danger' | 'warning' | 'primary' | 'success';
+
+const STAT_TONE: Record<Tone, { bar: string; value: string }> = {
+  danger: { bar: 'bg-red-500', value: 'text-red-600' },
+  warning: { bar: 'bg-amber-500', value: 'text-slate-900' },
+  primary: { bar: 'bg-blue-500', value: 'text-slate-900' },
+  success: { bar: 'bg-emerald-500', value: 'text-slate-900' },
+};
+
+/** A count nobody can act on is decoration, so every tile links to the matching list. */
+function Stat({
+  value,
+  label,
+  href,
+  tone,
+  icon,
+}: {
   value: number;
   label: string;
   href: string;
-  tone: 'danger' | 'warning' | 'primary' | 'success';
+  tone: Tone;
   icon: string;
-}
-
-/** A count nobody can act on is decoration, so every tile links to the matching list. */
-function Stat({ value, label, href, tone, icon }: StatProps) {
+}) {
   return (
-    <div className="col-6 col-lg-3">
-      <Link className={`inv-stat inv-stat-${tone}`} href={href}>
-        <div className="inv-stat-value">{value}</div>
-        <div className="inv-stat-label">
-          <i className={`bi ${icon} me-1`} aria-hidden="true" />
-          {label}
-        </div>
-      </Link>
-    </div>
+    <Link
+      href={href}
+      className="group relative overflow-hidden rounded-xl border border-slate-200 bg-white p-4 transition-shadow hover:shadow-sm"
+    >
+      <span className={cx('absolute inset-y-0 left-0 w-1', STAT_TONE[tone].bar)} aria-hidden="true" />
+      <span className={cx('block text-3xl font-semibold tabular-nums', STAT_TONE[tone].value)}>
+        {value}
+      </span>
+      <span className="mt-1 flex items-center gap-1.5 text-sm text-slate-500">
+        <i className={`bi ${icon}`} aria-hidden="true" />
+        {label}
+      </span>
+    </Link>
   );
 }
 
@@ -35,34 +53,35 @@ function Section({
   title,
   icon,
   count,
-  tone,
+  danger,
   children,
 }: {
   id?: string;
   title: string;
   icon: string;
   count?: number;
-  tone?: 'danger';
+  danger?: boolean;
   children: React.ReactNode;
 }) {
   return (
-    <section className={`card shadow-sm mb-4 ${tone === 'danger' ? 'border-danger' : ''}`} id={id}>
-      <div
-        className={`card-header d-flex justify-content-between align-items-center ${
-          tone === 'danger' ? 'bg-danger text-white' : ''
-        }`}
-      >
-        <strong>
-          <i className={`bi ${icon} me-2`} aria-hidden="true" />
+    <section id={id} className={cx(card, 'mb-4', danger && 'border-red-300')}>
+      <div className={cx(cardHeader, danger && 'border-red-200 bg-red-50 text-red-900')}>
+        <span className="flex items-center gap-2">
+          <i className={`bi ${icon} ${danger ? 'text-red-500' : 'text-slate-400'}`} aria-hidden="true" />
           {title}
-        </strong>
+        </span>
         {count !== undefined && count > 0 && (
-          <span className={`badge ${tone === 'danger' ? 'bg-light text-danger' : 'bg-secondary'}`}>
+          <span
+            className={cx(
+              'rounded-md px-2 py-0.5 text-xs font-medium tabular-nums',
+              danger ? 'bg-red-600 text-white' : 'bg-slate-100 text-slate-600',
+            )}
+          >
             {count}
           </span>
         )}
       </div>
-      <div className="card-body">{children}</div>
+      <div className={cardBody}>{children}</div>
     </section>
   );
 }
@@ -77,7 +96,7 @@ export default async function PregledPage() {
         action={{ href: '/inventar/izposoje/nova', label: 'Nova izposoja', icon: 'bi-plus-lg' }}
       />
 
-      <div className="row g-2 g-md-3 mb-4">
+      <div className="mb-6 grid grid-cols-2 gap-3 lg:grid-cols-4">
         <Stat
           value={zamuja.length}
           label="Zamuja"
@@ -111,20 +130,15 @@ export default async function PregledPage() {
       {/* Only shown when something is actually late: an always-present empty red card
           trains people to ignore the colour. */}
       {zamuja.length > 0 && (
-        <Section title="Zamuja" icon="bi-exclamation-triangle" count={zamuja.length} tone="danger">
-          <p className="text-secondary small">
+        <Section title="Zamuja" icon="bi-exclamation-triangle" count={zamuja.length} danger>
+          <p className="mb-3 text-sm text-slate-500">
             Oprema, ki bi morala biti že vrnjena. Pokličite izposojevalca s tapom na številko.
           </p>
           <LoanTable loans={zamuja} danes={danes} hide={['status', 'purpose']} />
         </Section>
       )}
 
-      <Section
-        id="prevzem"
-        title="Za prevzem danes"
-        icon="bi-box-arrow-up"
-        count={zaPrevzem.length}
-      >
+      <Section id="prevzem" title="Za prevzem danes" icon="bi-box-arrow-up" count={zaPrevzem.length}>
         <LoanTable
           loans={zaPrevzem}
           danes={danes}
@@ -135,11 +149,7 @@ export default async function PregledPage() {
         />
       </Section>
 
-      <Section
-        title="Trenutno izposojeno"
-        icon="bi-box-arrow-right"
-        count={izposojeno.length}
-      >
+      <Section title="Trenutno izposojeno" icon="bi-box-arrow-right" count={izposojeno.length}>
         <LoanTable
           loans={izposojeno}
           danes={danes}

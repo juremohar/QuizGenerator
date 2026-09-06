@@ -2,6 +2,8 @@
 
 import { usePathname, useRouter } from 'next/navigation';
 
+import { btn } from '@/lib/ui';
+
 export function NovKvizButton() {
   const router = useRouter();
   const pathname = usePathname();
@@ -9,7 +11,7 @@ export function NovKvizButton() {
   return (
     <button
       type="button"
-      className="btn btn-outline-secondary"
+      className={btn('secondary')}
       onClick={() => {
         // A changed URL guarantees a router-cache miss; refresh() guarantees the server
         // re-renders and reshuffles.
@@ -18,6 +20,7 @@ export function NovKvizButton() {
         window.scrollTo({ top: 0 });
       }}
     >
+      <i className="bi bi-arrow-clockwise" aria-hidden="true" />
       Nov kviz
     </button>
   );

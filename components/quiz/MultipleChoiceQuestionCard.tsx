@@ -22,36 +22,42 @@ export function MultipleChoiceQuestionCard({
   const name = `${groupId}-q${questionNumber}`;
 
   return (
-    <div className="py-2">
-      <div className="mb-1 fw-bold">
+    <div className="p-4">
+      <p className="font-medium text-slate-900">
         {questionNumber + 1}. {question.question}
-      </div>
+      </p>
 
       {question.imageSrc && (
-        <img src={question.imageSrc} className="img-thumbnail mb-1" alt="" />
+        <img
+          src={question.imageSrc}
+          alt=""
+          className="mt-3 max-w-full rounded-lg border border-slate-200 p-1"
+        />
       )}
 
-      <div className="mt-2">
+      <div className="mt-3 space-y-1">
         {question.answers.map((answer, index) => {
           // Index-based ids: the old app built ids out of full Slovenian sentences,
           // spaces and periods included, and gave the radios no `name` at all - so they
           // were never a group.
           const id = `${name}-a${index}`;
           return (
-            <div className="form-check" key={id}>
+            <label
+              key={id}
+              htmlFor={id}
+              className="flex cursor-pointer items-start gap-2.5 rounded-lg px-2 py-1.5 text-sm text-slate-700 hover:bg-slate-50 has-disabled:cursor-default has-disabled:hover:bg-transparent"
+            >
               <input
-                className="form-check-input"
                 type="radio"
                 name={name}
                 id={id}
                 checked={userAnswer === answer}
                 disabled={showResults}
                 onChange={() => onSelect(answer)}
+                className="mt-0.5 size-4 shrink-0 border-slate-300 text-slate-900 focus:ring-slate-900/20"
               />
-              <label className="form-check-label" htmlFor={id}>
-                {answer}
-              </label>
-            </div>
+              {answer}
+            </label>
           );
         })}
       </div>
