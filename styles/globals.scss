@@ -1,0 +1,122 @@
+// Ported from src/scss/styles.scss. The only required change is dropping the webpack
+// tilde prefix: Turbopack (the Next 16 default) does not support `~` in Sass imports.
+@import "bootstrap/scss/bootstrap";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+* {
+    caret-color: transparent;
+}
+
+.callout {
+    padding: 10px;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+    h4 {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    p:last-child {
+        margin-bottom: 0;
+    }
+    code {
+        border-radius: 3px;
+    }
+    & + .bs-callout {
+        margin-top: -5px;
+    }
+}
+
+@each $name,$color in (default,#777),(primary,#428bca),(success,#5cb85c),(danger,#d9534f),(warning,#f0ad4e),(info,#5bc0de), (bdc,#29527a) {
+    .callout-#{$name} {
+        border-left-color: $color;
+        h4 {
+        color: $color;
+        }
+    }
+}
+
+.correct-answer {
+    font-size: 14px;
+}
+
+.random-answer {
+    font-size: 15px;
+}
+
+.true-false-buttons {
+    button {
+        width: 10%;
+    }
+}
+
+.check-result-button {
+    width: 20%;
+}
+
+.home-layout {
+    flex-direction: row;
+}
+
+@include media-breakpoint-down(md) {
+    .true-false-buttons {
+        button {
+            width: 25%;
+        }
+    }
+
+    .check-result-button {
+        width: 50%;
+    }
+
+    .home-layout {
+        flex-direction: column;
+    }
+
+    .card {
+        margin: 10px 0;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .true-false-buttons {
+        display: flex;
+
+        button {
+            width: 50%;
+        }
+    }
+
+    .check-result-button {
+        width: 100%;
+    }
+}
+
+// --- Inventar ---------------------------------------------------------------------
+// The timeline needs fixed, narrow day columns to fit several weeks on screen.
+.koledar {
+    table-layout: fixed;
+    font-size: 12px;
+
+    th, td {
+        text-align: center;
+        padding: 2px;
+    }
+
+    .koledar-oprema {
+        text-align: left;
+        white-space: nowrap;
+        position: sticky;
+        left: 0;
+        background: var(--bs-body-bg);
+        z-index: 1;
+    }
+
+    .koledar-dan {
+        width: 26px;
+    }
+
+    .koledar-teden {
+        border-left: 2px solid var(--bs-border-color);
+    }
+}
