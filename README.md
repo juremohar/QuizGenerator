@@ -23,8 +23,9 @@ npm test              # 104 unit tests
 npm run typecheck
 ```
 
-Note that `drizzle-kit` and `tsx` do not read `.env.local` the way Next.js does; the
-`db:*` scripts load `dotenv`, so keep credentials in `.env` or export them.
+`drizzle-kit` and `tsx` do not read `.env.local` the way Next.js does, so
+`drizzle.config.ts` and `db/seed.ts` load it explicitly - the `db:*` scripts work with no
+extra setup.
 
 ## Why the inventory works the way it does
 
