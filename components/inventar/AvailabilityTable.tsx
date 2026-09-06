@@ -22,17 +22,26 @@ function badgeClass(row: AvailabilityResult): string {
   return 'bg-warning text-dark';
 }
 
-function ConflictLinks({ ids }: { ids: readonly number[] }) {
-  if (ids.length === 0) return <span className="text-secondary">–</span>;
+/**
+ * The loans that collide on the range's worst day, with that day in brackets.
+ *
+ * `conflictingLoanIds` are only the loans occupying the item on `peakDate`, not every
+ * overlapping loan, so naming the day is what makes the label true. That day is also the
+ * one that caps `Prosto` (available = total - peak), which is what makes it worth
+ * showing at all: it turns "no" into "no, because of the 15th".
+ */
+function Zasedajo({ row }: { row: AvailabilityResult }) {
+  if (row.conflictingLoanIds.length === 0) return <span className="text-secondary">–</span>;
   return (
-    <>
-      {ids.map((id, i) => (
+    <span className="text-nowrap">
+      {row.conflictingLoanIds.map((id, i) => (
         <span key={id}>
           {i > 0 && ', '}
           <Link href={`/inventar/izposoje/${id}`}>#{id}</Link>
         </span>
       ))}
-    </>
+      {row.peakDate && <span className="text-secondary"> ({formatSl(row.peakDate)})</span>}
+    </span>
   );
 }
 
@@ -64,14 +73,9 @@ export function AvailabilityTable({ rows }: { rows: readonly AvailabilityResult[
 
             {row.peak > 0 && (
               <dl className="mt-2">
-                <dt>Največ zasedenih</dt>
-                <dd>
-                  {row.peak}
-                  {row.peakDate && ` (${formatSl(row.peakDate)})`}
-                </dd>
                 <dt>Zasedajo</dt>
                 <dd>
-                  <ConflictLinks ids={row.conflictingLoanIds} />
+                  <Zasedajo row={row} />
                 </dd>
               </dl>
             )}
@@ -85,15 +89,11 @@ export function AvailabilityTable({ rows }: { rows: readonly AvailabilityResult[
             <tr>
               <th scope="col">Oprema</th>
               <th scope="col" className="text-end">
-                Skupaj
-              </th>
-              <th scope="col" className="text-end">
-                Največ zasedenih
-              </th>
-              <th scope="col" className="text-end">
                 Prosto
               </th>
-              <th scope="col">Najbolj zaseden dan</th>
+              <th scope="col" className="text-end">
+                Skupaj
+              </th>
               <th scope="col">Zasedajo</th>
             </tr>
           </thead>
@@ -106,20 +106,12 @@ export function AvailabilityTable({ rows }: { rows: readonly AvailabilityResult[
                     <span style={{ width: freeShare(row) }} />
                   </div>
                 </td>
-                <td className="text-end">{row.total}</td>
-                <td className="text-end">{row.peak}</td>
                 <td className="text-end">
                   <span className={`badge ${badgeClass(row)}`}>{row.available}</span>
                 </td>
-                <td className="text-nowrap">
-                  {row.peakDate ? (
-                    formatSl(row.peakDate)
-                  ) : (
-                    <span className="text-secondary">–</span>
-                  )}
-                </td>
+                <td className="text-end text-secondary">{row.total}</td>
                 <td>
-                  <ConflictLinks ids={row.conflictingLoanIds} />
+                  <Zasedajo row={row} />
                 </td>
               </tr>
             ))}

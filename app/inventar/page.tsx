@@ -101,8 +101,8 @@ export default async function PregledPage() {
         />
         <Stat
           value={prihajajoce.length}
-          label="Prihajajoče (7 dni)"
-          href="/inventar/koledar"
+          label="Prihajajoče"
+          href="#prihajajoce"
           tone="success"
           icon="bi-calendar3"
         />
@@ -149,12 +149,17 @@ export default async function PregledPage() {
         />
       </Section>
 
-      <Section title="Prihajajoče (7 dni)" icon="bi-calendar3" count={prihajajoce.length}>
+      <Section
+        id="prihajajoce"
+        title="Prihajajoče rezervacije"
+        icon="bi-calendar3"
+        count={prihajajoce.length}
+      >
         <LoanTable
           loans={prihajajoce}
           danes={danes}
           hide={['status']}
-          empty="V naslednjih 7 dneh ni rezervacij."
+          empty="Ni prihodnjih rezervacij."
           emptyIcon="bi-calendar3"
         />
       </Section>

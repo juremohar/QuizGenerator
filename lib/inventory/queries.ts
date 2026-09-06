@@ -5,7 +5,7 @@ import { getDb } from '@/db/client';
 import { items, loanItems, loans } from '@/db/schema';
 import type { Tx } from '@/db/tx';
 import type { IsoDate } from '../dates';
-import { addDays, todayLjubljana } from '../dates';
+import { todayLjubljana } from '../dates';
 import type { UsageRow } from './availability';
 import { OCCUPYING_STATUSES, type LoanStatus } from './transitions';
 
@@ -215,9 +215,13 @@ export async function fetchDashboard() {
     ),
     zamuja: withItems.filter((l) => l.status === 'out' && l.toDate < danes),
     zaPrevzem: withItems.filter((l) => l.status === 'reserved' && l.fromDate <= danes),
-    prihajajoce: withItems.filter(
-      (l) => l.status === 'reserved' && l.fromDate > danes && l.fromDate <= addDays(danes, 7),
-    ),
+    // Every future reservation, not a rolling window: the dashboard is the one place
+    // that answers "what is coming", and a booking three weeks out is exactly the one
+    // people forget. Sorted by start date - the outer query orders by `toDate`, which is
+    // what the overdue and on-loan lists want but not this one.
+    prihajajoce: withItems
+      .filter((l) => l.status === 'reserved' && l.fromDate > danes)
+      .sort((a, b) => (a.fromDate === b.fromDate ? a.id - b.id : a.fromDate < b.fromDate ? -1 : 1)),
   };
 }
 
